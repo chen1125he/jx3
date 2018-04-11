@@ -8,18 +8,16 @@ class Product < ApplicationRecord
 
 
   def price
-    prices.order(:id => :desc).first.try(:amount).to_i
+    prices.order(:id => :desc).first.try(:amount).to_f
   end
 
 
   def self.csv_import(file_name = '')
     FileUtils.mkdir_p(CSV_IMPORT_DIR) unless File.exist?(CSV_IMPORT_DIR)
     return 'File Not Exists!' unless file_name.present? && File.exist?(File.join(CSV_IMPORT_DIR, file_name))
-    pp 111
-    CSV.read(File.join(CSV_IMPORT_DIR, file_name), encoding: 'gb2312') do |row|
-      pp row
-      row = encoding(row)
-      pp row
+    CSV.read(File.join(CSV_IMPORT_DIR, file_name), encoding: 'gb2312').each_with_index do |row, index|
+      next if index == 0
+      # row = encoding(row)
       # 交易行物品
       product_param = {}
       product_param[:category_id] = row[0]
@@ -34,7 +32,7 @@ class Product < ApplicationRecord
       product = Product.find_or_initialize_by(:name => product_param[:name])
       product.attributes = product_param
       product.prices << Price.new(price_param)
-      # product.save
+      product.save
     end
   end
 
