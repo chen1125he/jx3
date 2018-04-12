@@ -15,7 +15,7 @@ development:
   database: jx3_project_development
   pool: 5
   username: root
-  password: chan5200he
+  password: chan5200han
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
@@ -28,7 +28,7 @@ test:
   database: jx3_project_test
   pool: 5
   username: root
-  password: chan5200he
+  password: chan5200han
   host: localhost
 
 production:
@@ -38,5 +38,5 @@ production:
   database: jx3_project_production
   pool: 5
   username: root
-  password: chan5200he
+  password: chan5200han
   host: localhost
