@@ -69,7 +69,7 @@ class Product < ApplicationRecord
       costs[:cost] += value[:price].to_f * value[:amount].to_f
     end
     if(avg_flag)
-      return {price: costs[:price], cost: (costs[:cost]/avg_amount).to_f, vigor_cost_per: (costs[:vigor_cost]/avg_amount).to_f}
+      return {price: costs[:price].to_f, cost: (costs[:cost]/avg_amount).to_f, vigor_cost_per: (costs[:vigor_cost]/avg_amount).to_f}
     else
       return costs
     end
@@ -83,7 +83,7 @@ class Product < ApplicationRecord
     self_requireds = {price: self.price, name: self.name, vigor_cost: vigor_cost.to_f, requireds: {}}
     product_to_products.includes(:required).each_with_index do |ptp, index|
       self_requireds[:requireds][index] = {}
-      self_requireds[:requireds][index][:price] = ptp.required.try(:price)
+      self_requireds[:requireds][index][:price] = ptp.required.try(:price).to_f
       self_requireds[:requireds][index][:name] = ptp.required.try(:name)
       self_requireds[:requireds][index][:vigor_cost] = (ptp.required.try(:vigor_cost_per) * ptp.amount).to_f
       self_requireds[:requireds][index][:amount] = ptp.amount

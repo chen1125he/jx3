@@ -50,7 +50,7 @@ class Price < ApplicationRecord
 
 	# 导出价格csv
   # [product_name, price, record_time, seller_name, update_flag: 1]
-  def self.price_export
+  def self.csv_export
     FileUtils.mkdir_p(CSV_EXPORT_DIR) unless File.exist?(CSV_EXPORT_DIR)
     path = File.join(CSV_EXPORT_DIR, "price_#{Time.now.strftime('%Y%m%d%H%M%S')}.csv")
     CSV.open(path, 'a+') do |csv|
