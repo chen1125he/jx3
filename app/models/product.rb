@@ -1,6 +1,7 @@
 class Product < ApplicationRecord
 
   CSV_IMPORT_DIR = File.join(Rails.root, 'product_csv_import_dir')
+  
   CSV_FIELDS = {
     product_param: {
       category_id: 0, 
@@ -8,7 +9,8 @@ class Product < ApplicationRecord
       name: 2,
       compile_flag: 3,
       vigor_cost: 4,
-      avg_amount: 5
+      avg_amount: 5,
+      price: 6
       }, 
     price_param: {
       amount: 6, 
@@ -35,10 +37,11 @@ class Product < ApplicationRecord
     end
   end
 
+  # 已经添加了当前价格字段
   # 获取当前价格
-  def price
-    prices.order(:id => :desc).first.try(:amount).to_f
-  end
+  # def price
+    # prices.order(:id => :desc).first.try(:amount).to_f
+  # end
 
   # 获取每一个物品所耗费精力
   def vigor_cost_per
