@@ -53,7 +53,7 @@ class Price < ApplicationRecord
   def self.csv_export
     FileUtils.mkdir_p(CSV_EXPORT_DIR) unless File.exist?(CSV_EXPORT_DIR)
     path = File.join(CSV_EXPORT_DIR, "price_#{Time.now.strftime('%Y%m%d%H%M%S')}.csv")
-    CSV.open(path, 'a+') do |csv|
+    CSV.open(path, 'a+:gb2312:utf-8') do |csv|
       csv << ['交易行名称(name)', '当前价格(amont)', '当前时间(record_time)', '售卖者(seller_name)', '是否更新此行价格']
       Product.find_in_batches(batch_size: 50) do |products|
         products.each do |product|
