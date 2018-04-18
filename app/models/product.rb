@@ -127,7 +127,8 @@ class Product < ApplicationRecord
   def self.csv_import(file_name = '')
     FileUtils.mkdir_p(CSV_IMPORT_DIR) unless File.exist?(CSV_IMPORT_DIR)
     return 'File Not Exists!' unless file_name.present? && File.exist?(File.join(CSV_IMPORT_DIR, file_name))
-    ImportErrorUtils.open(namespace: 'product', original_filename: file_name) do |eu|
+    Product.transaction do 
+      ImportErrorUtils.open(namespace: 'product', original_filename: file_name) do |eu|
         CSV.foreach(File.join(CSV_IMPORT_DIR, file_name), encoding: 'gb2312:utf-8').with_index do |row, index|
           next if index == 0
           params = get_csv_params(row)
@@ -141,14 +142,19 @@ class Product < ApplicationRecord
           product.attributes = product_param
           price = Price.new(price_param)
           
-          if price.valid? && product.valid?
-            product.prices << price
+          if product.valid?
             product.save(validate: false)
+            price.product = product
+            if price.valid?
+              price.save(validate: false)
+            else
+              eu.puts(index+1, price.errors)
+            end
           else
             eu.puts(index+1, product.errors)
-            eu.puts(index+1, price.errors)
           end
         end
+      end
     end
   end
 
