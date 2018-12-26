@@ -1,4 +1,4 @@
-source 'http://rubygems.org'
+source 'https://gems.ruby-china.com'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -9,7 +9,7 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.3'
 # Use sqlite3 as the database for Active Record
-gem 'mysql2', ' 0.3.20'
+gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -45,7 +45,12 @@ group :development do
   gem 'web-console', '>= 3.3.0'
 end
 
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
 gem "paranoia", "~> 2.2"
+
+# Deployment
+gem 'mina', '~> 1.2.2', require: false
+gem 'mina-puma', '~> 1.1.0', require: false
+gem 'mina-multistage', '~> 1.0.3', require: false
+gem 'mina-sidekiq', '~> 1.0.3', require: false
+gem 'mina-logs', '~> 1.1.0', require: false
+gem 'mina-clockwork', require: false
