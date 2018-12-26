@@ -7,16 +7,11 @@ require 'mina/git'
 require 'mina/rbenv'
 require 'mina/puma'
 require "mina_sidekiq/tasks"
-require 'mina/clockwork'
-require 'mina/logs'
 require 'mina/multistage'
 
 set :shared_dirs, fetch(:shared_dirs, []).push('log', 'public/uploads')
-set :shared_files, fetch(:shared_files, []).push('config/database.yml', 'config/application.yml')
-
+set :shared_files, fetch(:shared_files, []).push('config/application.yml', 'config/database.yml', 'config/puma.rb')
 set :sidekiq_pid, ->{ "#{fetch(:shared_path)}/tmp/pids/sidekiq.pid" }
-
-set :clockwork_file, ->{ "#{fetch(:current_path)}/config/clock.rb" }
 
 task :remote_environment do
   invoke :'rbenv:load'
@@ -43,6 +38,9 @@ task :setup do
 
   command %[touch "#{fetch(:shared_path)}/config/database.yml"]
   command %[echo "-----> Be sure to edit '#{fetch(:shared_path)}/config/database.yml'"]
+
+  command %[touch "#{fetch(:shared_path)}/config/puma.rb"]
+  command %[echo "-----> Be sure to edit '#{fetch(:shared_path)}/config/puma.rb'"]
 end
 
 desc "Deploys the current version to the server."
@@ -64,7 +62,6 @@ task :deploy do
       invoke :'sidekiq:quiet'
       invoke :'puma:hard_restart'
       invoke :'sidekiq:restart'
-      invoke :'clockwork:restart'
     end
   end
 end
