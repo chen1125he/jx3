@@ -58,3 +58,6 @@ gem 'mina-clockwork', require: false
 # Background job
 gem 'sidekiq', '~> 4.2'
 gem 'redis-namespace'
+
+# App configuration
+gem 'figaro', '~> 1.1'
