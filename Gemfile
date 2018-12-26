@@ -54,3 +54,7 @@ gem 'mina-multistage', '~> 1.0.3', require: false
 gem 'mina-sidekiq', '~> 1.0.3', require: false
 gem 'mina-logs', '~> 1.1.0', require: false
 gem 'mina-clockwork', require: false
+
+# Background job
+gem 'sidekiq', '~> 4.2'
+gem 'redis-namespace'
