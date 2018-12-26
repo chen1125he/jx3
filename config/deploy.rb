@@ -7,6 +7,8 @@ require 'mina/git'
 require 'mina/rbenv'
 require 'mina/puma'
 require "mina_sidekiq/tasks"
+require 'mina/clockwork'
+require 'mina/logs'
 require 'mina/multistage'
 
 set :shared_dirs, fetch(:shared_dirs, []).push('log', 'public/uploads')
