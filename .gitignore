@@ -20,7 +20,6 @@
 # Ignore Byebug command history file.
 .byebug_history
 /product_csv_import_dir/*
-/db/schema.rb
 /config/database.yml
 /error_msg_path/*
 /ptp_csv_import_dir/*
