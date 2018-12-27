@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: categories
+# Table name: areas
 #
 #  id         :bigint(8)        not null, primary key
 #  name       :string
@@ -8,5 +8,6 @@
 #  updated_at :datetime         not null
 #
 
-class Category < ApplicationRecord
+class Area < ApplicationRecord
+  has_many :services
 end

@@ -7,8 +7,8 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.3'
-# Use sqlite3 as the database for Active Record
+gem 'rails', '5.1.5'
+# Use postgresql as the database for Active Record
 gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
@@ -43,6 +43,12 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
+
+  # annotate schema info
+  gem 'annotate', git: 'https://github.com/ctran/annotate_models.git'
+
+  # rspec
+  gem 'rspec-rails'
 end
 
 gem "paranoia", "~> 2.2"

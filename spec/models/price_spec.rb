@@ -24,5 +24,8 @@
 #  fk_rails_...  (service_id => services.id)
 #
 
-class Price < ApplicationRecord
+require 'rails_helper'
+
+RSpec.describe Price, type: :model do
+  pending "add some examples to (or delete) #{__FILE__}"
 end

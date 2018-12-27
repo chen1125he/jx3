@@ -1,3 +1,16 @@
+# == Schema Information
+#
+# Table name: product_to_products
+#
+#  id          :integer          not null, primary key
+#  product_id  :integer
+#  required_id :integer
+#  amount      :integer          default(1)
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#  deleted     :boolean          default(FALSE)
+#
+
 class ProductToProduct < ApplicationRecord
   belongs_to :product, :foreign_key => :product_id
   belongs_to :required, :foreign_key => :required_id
