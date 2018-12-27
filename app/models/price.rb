@@ -21,8 +21,13 @@
 # Foreign Keys
 #
 #  fk_rails_...  (owner_id => products.id)
-#  fk_rails_...  (service_id => services.id)
 #
 
 class Price < ApplicationRecord
+  extend Enumerize
+  belongs_to :owner, class_name: 'Product'
+  belongs_to :service, optional: true
+
+  enumerize :price_type, in: %w(history_price system_price), default: :history_price
+  enumerize :currency_type, in: %w(gold), default: :gold
 end

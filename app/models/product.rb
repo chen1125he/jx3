@@ -22,27 +22,28 @@
 class Product < ApplicationRecord
 
   CSV_IMPORT_DIR = File.join(Rails.root, 'product_csv_import_dir')
-  
+
   CSV_FIELDS = {
     product_param: {
-      category_id: 0, 
-      game_id: 1, 
+      category_id: 0,
+      game_id: 1,
       name: 2,
       compile_flag: 3,
       vigor_cost: 4,
       avg_amount: 5,
       price: 6
-      }, 
+      },
     price_param: {
-      amount: 6, 
-      record_time: 7, 
+      amount: 6,
+      record_time: 7,
       seller_name: 8
       }
     }
 
-  has_many :prices
-  has_many :product_to_products
-  has_many :requireds, :through => :product_to_products
+  has_many :history_prices, -> { where(price_type: :history_price) }, dependent: :destroy
+  has_many :system_prices, -> { where(price_type: :system_price) }, dependent: :destroy
+  has_many :requirements, as: :owner, dependent: :destroy
+  has_many :materials, through: :requirements
 
   validate :category_present
 
@@ -72,8 +73,8 @@ class Product < ApplicationRecord
   # 获取收益
   def get_profit(amount = 0)
     # amount == 0 ? avg_amount
-    # get_requireds.each do 
-    # price 
+    # get_requireds.each do
+    # price
   end
 
   # 获取成本
@@ -148,7 +149,7 @@ class Product < ApplicationRecord
   def self.csv_import(file_name = '')
     FileUtils.mkdir_p(CSV_IMPORT_DIR) unless File.exist?(CSV_IMPORT_DIR)
     return 'File Not Exists!' unless file_name.present? && File.exist?(File.join(CSV_IMPORT_DIR, file_name))
-    Product.transaction do 
+    Product.transaction do
       ImportErrorUtils.open(namespace: 'product', original_filename: file_name) do |eu|
         CSV.foreach(File.join(CSV_IMPORT_DIR, file_name), encoding: 'gb2312:utf-8').with_index do |row, index|
           next if index == 0
@@ -162,7 +163,7 @@ class Product < ApplicationRecord
           product = Product.find_or_initialize_by(:name => product_param[:name])
           product.attributes = product_param
           price = Price.new(price_param)
-          
+
           if product.valid?
             product.save(validate: false)
             price.product = product

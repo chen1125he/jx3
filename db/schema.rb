@@ -70,7 +70,6 @@ ActiveRecord::Schema.define(version: 20181227131516) do
   end
 
   add_foreign_key "prices", "products", column: "owner_id"
-  add_foreign_key "prices", "services"
   add_foreign_key "products", "categories"
   add_foreign_key "requirements", "products", column: "material_id"
   add_foreign_key "requirements", "products", column: "owner_id"

@@ -67,3 +67,5 @@ gem 'redis-namespace'
 
 # App configuration
 gem 'figaro', '~> 1.1'
+
+gem 'enumerize'

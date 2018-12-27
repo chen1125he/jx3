@@ -63,6 +63,8 @@ GEM
     connection_pool (2.2.2)
     crass (1.0.4)
     diff-lcs (1.3)
+    enumerize (2.2.2)
+      activesupport (>= 3.2)
     erubi (1.8.0)
     execjs (2.7.0)
     ffi (1.9.25)
@@ -213,6 +215,7 @@ DEPENDENCIES
   annotate!
   byebug
   coffee-rails (~> 4.2)
+  enumerize
   figaro (~> 1.1)
   jbuilder (~> 2.5)
   jquery-rails

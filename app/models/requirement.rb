@@ -21,4 +21,6 @@
 #
 
 class Requirement < ApplicationRecord
+  belongs_to :owner, class_name: 'Owner'
+  belongs_to :material, class_name: 'Product'
 end
