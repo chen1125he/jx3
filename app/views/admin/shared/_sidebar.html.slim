@@ -1,0 +1,23 @@
+aside.sidebar
+  .sidebar-container
+    .sidebar-header
+      .brand
+        = image_tag ''
+    {{> _common/logo/logo}}
+    Modular Admin
+    nav.menu
+      ul.sidebar-menu.metismenu#sidebar-menu
+        li
+          a href="https://www.baidu.com"
+            i.fa.fa-home
+            | Dashboard
+        li
+          a href=""
+            i.fa.fa-th-large
+            | Items Manager
+            i.fa.arrow
+          ul.sidebar-nav
+            li
+              = link_to 'ItemsList', '#'
+            li
+              = link_to 'ItemEditor', '#'

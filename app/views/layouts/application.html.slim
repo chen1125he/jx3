@@ -1,0 +1,35 @@
+doctype html
+html lang="zh-cmn-Hans"
+  head
+    meta charset="utf-8"
+    meta http-equiv="x-ua-compatible" content="ie=edge"
+    meta name="description" content=""
+		meta name="viewport" content="width=device-width, initial-scale=1"
+    title
+      | jx3
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+
+  body.loaded
+    .main-wrapper
+      .app.header-fixed.footer-fixed.sidebar-fixed#app
+        = render 'admin/shared/header'
+
+        = render 'admin/shared/sidebar'
+
+        .sidebar-overlay#sidebar-overlay
+        .sidebar-mobile-menu-handle#sidebar-mobile-menu-handle
+        .mobile-menu-handle
+
+        article.content.pagename-page
+          = yield
+
+          | {{> app/_common/footer/footer}}
+
+          | {{> app/_common/modals/modals}}
+    .ref#ref
+			.color-primary
+			  .chart
+				  .color-primary
+				  .color-secondary

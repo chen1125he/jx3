@@ -53,6 +53,15 @@ end
 
 gem "paranoia", "~> 2.2"
 
+# view
+gem 'slim-rails', '~> 3.1'
+gem 'bootstrap', '~> 4.2.1'
+gem 'font-awesome-sass'
+gem 'metismenu-rails', github: 'lanvige/metismenu-rails'
+
+# ui
+gem 'echarts-rails'
+
 # Deployment
 gem 'mina', '~> 1.2.2', require: false
 gem 'mina-puma', '~> 1.1.0', require: false
