@@ -7,7 +7,7 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.2'
+gem 'rails', '5.2.1'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use Puma as the app server
@@ -73,7 +73,6 @@ gem 'mina-clockwork', require: false
 # Background job
 gem 'sidekiq', '~> 4.2'
 gem 'redis-namespace'
-gem 'activejob', '>= 5.1.6.1'
 
 # App configuration
 gem 'figaro', '~> 1.1'
