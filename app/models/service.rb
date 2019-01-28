@@ -5,6 +5,7 @@
 # Table name: services
 #
 #  id         :bigint(8)        not null, primary key
+#  deleted_at :datetime
 #  name       :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
@@ -20,5 +21,6 @@
 #
 
 class Service < ApplicationRecord
+  include SoftDeletable
   belongs_to :area
 end

@@ -6,6 +6,7 @@
 #
 #  id                          :bigint(8)        not null, primary key
 #  avg_amount(平均获得数量(如生活技能物品)) :float            default(1.0)
+#  deleted_at                  :datetime
 #  name                        :string
 #  created_at                  :datetime         not null
 #  updated_at                  :datetime         not null
