@@ -57,8 +57,6 @@ group :development do
   gem 'rubocop', require: false
 end
 
-gem 'paranoia', '~> 2.2'
-
 # view
 gem 'bootstrap', '~> 4.2.1'
 gem 'font-awesome-sass'
