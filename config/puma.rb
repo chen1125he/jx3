@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 if ENV['RAILS_ENV'] == 'production'
   app_root = '/data/www/jx3/shared'
   pidfile "#{app_root}/tmp/pids/puma.pid"

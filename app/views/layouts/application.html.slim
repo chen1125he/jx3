@@ -11,7 +11,7 @@ html lang="zh-cmn-Hans"
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
 
-  body.loaded
+  body.loaded class=body_class
     .main-wrapper
       .app.header-fixed.footer-fixed.sidebar-fixed#app
         = render 'admin/shared/header'

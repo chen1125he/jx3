@@ -17,12 +17,14 @@
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
-@import "themes/custom-theme";
 @import "mixins";
+
+@import "themes/custom-theme";
+@import "components/*";
 @import "shared/*";
 @import "shared/header/*";
 @import "scrollbar";
-
+@import "admin/*";
 
 html,
 body {

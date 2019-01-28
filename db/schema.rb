@@ -10,68 +10,67 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181227131516) do
-
+ActiveRecord::Schema.define(version: 20_181_227_131_516) do
   # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
+  enable_extension 'plpgsql'
 
-  create_table "areas", force: :cascade do |t|
-    t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+  create_table 'areas', force: :cascade do |t|
+    t.string 'name'
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
   end
 
-  create_table "categories", force: :cascade do |t|
-    t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+  create_table 'categories', force: :cascade do |t|
+    t.string 'name'
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
   end
 
-  create_table "prices", force: :cascade do |t|
-    t.bigint "owner_id"
-    t.bigint "service_id"
-    t.string "price_type", comment: "是否是固定的，否则有价格历史"
-    t.string "currency_type", comment: "价格的货币类型"
-    t.decimal "amount", precision: 12, scale: 4, default: "0.0"
-    t.string "seller_name", comment: "售卖者"
-    t.date "record_date", comment: "此价格的时间"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["owner_id"], name: "index_prices_on_owner_id"
-    t.index ["service_id"], name: "index_prices_on_service_id"
+  create_table 'prices', force: :cascade do |t|
+    t.bigint 'owner_id'
+    t.bigint 'service_id'
+    t.string 'price_type', comment: '是否是固定的，否则有价格历史'
+    t.string 'currency_type', comment: '价格的货币类型'
+    t.decimal 'amount', precision: 12, scale: 4, default: '0.0'
+    t.string 'seller_name', comment: '售卖者'
+    t.date 'record_date', comment: '此价格的时间'
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
+    t.index ['owner_id'], name: 'index_prices_on_owner_id'
+    t.index ['service_id'], name: 'index_prices_on_service_id'
   end
 
-  create_table "products", force: :cascade do |t|
-    t.bigint "category_id"
-    t.string "game_id"
-    t.string "name"
-    t.float "avg_amount", default: 1.0, comment: "平均获得数量(如生活技能物品)"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["category_id"], name: "index_products_on_category_id"
+  create_table 'products', force: :cascade do |t|
+    t.bigint 'category_id'
+    t.string 'game_id'
+    t.string 'name'
+    t.float 'avg_amount', default: 1.0, comment: '平均获得数量(如生活技能物品)'
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
+    t.index ['category_id'], name: 'index_products_on_category_id'
   end
 
-  create_table "requirements", force: :cascade do |t|
-    t.bigint "owner_id"
-    t.bigint "material_id"
-    t.float "amount"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["material_id"], name: "index_requirements_on_material_id"
-    t.index ["owner_id"], name: "index_requirements_on_owner_id"
+  create_table 'requirements', force: :cascade do |t|
+    t.bigint 'owner_id'
+    t.bigint 'material_id'
+    t.float 'amount'
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
+    t.index ['material_id'], name: 'index_requirements_on_material_id'
+    t.index ['owner_id'], name: 'index_requirements_on_owner_id'
   end
 
-  create_table "services", force: :cascade do |t|
-    t.bigint "area_id"
-    t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["area_id"], name: "index_services_on_area_id"
+  create_table 'services', force: :cascade do |t|
+    t.bigint 'area_id'
+    t.string 'name'
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
+    t.index ['area_id'], name: 'index_services_on_area_id'
   end
 
-  add_foreign_key "prices", "products", column: "owner_id"
-  add_foreign_key "products", "categories"
-  add_foreign_key "requirements", "products", column: "material_id"
-  add_foreign_key "requirements", "products", column: "owner_id"
-  add_foreign_key "services", "areas"
+  add_foreign_key 'prices', 'products', column: 'owner_id'
+  add_foreign_key 'products', 'categories'
+  add_foreign_key 'requirements', 'products', column: 'material_id'
+  add_foreign_key 'requirements', 'products', column: 'owner_id'
+  add_foreign_key 'services', 'areas'
 end

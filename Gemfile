@@ -1,10 +1,13 @@
+# frozen_string_literal: true
+
 source 'https://gems.ruby-china.com'
 
 git_source(:github) do |repo_name|
-  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
+  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?('/')
   "https://github.com/#{repo_name}.git"
 end
 
+ruby '2.3.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '5.2.1'
@@ -49,30 +52,33 @@ group :development do
 
   # rspec
   gem 'rspec-rails'
+
+  # rubocop
+  gem 'rubocop', require: false
 end
 
-gem "paranoia", "~> 2.2"
+gem 'paranoia', '~> 2.2'
 
 # view
-gem 'slim-rails', '~> 3.1'
 gem 'bootstrap', '~> 4.2.1'
 gem 'font-awesome-sass'
 gem 'metismenu-rails', github: 'lanvige/metismenu-rails'
+gem 'slim-rails', '~> 3.1'
 
 # ui
 gem 'echarts-rails'
 
 # Deployment
 gem 'mina', '~> 1.2.2', require: false
-gem 'mina-puma', '~> 1.1.0', require: false
-gem 'mina-multistage', '~> 1.0.3', require: false
-gem 'mina-sidekiq', '~> 1.0.3', require: false
-gem 'mina-logs', '~> 1.1.0', require: false
 gem 'mina-clockwork', require: false
+gem 'mina-logs', '~> 1.1.0', require: false
+gem 'mina-multistage', '~> 1.0.3', require: false
+gem 'mina-puma', '~> 1.1.0', require: false
+gem 'mina-sidekiq', '~> 1.0.3', require: false
 
 # Background job
-gem 'sidekiq', '~> 4.2'
 gem 'redis-namespace'
+gem 'sidekiq', '~> 4.2'
 
 # App configuration
 gem 'figaro', '~> 1.1'

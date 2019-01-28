@@ -3,21 +3,20 @@ aside.sidebar
     .sidebar-header
       .brand
         = image_tag ''
-    {{> _common/logo/logo}}
-    Modular Admin
+
     nav.menu
       ul.sidebar-menu.metismenu#sidebar-menu
         li
           a href="https://www.baidu.com"
             i.fa.fa-home
             | Dashboard
-        li
+        li.active.open
           a href=""
             i.fa.fa-th-large
             | Items Manager
             i.fa.arrow
           ul.sidebar-nav
-            li
+            li.active
               = link_to 'ItemsList', '#'
             li
               = link_to 'ItemEditor', '#'

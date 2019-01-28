@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: prices
@@ -28,6 +30,6 @@ class Price < ApplicationRecord
   belongs_to :owner, class_name: 'Product'
   belongs_to :service, optional: true
 
-  enumerize :price_type, in: %w(history_price system_price), default: :history_price
-  enumerize :currency_type, in: %w(gold), default: :gold
+  enumerize :price_type, in: %w[history_price system_price], default: :history_price
+  enumerize :currency_type, in: %w[gold], default: :gold
 end
