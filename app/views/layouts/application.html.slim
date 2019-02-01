@@ -30,20 +30,21 @@ html lang="zh-cmn-Hans"
 			  .chart
 				  .color-primary
 				  .color-secondary
-    .modal.fade#modal
-      .modal-dialog role="document"
-        .modal-content
-          .modal-header
-            h4.modal-title
-              i.fa.fa-warning
-              | Alert
-            button.close type="button" data-dismiss="modal" aria-label="Close"
-              span aria-hidden="true"
-                | &times;
-          .modal-body
-            | Are you sure want to do this?
-          .modal-footer
-            button.btn.btn-primary type="button" data-dismiss="modal"
-              | 是的
-            button.btn.btn-secondary type="button" data-dismiss="modal"
-              | 不是
+    #modal-window
+      .modal.fade
+        .modal-dialog role="document"
+          .modal-content
+            .modal-header
+              h4.modal-title
+                i.fa.fa-warning
+                | Alert
+              button.close type="button" data-dismiss="modal" aria-label="Close"
+                span aria-hidden="true"
+                  | &times;
+            .modal-body
+              | Are you sure want to do this?
+            .modal-footer
+              button.btn.btn-primary type="button" data-dismiss="modal"
+                | 是的
+              button.btn.btn-secondary type="button" data-dismiss="modal"
+                | 不是
