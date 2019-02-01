@@ -82,3 +82,4 @@ gem 'sidekiq', '~> 4.2'
 gem 'figaro', '~> 1.1'
 
 gem 'enumerize'
+gem 'kaminari'

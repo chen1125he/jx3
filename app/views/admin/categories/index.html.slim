@@ -15,3 +15,27 @@
         span.input-group-btn
           = link_to '#', onclick: "$(this).closest('form').submit()", class: 'btn btn-secondary rounded-s' do
             i.fa.fa-search
+
+section.section
+  .row
+    .col-md-12
+      .card
+        .card-block
+          .card-title-block
+            h3.title
+              | Responsive simple
+          section.example
+            .table-responsive
+              table.table.table-striped.table-bordered.table-hover
+                thead
+                  tr
+                    th
+                      | 分类名
+                    th
+                      | 操作
+			          tbody
+                  - @categories.each do |category|
+                    tr
+                      td.w70p = category.name
+                      td
+                        | 删除

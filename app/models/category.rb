@@ -14,4 +14,6 @@
 class Category < ApplicationRecord
   include SoftDeletable
   has_many :products
+
+  validates :name, presence: true, uniqueness: { conditions: -> { where(deleted_at: nil) } }
 end

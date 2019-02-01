@@ -22,3 +22,4 @@
 //= require config
 //= require metismenu
 //= require admin/shared/sidebar
+//= require admin/shared/modal

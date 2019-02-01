@@ -6,11 +6,10 @@ module SoftDeletable
   included do
     default_scope { where(deleted_at: nil) }
 
-    scope :only_deleted, -> { unscope(deleted_at: nil).where.not(deleted_at: nil) }
-    scope :with_deleted, -> { unscope(deleted_at: nil) }
+    scope :with_deleted, -> { unscope(where: :deleted_at) }
 
-    define_model_callabcks :soft_delete
-    define_model_callabcks :soft_undelete
+    define_model_callbacks :soft_delete
+    define_model_callbacks :soft_undelete
   end
 
   def deleted?
