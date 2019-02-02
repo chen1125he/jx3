@@ -9,12 +9,13 @@
         p.title-description
 					| 自定义的分类，包括各种物品
   .items-search
-    form.form-inline
-      .input-group
-        = text_field_tag :s, nil, class: 'form-control boxed rounded-s', placeholder: 'Search for...'
-        span.input-group-btn
-          = link_to '#', onclick: "$(this).closest('form').submit()", class: 'btn btn-secondary rounded-s' do
-            i.fa.fa-search
+    = form_tag admin_categories_path, method: :get do
+      form.form-inline
+        .input-group
+          = text_field_tag :q, params[:q], class: 'form-control boxed rounded-s', placeholder: '分类名...'
+          span.input-group-btn
+            = link_to 'javascript:void(0)', onclick: "$(this).closest('form').submit()", class: 'btn btn-secondary rounded-s' do
+              i.fa.fa-search
 
 section.section
   .row

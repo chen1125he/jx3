@@ -4,7 +4,8 @@ class Admin::CategoriesController < Admin::BaseController
   before_action :load_category, only: [:edit, :update, :destroy]
 
   def index
-    @categories = Category.order(created_at: :asc).page(params[:page])
+    q = Category.ransack(name_cont: params[:q])
+    @categories = q.result.order(created_at: :asc).page(params[:page])
   end
 
   def new
@@ -33,7 +34,7 @@ class Admin::CategoriesController < Admin::BaseController
 
   def destroy
     @category.soft_delete!
-    
+
     render_turbolinks_reload
   end
 
