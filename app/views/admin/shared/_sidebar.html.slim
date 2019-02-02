@@ -10,6 +10,10 @@ aside.sidebar
           = link_to admin_dashboards_path do
             i.fa.fa-home
             | 数据总览
+        li class=active_menu_class([:products])
+          = link_to admin_products_path do
+            i.fa.fa-home
+            | 物品管理
         li class=active_menu_class([:categories])
           = link_to admin_categories_path do
             i.fa.fa-home

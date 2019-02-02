@@ -4,8 +4,8 @@ class Admin::ProductsController < Admin::BaseController
   before_action :load_product, only: [:edit, :update, :destroy]
 
   def index
-    q = Product.ransack(name_cont: params[:q])
-    @products = q.result.order(created_at: :asc).page(params[:page])
+    q = Product.ransack({cateogry_name_cont: params[:q], name_cont: params[:q]}.merge(m: :or))
+    @products = q.result.includes(:category, :system_prices).order(created_at: :asc).page(params[:page])
   end
 
   def new

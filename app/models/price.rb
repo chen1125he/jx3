@@ -32,4 +32,7 @@ class Price < ApplicationRecord
 
   enumerize :price_type, in: %w[history_price system_price], default: :history_price
   enumerize :currency_type, in: %w[gold xiayi jianggong jianben weiwang duihuanpai], default: :gold
+
+  validates :amount, presence: true, numericality: { greater_than_or_equal_to: 0 }
+  validates :currency_type, presence: true
 end

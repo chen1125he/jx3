@@ -1,0 +1,60 @@
+.title-search-block
+  .title-block
+    .row
+      .col-md-6
+        h3.title
+          | 物品&nbsp;
+          = link_to new_admin_product_path, class: 'btn btn-primary btn-sm rounded-s' do
+            | 添加物品
+        p.title-description
+					| 系统中的所有物品
+  .items-search
+    = form_tag admin_products_path, method: :get do
+      form.form-inline
+        .input-group
+          = text_field_tag :q, params[:q], class: 'form-control boxed rounded-s', placeholder: '所属分类名、物品名...'
+          span.input-group-btn
+            = link_to 'javascript:void(0)', onclick: "$(this).closest('form').submit()", class: 'btn btn-secondary rounded-s' do
+              i.fa.fa-search
+
+section.section
+  .row
+    .col-md-12
+      .card
+        .card-block
+          .card-title-block
+            h3.title
+              | Responsive simple
+          section
+            .table-responsive
+              table.table.table-striped.table-bordered.table-hover
+                thead
+                  tr
+                    th
+                      | ID
+                    th
+                      | 所属分类名
+                    th
+                      | 物品名
+                    th
+                      | 系统固定价格
+                    th
+                      | 操作
+			          tbody
+                  - if @products.blank?
+                    tr
+                      td.nodata colspan=4
+                        | 暂无数据
+                  - @products.each do |product|
+                    tr
+                      td.w10p = product.id
+                      td = product.category.name
+                      td = product.name
+                      td
+                        - product.system_prices.each do |price|
+                          = format('%<currency_type>s:%<amount>s', currency_type: price.currency_type_text, amount: price.amount)
+                          br
+                      td.actions.w20p
+                        = link_to '编辑', edit_admin_product_path(product)
+                        = link_to '删除', admin_product_path(product), data: {'confirm' => '确认删除吗？'}, method: :delete, remote: true
+        = paginate @products
