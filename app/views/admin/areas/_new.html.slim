@@ -1,0 +1,14 @@
+.modal.fade
+  .modal-dialog role="document"
+    .modal-content
+      .modal-header
+        h5.modal-title
+          i.fa.fa-warning
+          | 添加大区
+        button.close type="button" data-dismiss="modal" aria-label="Close"
+          span aria-hidden="true"
+            | &times;
+      .modal-body
+        .area-form
+          = render 'form', area: @area, url: admin_areas_path
+      .modal-footer

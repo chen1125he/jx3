@@ -1,0 +1,51 @@
+.title-search-block
+  .title-block
+    .row
+      .col-md-6
+        h3.title
+          | 物品大区&nbsp;
+          = link_to new_admin_area_path, remote: true, class: 'btn btn-primary btn-sm rounded-s' do
+            | 添加大区
+        p.title-description
+					| 自定义的大区，包括各种物品
+  .items-search
+    = form_tag admin_areas_path, method: :get do
+      form.form-inline
+        .input-group
+          = text_field_tag :q, params[:q], class: 'form-control boxed rounded-s', placeholder: '大区名...'
+          span.input-group-btn
+            = link_to 'javascript:void(0)', onclick: "$(this).closest('form').submit()", class: 'btn btn-secondary rounded-s' do
+              i.fa.fa-search
+
+section.section
+  .row
+    .col-md-12
+      .card
+        .card-block
+          .card-title-block
+            h3.title
+              | Responsive simple
+          section
+            .table-responsive
+              table.table.table-striped.table-bordered.table-hover
+                thead
+                  tr
+                    th
+                      | ID
+                    th
+                      | 大区名
+                    th
+                      | 操作
+			          tbody
+                  - if @areas.blank?
+                    tr
+                      td.nodata colspan=3
+                        | 暂无数据
+                  - @areas.each do |area|
+                    tr
+                      td = area.id
+                      td.w70p = area.name
+                      td.actions
+                        = link_to '编辑', edit_admin_area_path(area), remote: true
+                        = link_to '删除', admin_area_path(area), data: {'confirm' => '确认删除吗？'}, method: :delete, remote: true
+        = paginate @areas
