@@ -23,4 +23,6 @@
 class Service < ApplicationRecord
   include SoftDeletable
   belongs_to :area
+
+  validates :name, presence: true
 end

@@ -1,0 +1,54 @@
+.title-search-block
+  .title-block
+    .row
+      .col-md-6
+        h3.title
+          | 物品服务器&nbsp;
+          = link_to new_admin_service_path, remote: true, class: 'btn btn-primary btn-sm rounded-s' do
+            | 添加服务器
+        p.title-description
+					| 自定义的服务器，包括各种物品
+  .items-search
+    = form_tag admin_services_path, method: :get do
+      form.form-inline
+        .input-group
+          = text_field_tag :q, params[:q], class: 'form-control boxed rounded-s', placeholder: '所属大区名、服务器名...'
+          span.input-group-btn
+            = link_to 'javascript:void(0)', onclick: "$(this).closest('form').submit()", class: 'btn btn-secondary rounded-s' do
+              i.fa.fa-search
+
+section.section
+  .row
+    .col-md-12
+      .card
+        .card-block
+          .card-title-block
+            h3.title
+              | Responsive simple
+          section
+            .table-responsive
+              table.table.table-striped.table-bordered.table-hover
+                thead
+                  tr
+                    th
+                      | ID
+                    th
+                      | 所属大区名
+                    th
+                      | 服务器名
+                    th
+                      | 操作
+			          tbody
+                  - if @services.blank?
+                    tr
+                      td.nodata colspan=4
+                        | 暂无数据
+                  - @services.each do |service|
+                    tr
+                      td = service.id
+                      td.w30p = service.area.name
+                      td.w30p = service.name
+                      td.actions
+                        = link_to '编辑', edit_admin_service_path(service), remote: true
+                        = link_to '删除', admin_service_path(service), data: {'confirm' => '确认删除吗？'}, method: :delete, remote: true
+        = paginate @services

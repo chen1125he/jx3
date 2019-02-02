@@ -18,6 +18,10 @@ aside.sidebar
           = link_to admin_areas_path do
             i.fa.fa-home
             | 大区管理
+        li class=active_menu_class([:services])
+          = link_to admin_services_path do
+            i.fa.fa-home
+            | 服务器管理
         li
           = link_to '#' do
             i.fa.fa-th-large

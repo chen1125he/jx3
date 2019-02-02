@@ -7,5 +7,6 @@ Rails.application.routes.draw do
     resources :dashboards
     resources :categories
     resources :areas
+    resources :services
   end
 end
