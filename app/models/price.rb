@@ -27,9 +27,9 @@
 
 class Price < ApplicationRecord
   extend Enumerize
-  belongs_to :owner, class_name: 'Product'
+  belongs_to :owner, class_name: 'Product', foreign_key: :owner_id
   belongs_to :service, optional: true
 
   enumerize :price_type, in: %w[history_price system_price], default: :history_price
-  enumerize :currency_type, in: %w[gold], default: :gold
+  enumerize :currency_type, in: %w[gold xiayi jianggong jianben weiwang duihuanpai], default: :gold
 end

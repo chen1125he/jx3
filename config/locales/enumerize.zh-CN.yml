@@ -1,0 +1,10 @@
+zh-CN:
+  enumerize:
+    price:
+      currency_type:
+        gold: 金
+        xiayi: 侠义值
+        jianggong: 江湖贡献值
+        jianben: 监本印文
+        weiwang: 威望
+        duihuanpai: 兑换牌

@@ -1,0 +1,29 @@
+.title-block
+  h3.title
+    | 编辑物品
+    span.sparkline.bar data-type='bar'
+.card.card-block
+  = render 'form', product: @product, url: admin_product_path(@product)
+
+.card
+  .card-block
+    .card-title-block
+      h3.title
+        | 系统固定价格&nbsp;
+        = link_to new_admin_product_system_price_path(@product), remote: true, class: 'btn btn-primary btn-sm rounded-s' do
+          | 添加价格
+    section
+      .table-responsive
+        table.table.table-striped.table-bordered.table-hover
+          thead
+            tr
+              th
+                | 价格类型
+              th
+                | 价格
+              th
+                | 出售的NPC
+              th
+                | 操作
+          tbody.system-price-list
+            = render 'system_price_list', system_prices: @product.system_prices, product: @product

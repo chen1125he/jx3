@@ -1,0 +1,6 @@
+.title-block
+  h3.title
+    | 添加物品
+    span.sparkline.bar data-type='bar'
+.card.card-block
+  = render 'form', product: @product, url: admin_products_path

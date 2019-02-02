@@ -8,5 +8,9 @@ Rails.application.routes.draw do
     resources :categories
     resources :areas
     resources :services
+    resources :products do
+      resources :system_prices, only: [:new, :create, :edit, :update, :destroy]
+      resources :history_prices, only: [:new, :create, :edit, :update, :destroy]
+    end
   end
 end

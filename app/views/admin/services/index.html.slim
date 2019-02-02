@@ -3,11 +3,11 @@
     .row
       .col-md-6
         h3.title
-          | 物品服务器&nbsp;
+          | 服务器&nbsp;
           = link_to new_admin_service_path, remote: true, class: 'btn btn-primary btn-sm rounded-s' do
             | 添加服务器
         p.title-description
-					| 自定义的服务器，包括各种物品
+					| 大区下的服务器，物品的历史价格是和服务器相关的
   .items-search
     = form_tag admin_services_path, method: :get do
       form.form-inline

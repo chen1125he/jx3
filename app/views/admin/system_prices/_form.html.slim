@@ -1,0 +1,5 @@
+= bootstrap_form_for system_price, url: url, remote: true do |f|
+  = f.select :currency_type, Price.currency_type.options
+  = f.number_field :amount
+  = f.number_field :seller_name
+  = f.submit '保存'

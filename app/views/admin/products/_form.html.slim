@@ -1,0 +1,6 @@
+= bootstrap_form_for product, url: url do |f|
+  = f.select :category_id, Category.all.map{|s| [s.name, s.id]}
+  = f.text_field :name
+  = f.text_field :game_id
+  = f.number_field :avg_amount
+  = f.submit '保存'

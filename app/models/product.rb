@@ -24,8 +24,11 @@
 
 class Product < ApplicationRecord
   include SoftDeletable
-  has_many :history_prices, -> { where(price_type: :history_price) }, dependent: :destroy
-  has_many :system_prices, -> { where(price_type: :system_price) }, dependent: :destroy
+  has_many :history_prices, -> { where(price_type: :history_price) }, dependent: :destroy, class_name: 'Price', foreign_key: :owner_id
+  has_many :system_prices, -> { where(price_type: :system_price) }, dependent: :destroy, class_name: 'Price', foreign_key: :owner_id
   has_many :requirements, as: :owner, dependent: :destroy
   has_many :materials, through: :requirements
+
+  validates :name, presence: true
+  validates :avg_amount, presence: true, numericality: { greater_than_or_equal_to: 0 }
 end
