@@ -4,11 +4,11 @@
       .modal-header
         h5.modal-title
           i.fa.fa-warning
-          | 添加分类
+          | 编辑分类
         button.close type="button" data-dismiss="modal" aria-label="Close"
           span aria-hidden="true"
             | &times;
       .modal-body
         .category-form
-          = render 'form', category: @category, url: admin_categories_path
+          = render 'form', category: @category, url: admin_category_path(@category)
       .modal-footer

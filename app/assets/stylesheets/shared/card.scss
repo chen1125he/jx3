@@ -175,6 +175,16 @@
 	.section.demo {
 		margin-bottom: 20px;
 	}
+
+	table {
+		td.nodata {
+			text-align: center;
+		}
+		
+		td.actions a:not(:first-child) {
+			margin-left: 10px;
+		}
+	}
 }
 
 

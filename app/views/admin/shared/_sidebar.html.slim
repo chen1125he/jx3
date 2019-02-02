@@ -6,12 +6,16 @@ aside.sidebar
 
     nav.menu
       ul.sidebar-menu.metismenu#sidebar-menu
-        li
-          a href="https://www.baidu.com"
+        li class=active_menu_class([:dashboards])
+          = link_to admin_dashboards_path do
             i.fa.fa-home
-            | Dashboard
-        li.active.open
-          a href=""
+            | 数据总览
+        li class=active_menu_class([:categories])
+          = link_to admin_categories_path do
+            i.fa.fa-home
+            | 分类管理
+        li
+          = link_to '#' do
             i.fa.fa-th-large
             | Items Manager
             i.fa.arrow

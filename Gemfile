@@ -83,4 +83,4 @@ gem 'figaro', '~> 1.1'
 
 gem 'enumerize'
 gem 'kaminari'
-gem "bootstrap_form", ">= 4.1.0"
+gem 'bootstrap_form', '>= 4.1.0'

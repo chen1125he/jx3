@@ -41,11 +41,11 @@ $btn-primary-color-text: $color-text-inverse !default;
 
 
 // Links
-$link-color: #969696 !default;
+$link-color: #969696 !important;
 $link-transition: initial;
 $link-decoration: underline;
 
-$link-hover-color: darken($color-primary, 8%) !default;
+$link-hover-color: darken($color-primary, 8%) !important;
 $link-hover-decoration: underline !default;
 
 // Header
