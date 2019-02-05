@@ -1,9 +1,9 @@
-class Admin::SystemPricesController < Admin::BaseController
+class Admin::RequirementsController < Admin::BaseController
   before_action :load_product, only: [:new, :create, :edit, :update, :destroy]
-  before_action :load_system_price, only: [:edit, :update, :destroy]
+  before_action :load_requirement, only: [:edit, :update, :destroy]
 
   def new
-    @system_price = @product.system_prices.new
+    @system_price = @product.requirements.new
   end
 
   def create

@@ -19,11 +19,11 @@
 
 
 .title-block {
+	display: flex;
+	justify-content: space-between;
 	padding-bottom: 15px;
 	margin-bottom: 30px;
 	border-bottom: 1px solid $color-divider;
-
-	@include clearfix();
 
 	@include media-down(sm) {
 		margin-bottom: 20px;

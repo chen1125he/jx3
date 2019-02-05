@@ -15,6 +15,7 @@
  *= require metismenu
  */
 @import "bootstrap";
+@import "daterangepicker-bs3";
 @import "font-awesome-sprockets";
 @import "font-awesome";
 @import "mixins";
@@ -129,4 +130,8 @@ body {
 	&.blank {
 		background-color: #667380;
 	}
+}
+
+.breadcrumbs {
+	margin: -30px 0 30px;
 }

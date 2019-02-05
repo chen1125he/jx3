@@ -17,6 +17,10 @@
 //= require ./turbolinks-custom
 //= require popper
 //= require bootstrap
+//= require moment
+//= require moment/zh-cn
+//= require daterangepicker
+//= require datetimepicker-custom
 //= echarts.simple
 //= require config
 //= require metismenu
@@ -25,4 +29,8 @@
 
 (function() {
   this.App || (this.App = {});
+
+  $(document).on('turbolinks:load', function() {
+    App.dateTimePicker.init();
+  })
 }).call(this);

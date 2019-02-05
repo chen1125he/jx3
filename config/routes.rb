@@ -10,7 +10,7 @@ Rails.application.routes.draw do
     resources :services
     resources :products do
       resources :system_prices, only: [:new, :create, :edit, :update, :destroy]
-      resources :history_prices, only: [:new, :create, :edit, :update, :destroy]
+      resources :history_prices
     end
   end
 end

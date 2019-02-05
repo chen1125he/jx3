@@ -62,9 +62,10 @@ gem 'bootstrap', '~> 4.2.1'
 gem 'font-awesome-sass'
 gem 'metismenu-rails', github: 'lanvige/metismenu-rails'
 gem 'slim-rails', '~> 3.1'
-
-# ui
+gem 'momentjs-rails', '>= 2.9.0'
+gem 'bootstrap-daterangepicker-rails'
 gem 'echarts-rails'
+gem 'breadcrumbs_on_rails'
 
 # Deployment
 gem 'mina', '~> 1.2.2', require: false

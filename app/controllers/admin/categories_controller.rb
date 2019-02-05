@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class Admin::CategoriesController < Admin::BaseController
+  before_action :load_breadcrumb
   before_action :load_category, only: [:edit, :update, :destroy]
 
   def index
@@ -46,5 +47,9 @@ class Admin::CategoriesController < Admin::BaseController
 
   def category_params
     params.require(:category).permit(:name)
+  end
+
+  def load_breadcrumb
+    add_breadcrumb '分类管理', admin_categories_path
   end
 end

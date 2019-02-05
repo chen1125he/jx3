@@ -35,4 +35,5 @@ class Price < ApplicationRecord
 
   validates :amount, presence: true, numericality: { greater_than_or_equal_to: 0 }
   validates :currency_type, presence: true
+  validates :record_date, uniqueness: { scope: [:record_date, :owner_id, :service_id], message: :price_taken }, if: Proc.new{ |p| p.price_type.history_price? }
 end

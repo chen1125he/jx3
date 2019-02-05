@@ -1,0 +1,27 @@
+table.table.table-striped.table-bordered.table-hover
+  thead
+    tr
+      th
+        | 价格类型
+      th
+        | 价格
+      th
+        | 出售者
+      th
+        | 记录日期
+      th
+        | 操作
+  tbody
+    - if history_prices.blank?
+      tr
+        td.nodata colspan=5
+          | 暂无数据
+    - history_prices.each do |price|
+      tr
+        td = price.currency_type_text
+        td = price.amount
+        td = price.seller_name
+        td = price.record_date
+        td.actions
+          = link_to '编辑', edit_admin_product_history_price_path(product, price), remote: true
+          = link_to '删除', admin_product_history_price_path(product, price), data: {'confirm' => '确认删除吗？'}, method: :delete, remote: true

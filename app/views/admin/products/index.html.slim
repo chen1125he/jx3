@@ -1,13 +1,9 @@
 .title-search-block
   .title-block
-    .row
-      .col-md-6
-        h3.title
-          | 物品&nbsp;
-          = link_to new_admin_product_path, class: 'btn btn-primary btn-sm rounded-s' do
-            | 添加物品
-        p.title-description
-					| 系统中的所有物品
+    p.title-description
+			| 系统中的所有物品
+    = link_to new_admin_product_path, class: 'btn btn-primary btn-sm rounded-s' do
+      | 添加物品
   .items-search
     = form_tag admin_products_path, method: :get do
       form.form-inline

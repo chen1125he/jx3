@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class Admin::ServicesController < Admin::BaseController
+  before_action :load_breadcrumb
   before_action :load_service, only: [:edit, :update, :destroy]
 
   def index
@@ -46,5 +47,9 @@ class Admin::ServicesController < Admin::BaseController
 
   def service_params
     params.require(:service).permit(:name, :area_id)
+  end
+
+  def load_breadcrumb
+    add_breadcrumb '服务器管理', admin_services_path
   end
 end

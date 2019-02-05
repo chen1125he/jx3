@@ -5,7 +5,7 @@ a:not(.btn) {
 	// vertical-align: top;
 	// z-index: 0;
 	transition: $link-transition;
-	text-decoration: $link-decoration;
+	text-decoration: none; //$link-decoration;
 	color: $link-color;
 
 	// &:before {
@@ -13,7 +13,7 @@ a:not(.btn) {
 	// }
 
 	&:hover{
-		text-decoration: $link-hover-decoration;
+		text-decoration: none; //$link-hover-decoration;
 		color: $link-hover-color;
 
 		&:before {

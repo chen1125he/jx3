@@ -1,0 +1,14 @@
+.modal.fade
+  .modal-dialog role="document"
+    .modal-content
+      .modal-header
+        h5.modal-title
+          i.fa.fa-warning
+          | 编辑历史价格
+        button.close type="button" data-dismiss="modal" aria-label="Close"
+          span aria-hidden="true"
+            | &times;
+      .modal-body
+        .history-price-form
+          = render 'form', history_price: @history_price, url: admin_product_history_price_path(@product, @history_price)
+      .modal-footer

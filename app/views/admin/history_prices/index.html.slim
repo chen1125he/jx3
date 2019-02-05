@@ -1,0 +1,27 @@
+.title-search-block
+  .title-block
+    p.title-description
+			| 自定义的分类，包括各种物品
+    = link_to new_admin_product_history_price_path(@product), remote: true, class: 'btn btn-primary btn-sm rounded-s' do
+      | 添加分类
+  .items-search
+    = form_tag admin_categories_path, method: :get do
+      form.form-inline
+        .input-group
+          = text_field_tag :q, params[:q], class: 'form-control boxed rounded-s', placeholder: '分类名...'
+          span.input-group-btn
+            = link_to 'javascript:void(0)', onclick: "$(this).closest('form').submit()", class: 'btn btn-secondary rounded-s' do
+              i.fa.fa-search
+
+section.section
+  .row
+    .col-md-12
+      .card
+        .card-block
+          .card-title-block
+            h3.title
+              | Responsive simple
+          section
+            .table-responsive
+              = render 'admin/products/history_price_list', history_prices: @history_prices, product: @product
+        = paginate @history_prices

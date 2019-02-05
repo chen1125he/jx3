@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class Admin::AreasController < Admin::BaseController
+  before_action :load_breadcrumb
   before_action :load_area, only: [:edit, :update, :destroy]
 
   def index
@@ -46,5 +47,9 @@ class Admin::AreasController < Admin::BaseController
 
   def area_params
     params.require(:area).permit(:name)
+  end
+
+  def load_breadcrumb
+    add_breadcrumb '大区管理', admin_areas_path
   end
 end

@@ -13,17 +13,19 @@
         = link_to new_admin_product_system_price_path(@product), remote: true, class: 'btn btn-primary btn-sm rounded-s' do
           | 添加价格
     section
-      .table-responsive
-        table.table.table-striped.table-bordered.table-hover
-          thead
-            tr
-              th
-                | 价格类型
-              th
-                | 价格
-              th
-                | 出售者
-              th
-                | 操作
-          tbody.system-price-list
-            = render 'system_price_list', system_prices: @product.system_prices, product: @product
+      .table-responsive.system-price-list
+        = render 'system_price_list', system_prices: @product.system_prices, product: @product
+
+.card
+  .card-block
+    .card-title-block
+      h3.title
+        | 历史价格&nbsp;
+        = link_to new_admin_product_history_price_path(@product), remote: true, class: 'btn btn-primary btn-sm rounded-s' do
+          | 添加价格
+        | &nbsp;
+        = link_to admin_product_history_prices_path(@product), class: 'btn btn-primary btn-sm rounded-s', target: '_blank' do
+          | 查看更多
+    section
+      .table-responsive.history-price-list
+        = render 'history_price_list', history_prices: @history_prices, product: @product
