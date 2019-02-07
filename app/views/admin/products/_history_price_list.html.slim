@@ -2,9 +2,7 @@ table.table.table-striped.table-bordered.table-hover
   thead
     tr
       th
-        | 价格类型
-      th
-        | 价格
+        | 价格(金)
       th
         | 出售者
       th
@@ -14,11 +12,10 @@ table.table.table-striped.table-bordered.table-hover
   tbody
     - if history_prices.blank?
       tr
-        td.nodata colspan=5
+        td.nodata colspan=4
           | 暂无数据
     - history_prices.each do |price|
       tr
-        td = price.currency_type_text
         td = price.amount
         td = price.seller_name
         td = price.record_date
