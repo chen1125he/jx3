@@ -2,7 +2,7 @@
 
 class Admin::AreasController < Admin::BaseController
   before_action :load_breadcrumb
-  before_action :load_area, only: [:edit, :update, :destroy]
+  before_action :load_area, only: %i[edit update destroy]
 
   def index
     q = Area.ransack(name_cont: params[:q])

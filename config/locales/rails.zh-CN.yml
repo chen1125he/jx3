@@ -126,7 +126,10 @@ zh-CN:
       present: 必须是空白
       required: 必须存在
       taken: 已经被使用
-      price_taken: 此日价格已被记录
+      price_record_date_taken: 此日价格已被记录
+      price_currency_type_taken: 此类型价格已被记录
+      material_taken: 已经添加此材料
+      product_taken: 已经存在此物品
       too_long:
         one: 过长（最长为一个字符）
         other: 过长（最长为 %{count} 个字符）

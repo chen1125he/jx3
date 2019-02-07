@@ -28,9 +28,9 @@ class Product < ApplicationRecord
   belongs_to :category
   has_many :history_prices, -> { where(price_type: :history_price) }, dependent: :destroy, class_name: 'Price', foreign_key: :owner_id
   has_many :system_prices, -> { where(price_type: :system_price) }, dependent: :destroy, class_name: 'Price', foreign_key: :owner_id
-  has_many :requirements, as: :owner, dependent: :destroy
-  has_many :materials, through: :requirements
+  has_many :requirements, dependent: :destroy, foreign_key: :owner_id
+  has_many :materials, through: :requirements, source: :product
 
-  validates :name, presence: true
+  validates :name, presence: true, uniqueness: { scope: %i[name category_id], conditions: -> { where.not(deleted_at: nil) }, message: :product_taken }
   validates :avg_amount, presence: true, numericality: { greater_than_or_equal_to: 0 }
 end

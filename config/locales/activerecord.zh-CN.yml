@@ -19,4 +19,7 @@ zh-CN:
       area:
         name: 大区名
       category:
-        name: '分类名'
+        name: 分类名
+      requirement:
+        material_id: 材料名
+        amount: 需要数量

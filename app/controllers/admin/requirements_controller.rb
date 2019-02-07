@@ -1,14 +1,17 @@
+# frozen_string_literal: true
+
 class Admin::RequirementsController < Admin::BaseController
-  before_action :load_product, only: [:new, :create, :edit, :update, :destroy]
-  before_action :load_requirement, only: [:edit, :update, :destroy]
+  before_action :load_product, only: %i[new create edit update destroy]
+  before_action :load_requirement, only: %i[edit update destroy]
 
   def new
-    @system_price = @product.requirements.new
+    @requirement = @product.requirements.new
   end
 
   def create
-    @system_price = @product.system_prices.new(system_price_params)
-    if @system_price.save
+    @requirement = @product.requirements.new(requirement_params)
+    @requirement.owner = @product
+    if @requirement.save
       render_turbolinks_reload
     else
       render
@@ -19,7 +22,7 @@ class Admin::RequirementsController < Admin::BaseController
   end
 
   def update
-    if @system_price.update(system_price_params)
+    if @requirement.update(requirement_params)
       render_turbolinks_reload
     else
       render
@@ -27,7 +30,7 @@ class Admin::RequirementsController < Admin::BaseController
   end
 
   def destroy
-    @system_price.destroy
+    @requirement.destroy
 
     render_turbolinks_reload
   end
@@ -38,11 +41,11 @@ class Admin::RequirementsController < Admin::BaseController
     @product = Product.find(params[:product_id])
   end
 
-  def load_system_price
-    @system_price = @product.system_prices.find(params[:id])
+  def load_requirement
+    @requirement = @product.requirements.find(params[:id])
   end
 
-  def system_price_params
-    params.require(:price).permit(:currency_type, :seller_name, :amount)
+  def requirement_params
+    params.require(:requirement).permit(:material_id, :amount)
   end
 end

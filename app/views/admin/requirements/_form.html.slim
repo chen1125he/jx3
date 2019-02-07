@@ -1,0 +1,4 @@
+= bootstrap_form_for requirement, url: url, remote: true do |f|
+  = f.select :material_id, [[f.object.material&.name, f.object.material&.id]], { include_blank: false }, { class: 'select2-selector' }
+  = f.number_field :amount
+  = f.submit '保存'

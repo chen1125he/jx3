@@ -13,6 +13,7 @@ module ApplicationHelper
 
     return 'open active' if controller_names.include?(controller_name) && action_names.blank?
     return 'open active' if controller_names.include?(controller_name) && action_names.include?(action_name)
-    return ''
+
+    ''
   end
 end

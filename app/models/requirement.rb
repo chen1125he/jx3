@@ -23,6 +23,8 @@
 #
 
 class Requirement < ApplicationRecord
-  belongs_to :owner, class_name: 'Owner'
+  belongs_to :owner, class_name: 'Product'
   belongs_to :material, class_name: 'Product'
+
+  validates :material_id, presence: true, uniqueness: { scope: %i[material_id owner_id], message: :material_taken }
 end

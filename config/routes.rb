@@ -9,8 +9,11 @@ Rails.application.routes.draw do
     resources :areas
     resources :services
     resources :products do
-      resources :system_prices, only: [:new, :create, :edit, :update, :destroy]
+      resources :requirements, only: %i[new create edit update destroy]
+      resources :system_prices, only: %i[new create edit update destroy]
       resources :history_prices
     end
+
+    resources :materials, only: [:index]
   end
 end

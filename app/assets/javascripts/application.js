@@ -21,6 +21,9 @@
 //= require moment/zh-cn
 //= require daterangepicker
 //= require datetimepicker-custom
+//= require select2
+//= require select2_locale_zh-CN
+//= require select2-custom
 //= echarts.simple
 //= require config
 //= require metismenu

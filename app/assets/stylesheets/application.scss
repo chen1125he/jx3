@@ -16,6 +16,8 @@
  */
 @import "bootstrap";
 @import "daterangepicker-bs3";
+@import "select2";
+@import "select2-bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
 @import "mixins";
@@ -134,4 +136,8 @@ body {
 
 .breadcrumbs {
 	margin: -30px 0 30px;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+  margin-top: 0;
 }

@@ -2,11 +2,11 @@
 
 class Admin::ProductsController < Admin::BaseController
   before_action :load_breadcrumb
-  before_action :load_product, only: [:edit, :update, :destroy]
-  before_action :load_history_prices, only: [:edit, :update]
+  before_action :load_product, only: %i[edit update destroy]
+  before_action :load_history_prices, only: %i[edit update]
 
   def index
-    q = Product.ransack({cateogry_name_cont: params[:q], name_cont: params[:q]}.merge(m: :or))
+    q = Product.ransack({ cateogry_name_cont: params[:q], name_cont: params[:q] }.merge(m: :or))
     @products = q.result.includes(:category, :system_prices).order(created_at: :asc).page(params[:page])
   end
 
@@ -33,7 +33,7 @@ class Admin::ProductsController < Admin::BaseController
 
   def update
     add_breadcrumb '编辑物品'
-    
+
     if @product.update(product_params)
       redirect_to edit_admin_product_path(@product)
     else

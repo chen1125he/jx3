@@ -9,6 +9,17 @@
   .card-block
     .card-title-block
       h3.title
+        | 所需材料&nbsp;
+        = link_to new_admin_product_requirement_path(@product), remote: true, class: 'btn btn-primary btn-sm rounded-s' do
+          | 添加材料
+    section
+      .table-responsive.system-price-list
+        = render 'requirement_list', requirements: @product.requirements, product: @product
+
+.card
+  .card-block
+    .card-title-block
+      h3.title
         | 系统固定价格&nbsp;
         = link_to new_admin_product_system_price_path(@product), remote: true, class: 'btn btn-primary btn-sm rounded-s' do
           | 添加价格
@@ -24,7 +35,7 @@
         = link_to new_admin_product_history_price_path(@product), remote: true, class: 'btn btn-primary btn-sm rounded-s' do
           | 添加价格
         | &nbsp;
-        = link_to admin_product_history_prices_path(@product), class: 'btn btn-primary btn-sm rounded-s', target: '_blank' do
+        = link_to admin_product_history_prices_path(@product), class: 'btn btn-primary btn-sm rounded-s' do
           | 查看更多
     section
       .table-responsive.history-price-list

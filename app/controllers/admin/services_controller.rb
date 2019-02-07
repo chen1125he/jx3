@@ -2,10 +2,10 @@
 
 class Admin::ServicesController < Admin::BaseController
   before_action :load_breadcrumb
-  before_action :load_service, only: [:edit, :update, :destroy]
+  before_action :load_service, only: %i[edit update destroy]
 
   def index
-    q = Service.ransack({name_cont: params[:q], area_name_cont: params[:q]}.merge(m: 'or'))
+    q = Service.ransack({ name_cont: params[:q], area_name_cont: params[:q] }.merge(m: 'or'))
     @services = q.result.order(created_at: :asc).page(params[:page])
   end
 

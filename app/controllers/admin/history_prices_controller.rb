@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 class Admin::HistoryPricesController < Admin::BaseController
   before_action :load_product
   before_action :load_breadcrumb
-  before_action :load_history_prices, only: [:index, :edit, :update, :destroy]
-  before_action :load_history_price, only: [:edit, :update, :destroy]
+  before_action :load_history_prices, only: %i[index edit update destroy]
+  before_action :load_history_price, only: %i[edit update destroy]
 
   def index
     add_breadcrumb @product.name, edit_admin_product_path(@product)
@@ -46,11 +48,11 @@ class Admin::HistoryPricesController < Admin::BaseController
   end
 
   def load_history_prices
-    if params[:page_flag] = 'index'
-      @history_prices = @product.history_prices.order(record_date: :desc).page(params[:page])
-    else
-      @history_prices = @product.history_prices.order(record_date: :desc).limit(5)
-    end
+    @history_prices = if params[:page_flag] == 'index'
+                        @product.history_prices.order(record_date: :desc).page(params[:page])
+                      else
+                        @product.history_prices.order(record_date: :desc).limit(5)
+                      end
   end
 
   def load_history_price

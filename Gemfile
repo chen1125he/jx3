@@ -59,13 +59,14 @@ end
 
 # view
 gem 'bootstrap', '~> 4.2.1'
+gem 'bootstrap-daterangepicker-rails'
+gem 'breadcrumbs_on_rails'
+gem 'echarts-rails'
 gem 'font-awesome-sass'
 gem 'metismenu-rails', github: 'lanvige/metismenu-rails'
-gem 'slim-rails', '~> 3.1'
 gem 'momentjs-rails', '>= 2.9.0'
-gem 'bootstrap-daterangepicker-rails'
-gem 'echarts-rails'
-gem 'breadcrumbs_on_rails'
+gem 'select2-rails'
+gem 'slim-rails', '~> 3.1'
 
 # Deployment
 gem 'mina', '~> 1.2.2', require: false
@@ -82,8 +83,8 @@ gem 'sidekiq', '~> 4.2'
 # App configuration
 gem 'figaro', '~> 1.1'
 
+gem 'bootstrap_form', '>= 4.1.0'
 gem 'enumerize'
 gem 'kaminari'
-gem 'bootstrap_form', '>= 4.1.0'
 
 gem 'ransack'

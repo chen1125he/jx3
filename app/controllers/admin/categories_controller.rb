@@ -2,7 +2,7 @@
 
 class Admin::CategoriesController < Admin::BaseController
   before_action :load_breadcrumb
-  before_action :load_category, only: [:edit, :update, :destroy]
+  before_action :load_category, only: %i[edit update destroy]
 
   def index
     q = Category.ransack(name_cont: params[:q])

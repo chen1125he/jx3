@@ -31,9 +31,10 @@ class Price < ApplicationRecord
   belongs_to :service, optional: true
 
   enumerize :price_type, in: %w[history_price system_price], default: :history_price
-  enumerize :currency_type, in: %w[gold xiayi jianggong jianben weiwang duihuanpai], default: :gold
+  enumerize :currency_type, in: %w[gold jingli xiayi jianggong jianben weiwang duihuanpai], default: :gold
 
   validates :amount, presence: true, numericality: { greater_than_or_equal_to: 0 }
   validates :currency_type, presence: true
-  validates :record_date, uniqueness: { scope: [:record_date, :owner_id, :service_id], message: :price_taken }, if: Proc.new{ |p| p.price_type.history_price? }
+  validates :record_date, uniqueness: { scope: %i[record_date owner_id service_id], message: :price_taken }, if: proc { |p| p.price_type.history_price? }
+  validates :currency_type, uniqueness: { scope: %i[currency_type owner_id], message: :price_currency_type_taken }, if: Proc.new { |p| p.price_type.system_price? }
 end

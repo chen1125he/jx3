@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 class Admin::SystemPricesController < Admin::BaseController
-  before_action :load_product, only: [:new, :create, :edit, :update, :destroy]
-  before_action :load_system_price, only: [:edit, :update, :destroy]
+  before_action :load_product, only: %i[new create edit update destroy]
+  before_action :load_system_price, only: %i[edit update destroy]
 
   def new
     @system_price = @product.system_prices.new
