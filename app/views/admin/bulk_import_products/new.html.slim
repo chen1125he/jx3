@@ -1,0 +1,8 @@
+.title-block
+  h3.title
+    | 批量导入物品
+    span.sparkline.bar data-type='bar'
+.card.card-block
+  = bootstrap_form_tag url: admin_bulk_import_products_path, html: { id: 'bulk-import-product-form', remote: true } do |f|
+    = f.file_field :file, placeholder: '请选择文件', label: '文件', accept: ".csv", class: 'file_field_without_bootstrap'
+    = f.submit '导入'

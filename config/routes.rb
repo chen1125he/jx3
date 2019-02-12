@@ -13,6 +13,7 @@ Rails.application.routes.draw do
       resources :system_prices, only: %i[new create edit update destroy]
       resources :history_prices
     end
+    resources :bulk_import_products, only: %i[new create]
 
     resources :materials, only: [:index]
   end

@@ -79,6 +79,9 @@ gem 'mina-sidekiq', '~> 1.0.3', require: false
 # Background job
 gem 'redis-namespace'
 gem 'sidekiq', '~> 4.2'
+gem 'sidekiq-status'
+gem 'sidekiq-unique-jobs'
+gem 'remotipart', '~> 1.2'
 
 # App configuration
 gem 'figaro', '~> 1.1'

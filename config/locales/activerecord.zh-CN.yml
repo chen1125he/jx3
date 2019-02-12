@@ -13,6 +13,7 @@ zh-CN:
         avg_amount: 平均获得数量
         name: 物品名
         category_id: 分类
+        category: 分类
         game_id: 游戏ID
       service:
         name: 服务器名

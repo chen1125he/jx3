@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.remotipart
 //= require jquery_ujs
 //= require turbolinks
 //= require_self
@@ -27,7 +28,7 @@
 //= echarts.simple
 //= require config
 //= require metismenu
-//= require admin/shared/sidebar
+//= require_tree ./admin
 
 
 (function() {
