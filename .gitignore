@@ -24,3 +24,6 @@
 /error_msg_path/*
 /ptp_csv_import_dir/*
 /price_csv_import_dir/*
+
+# Ignore application configuration
+/config/application.yml

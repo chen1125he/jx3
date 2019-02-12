@@ -1,6 +1,6 @@
 .title-block
-  h3.title
-    | 批量导入物品
+  p.title-description
+    | 物品批量导入(可用模板为物品列表页中下载的csv文件)
     span.sparkline.bar data-type='bar'
 .card.card-block
   = bootstrap_form_tag url: admin_bulk_import_products_path, html: { id: 'bulk-import-product-form', remote: true } do |f|

@@ -14,7 +14,11 @@ Rails.application.routes.draw do
       resources :history_prices
     end
     resources :bulk_import_products, only: %i[new create]
+    resource :generate_product_csvs, only: %i[create]
 
     resources :materials, only: [:index]
   end
+
+  resources :jobs, only: [:show], param: :jid
+  resource :download_file, only: [:create]
 end

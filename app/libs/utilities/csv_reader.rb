@@ -2,7 +2,7 @@
 
 module Utilities::CSVReader
   require 'csv'
-  
+
   FileNotExist = Class.new(StandardError)
 
   def self.read(csv_path)

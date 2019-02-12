@@ -1,0 +1,21 @@
+.modal.fade.generate-modal data-job-path=job_path(jid)
+  .modal-dialog role="document"
+    .modal-content
+      .modal-header
+        h5.modal-title
+          i.fa.fa-warning
+          | 生成进度
+      .modal-body
+        .hint
+          | 数据生成中，请不要刷新页面...
+        .processing.hidden
+          | 共
+          span.number.total
+          | 条，当前进度：第
+          span.number.at
+          | 条
+
+        .download-link.hidden
+          = link_to '下载', '#', method: :post, data: { 'download-path' => download_file_path }
+
+      .modal-footer

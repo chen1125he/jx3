@@ -1,0 +1,4 @@
+$('#modal-window').html("<%= j render 'admin/shared/generate_modal', jid: @jid%>");
+$('#modal-window .modal').modal({ backdrop: 'static', keyboard: false });
+
+App.GenerateModal.accessProcessing();
