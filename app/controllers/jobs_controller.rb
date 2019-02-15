@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class JobsController < ApplicationController
   def show
     data = Sidekiq::Status.get_all(params[:jid]) || {}

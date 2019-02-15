@@ -79,10 +79,10 @@ gem 'mina-sidekiq', '~> 1.0.3', require: false
 
 # Background job
 gem 'redis-namespace'
-gem 'sidekiq'
-gem 'sidekiq-unique-jobs'
-gem 'sidekiq-status'
 gem 'remotipart', '~> 1.2'
+gem 'sidekiq'
+gem 'sidekiq-status'
+gem 'sidekiq-unique-jobs'
 
 # App configuration
 gem 'figaro', '~> 1.1'
@@ -92,5 +92,5 @@ gem 'enumerize'
 gem 'kaminari'
 
 gem 'browser'
-gem 'ransack'
 gem 'mime-types'
+gem 'ransack'

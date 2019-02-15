@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 class DownloadFilesController < ApplicationController
   def create
     filepath = params[:filepath]
     return if filepath.blank?
-    return unless File.exists?(Rails.root.join(filepath))
+    return unless File.exist?(Rails.root.join(filepath))
 
     filename = params[:filename].presence || File.basename(filepath)
     return if filename.blank?
