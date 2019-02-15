@@ -1,0 +1,83 @@
+[
+  {
+    "category_name": "材料",
+    "products": [
+      { "name": "杂碎", "avg_amount": 1 },
+      { "name": "碎肉", "avg_amount": 1 },
+      { "name": "鱼肉", "avg_amount": 1 },
+      { "name": "骨头", "avg_amount": 1 },
+      { "name": "精肉", "avg_amount": 1 },
+      { "name": "血", "avg_amount": 1 },
+      { "name": "大黄", "avg_amount": 1 },
+      { "name": "千里香", "avg_amount": 1 },
+      { "name": "珊瑚", "avg_amount": 1 },
+      { "name": "芍药", "avg_amount": 1 },
+      { "name": "五味子", "avg_amount": 1 },
+      { "name": "甘草", "avg_amount": 1 },
+      { "name": "枸杞", "avg_amount": 1 },
+      { "name": "川贝", "avg_amount": 1 },
+      { "name": "虫草", "avg_amount": 1 },
+      { "name": "彼岸花", "avg_amount": 1 },
+      { "name": "银矿", "avg_amount": 1 },
+      { "name": "铅锌矿", "avg_amount": 1 },
+      { "name": "铁矿", "avg_amount": 1 },
+      { "name": "铜矿", "avg_amount": 1 },
+      { "name": "锡矿", "avg_amount": 1 },
+      { "name": "蜃楼珠", "avg_amount": 1 },
+      { "name": "紫檀", "avg_amount": 1 },
+      { "name": "猫眼石", "avg_amount": 1 },
+      { "name": "宝石", "avg_amount": 1 },
+      { "name": "珠贝母", "avg_amount": 1 },
+      { "name": "沉香木", "avg_amount": 1 },
+      { "name": "蜂王浆", "avg_amount": 1 },
+      { "name": "银麟", "avg_amount": 1 },
+      { "name": "玛瑙", "avg_amount": 1 },
+      { "name": "硼砂", "avg_amount": 1 },
+      { "name": "露水", "avg_amount": 1 },
+      { "name": "人参", "avg_amount": 1 },
+      { "name": "今朝醉", "avg_amount": 1 }
+    ]
+  },
+  {
+    "category_name": "烹饪物品",
+    "products": [
+      { "name": "炉料", "avg_amount": 1 },
+      { "name": "酱料", "avg_amount": 1 },
+      { "name": "馅料", "avg_amount": 1 },
+      { "name": "饺子皮", "avg_amount": 1 },
+      { "name": "饺子馅", "avg_amount": 1 }
+    ]
+  },
+  {
+    "category_name": "缝纫物品",
+    "products": [
+      { "name": "五色石", "avg_amount": 1 },
+      { "name": "七彩线", "avg_amount": 1 },
+      { "name": "银丝缎", "avg_amount": 1 },
+      { "name": "蜀染布", "avg_amount": 1 },
+      { "name": "百花布", "avg_amount": 1 }
+    ]
+  },
+  {
+    "category_name": "铸造物品",
+    "products": []
+  },
+  {
+    "category_name": "医术物品",
+    "products": [
+      { "name": "药引", "avg_amount": 1 },
+      { "name": "药丸", "avg_amount": 1 },
+      { "name": "药料", "avg_amount": 1 },
+      { "name": "药膏", "avg_amount": 1 },
+      { "name": "药用黄丹", "avg_amount": 1 }
+    ]
+  },
+  {
+    "category_name": "五行石",
+    "products": []
+  },
+  {
+    "category_name": "五彩石",
+    "products": []
+  }
+]

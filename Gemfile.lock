@@ -256,6 +256,9 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
+    seed-fu (2.3.9)
+      activerecord (>= 3.1)
+      activesupport (>= 3.1)
     select2-rails (4.0.3)
       thor (~> 0.14)
     sidekiq (4.2.10)
@@ -342,6 +345,7 @@ DEPENDENCIES
   rspec-rails
   rubocop
   sass-rails (~> 5.0)
+  seed-fu (~> 2.3)
   select2-rails
   sidekiq
   sidekiq-status

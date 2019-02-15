@@ -33,22 +33,22 @@
             case 'fail':
               // new Noty({ text: '生成失败，请重试', type: 'error' }).show();
               $('#modal-window .modal').modal('hide');
-              alert('生成失败，请重试');
+              alert('导入失败，请重试');
               break;
             case 'interrupted':
               // new Noty({ text: '生成失败，请重试', type: 'error' }).show();
               $('#modal-window .modal').modal('hide');
-              alert('生成失败，请重试');
+              alert('导入失败，请重试');
               break;
             default:
               // new Noty({ text: '生成失败，请重试', type: 'error' }).show();
               $('#modal-window .modal').modal('hide');
-              alert('生成失败，请重试');
+              alert('导入失败，请重试');
           }
         }).fail(function() {
           // new Noty({ text: '生成失败，请重试', type: 'error' }).show();
           $('#modal-window .modal').modal('hide');
-          alert('生成失败，请重试');
+          alert('导入失败，请重试');
         });
       }
 
