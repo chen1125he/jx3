@@ -15,7 +15,7 @@ class Admin::BulkImportProductsWorker
         create_or_update_product(row, index)
       end
     rescue Utilities::CSVReader::FileNotExist => ex
-      @errors << ex.message
+      @errors << { message: ex.message }
     end
 
     store payload: { errors: @errors }.to_json
@@ -31,11 +31,14 @@ class Admin::BulkImportProductsWorker
     product = Product.find_or_initialize_by(category: category, name: row[1])
 
     product.avg_amount = row[2]
-    product.game_id = row[3]
 
     unless product.save
-      product.errors.full_messages.each do |message|
-        @errors << { line: index + 1, message: message }
+      product.errors.messages.each do |key, message|
+        @errors << {
+          line: index + 1,
+          message: message.join(','),
+          attribute: format('%<attribute_name>s(%<attribute_value>s)', attribute_name: Product.human_attribute_name(key), attribute_value: row[1])
+        }
       end
     end
 

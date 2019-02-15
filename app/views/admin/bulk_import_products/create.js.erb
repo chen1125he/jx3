@@ -1,4 +1,4 @@
-$('#modal-window').html("<%= j render 'admin/shared/import_modal', jid: @jid%>");
+$('#modal-window').html("<%= j render 'admin/shared/import_modal', jid: @jid, success_path: admin_products_path%>");
 $('#modal-window .modal').modal({ backdrop: 'static', keyboard: false });
 
-// App.EnterpriseMarketCardPosterZipProcessingModal.accessProcessing();
+App.ImportModal.accessProcessing();

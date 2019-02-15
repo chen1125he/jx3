@@ -6,3 +6,20 @@
   = bootstrap_form_tag url: admin_bulk_import_products_path, html: { id: 'bulk-import-product-form', remote: true } do |f|
     = f.file_field :file, placeholder: '请选择文件', label: '文件', accept: ".csv", class: 'file_field_without_bootstrap'
     = f.submit '导入'
+
+.card.card-block.import-errors.hidden
+  .card-title-block
+    h3.title
+      | 导入失败数据
+  section
+    .table-responsive
+      table.table.table-striped.table-bordered.table-hover
+        thead
+          tr
+            th
+              | 行号
+            th
+              | 字段名
+            th
+              | 失败原因
+        tbody
