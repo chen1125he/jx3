@@ -32,5 +32,5 @@ class Product < ApplicationRecord
   has_many :materials, through: :requirements, source: :product
 
   validates :name, presence: true, uniqueness: { scope: %i[name category_id], conditions: -> { where.not(deleted_at: nil) }, message: :product_taken, on: :create }
-  validates :avg_amount, presence: true, numericality: { greater_than_or_equal_to: 0 }
+  validates :avg_amount, presence: true, numericality: { allow_nil: true, greater_than_or_equal_to: 0 }
 end

@@ -47,7 +47,7 @@
         });
       }
 
-      fn();
+      that.generateStateTimer = setTimeout(fn, 1000);
     },
 
     downloadCsv: function(filepath){

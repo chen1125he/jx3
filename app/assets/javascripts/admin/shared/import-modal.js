@@ -23,7 +23,7 @@
               }
               break;
             case 'complete':
-              console.log($('#modal-window .modal').modal('hide'));
+              $('#modal-window .modal').modal('hide');
               if (data.payload.errors.length > 0) {
                 that.displayErrors(data.payload.errors);
               } else {
@@ -52,7 +52,7 @@
         });
       }
 
-      fn();
+      that.importStateTimer = setTimeout(fn, 1000);
     },
 
     displayErrors: function(errors){
