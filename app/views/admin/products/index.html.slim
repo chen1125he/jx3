@@ -57,5 +57,5 @@ section.section
                           br
                       td.actions.w20p
                         = link_to '编辑', edit_admin_product_path(product)
-                        = link_to '删除', admin_product_path(product), data: {'confirm' => '确认删除吗？'}, method: :delete, remote: true
+                        = link_to '置顶', admin_topping_product_path(product), method: :put, remote: true
         = paginate @products

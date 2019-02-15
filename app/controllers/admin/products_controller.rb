@@ -2,12 +2,12 @@
 
 class Admin::ProductsController < Admin::BaseController
   before_action :load_breadcrumb
-  before_action :load_product, only: %i[edit update destroy]
+  before_action :load_product, only: %i[edit update]
   before_action :load_history_prices, only: %i[edit update]
 
   def index
     q = Product.ransack({ cateogry_name_cont: params[:q], name_cont: params[:q] }.merge(m: :or))
-    @products = q.result.includes(:category, :system_prices).order(created_at: :asc).page(params[:page])
+    @products = q.result.includes(:category, :system_prices).order(updated_at: :desc).page(params[:page])
   end
 
   def new
@@ -39,12 +39,6 @@ class Admin::ProductsController < Admin::BaseController
     else
       render :edit
     end
-  end
-
-  def destroy
-    @product.soft_delete!
-
-    render_turbolinks_reload
   end
 
   private
