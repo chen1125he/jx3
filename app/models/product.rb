@@ -30,6 +30,7 @@ class Product < ApplicationRecord
   has_many :system_prices, -> { where(price_type: :system_price) }, dependent: :destroy, class_name: 'Price', foreign_key: :owner_id
   has_many :requirements, dependent: :destroy, foreign_key: :owner_id
   has_many :materials, through: :requirements, source: :product
+  has_many :chart_items, as: :item
 
   validates :name, presence: true, uniqueness: { scope: %i[category_id], conditions: -> { where(deleted_at: nil) }, message: :product_taken }
   validates :avg_amount, presence: true, numericality: { allow_nil: true, greater_than_or_equal_to: 0 }

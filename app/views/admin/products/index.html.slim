@@ -18,44 +18,39 @@
             = link_to 'javascript:void(0)', onclick: "$(this).closest('form').submit()", class: 'btn btn-secondary rounded-s' do
               i.fa.fa-search
 
-section.section
-  .row
-    .col-md-12
-      .card
-        .card-block
-          .card-title-block
-            h3.title
-              | Responsive simple
-          section
-            .table-responsive
-              table.table.table-striped.table-bordered.table-hover
-                thead
-                  tr
-                    th
-                      | ID
-                    th
-                      | 所属分类名
-                    th
-                      | 物品名
-                    th
-                      | 系统固定价格
-                    th
-                      | 操作
-			          tbody
-                  - if @products.blank?
-                    tr
-                      td.nodata colspan=4
-                        | 暂无数据
-                  - @products.each do |product|
-                    tr
-                      td.w10p = product.id
-                      td = product.category.name
-                      td = product.name
-                      td
-                        - product.system_prices.each do |price|
-                          = format('%<currency_type>s:%<amount>s', currency_type: price.currency_type_text, amount: price.amount)
-                          br
-                      td.actions.w20p
-                        = link_to '编辑', edit_admin_product_path(product)
-                        = link_to '置顶', admin_topping_product_path(product), method: :put, remote: true
-        = paginate @products
+
+.card
+  .card-block
+    section
+      .table-responsive
+        table.table.table-striped.table-bordered.table-hover
+          thead
+            tr
+              th
+                | ID
+              th
+                | 所属分类名
+              th
+                | 物品名
+              th
+                | 系统固定价格
+              th
+                | 操作
+          tbody
+            - if @products.blank?
+              tr
+                td.nodata colspan=4
+                  | 暂无数据
+            - @products.each do |product|
+              tr
+                td.w10p = product.id
+                td = product.category.name
+                td = product.name
+                td
+                  - product.system_prices.each do |price|
+                    = format('%<currency_type>s:%<amount>s', currency_type: price.currency_type_text, amount: price.amount)
+                    br
+                td.actions.w20p
+                  = link_to '编辑', edit_admin_product_path(product)
+                  = link_to '置顶', admin_topping_product_path(product), method: :put, remote: true
+  = paginate @products

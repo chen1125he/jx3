@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   root to: 'admin/dashboards#index'
   namespace :admin do
     resources :dashboards
+    resources :charts
     resources :categories
     resources :areas
     resources :services

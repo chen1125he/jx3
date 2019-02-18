@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_28_094923) do
+ActiveRecord::Schema.define(version: 2019_02_16_073744) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,6 +27,24 @@ ActiveRecord::Schema.define(version: 2019_01_28_094923) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.datetime "deleted_at"
+  end
+
+  create_table "chart_items", force: :cascade do |t|
+    t.bigint "chart_id"
+    t.string "item_type"
+    t.bigint "item_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["chart_id"], name: "index_chart_items_on_chart_id"
+    t.index ["item_type", "item_id"], name: "index_chart_items_on_item_type_and_item_id"
+  end
+
+  create_table "charts", force: :cascade do |t|
+    t.string "name"
+    t.string "chart_type"
+    t.string "item_type"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "prices", force: :cascade do |t|
@@ -73,6 +91,7 @@ ActiveRecord::Schema.define(version: 2019_01_28_094923) do
     t.index ["area_id"], name: "index_services_on_area_id"
   end
 
+  add_foreign_key "chart_items", "charts"
   add_foreign_key "prices", "products", column: "owner_id"
   add_foreign_key "products", "categories"
   add_foreign_key "requirements", "products", column: "material_id"

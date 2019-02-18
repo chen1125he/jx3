@@ -7,7 +7,7 @@
         formatLoadMore: '加载中...',
         width: '100%',
         ajax: {
-          url: "/admin/materials",
+          url: this._selector().data('path'),
           dataType: "json",
           type: "GET",
           data: function (params) {

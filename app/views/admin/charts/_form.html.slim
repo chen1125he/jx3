@@ -1,0 +1,4 @@
+= bootstrap_form_for chart, url: url, remote: true do |f|
+  = f.text_field :name
+  = f.select :product_items, [[f.object.material&.name, f.object.material&.id]], { include_blank: false }, { class: 'select2-selector' }
+  = f.submit '保存'

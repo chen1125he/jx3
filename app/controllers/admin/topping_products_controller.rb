@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Admin::ToppingProductsController < Admin::BaseController
   before_action :load_product, only: [:update]
 

@@ -1,0 +1,446 @@
+[
+  {
+    "owner_name": "卤料",
+    "requirements": [
+      { "material_name": "调料", "amount": 20 },
+      { "material_name": "血", "amount": 5 },
+      { "material_name": "杂碎", "amount": 5 },
+      { "material_name": "人参", "amount": 1 },
+      { "material_name": "露水", "amount": 2 },
+    ]
+  },
+  {
+    "owner_name": "馅料",
+    "requirements": [
+      { "material_name": "蛋", "amount": 20 },
+      { "material_name": "鱼", "amount": 5 },
+      { "material_name": "精肉", "amount": 5 },
+      { "material_name": "人参", "amount": 1 },
+      { "material_name": "露水", "amount": 2 },
+    ]
+  },
+  {
+    "owner_name": "酱料",
+    "requirements": [
+      { "material_name": "红辣椒", "amount": 20 },
+      { "material_name": "骨头", "amount": 5 },
+      { "material_name": "碎肉", "amount": 5 },
+      { "material_name": "人参", "amount": 1 },
+      { "material_name": "露水", "amount": 2 },
+    ]
+  },
+  {
+    "owner_name": "饺子皮",
+    "requirements": [
+      { "material_name": "精制面粉", "amount": 1 },
+      { "material_name": "生粉", "amount": 1 }
+    ]
+  },
+  {
+    "owner_name": "饺子馅",
+    "requirements": [
+      { "material_name": "调料", "amount": 1 },
+      { "material_name": "大葱", "amount": 1 },
+      { "material_name": "碎肉", "amount": 1 }
+    ]
+  },
+  {
+    "owner_name": "佛跳墙",
+    "requirements": [
+      { "material_name": "新鲜冬瓜", "amount": 10 },
+      { "material_name": "调料", "amount": 10 },
+      { "material_name": "卤料", "amount": 3 },
+      { "material_name": "杂碎", "amount": 15 },
+      { "material_name": "蜂王浆", "amount": 1 }
+    ]
+  },
+  {
+    "owner_name": "转神餐",
+    "requirements": [
+      { "material_name": "菌菇", "amount": 10 },
+      { "material_name": "料酒", "amount": 5 },
+      { "material_name": "酱料", "amount": 1 },
+      { "material_name": "骨头", "amount": 5 },
+      { "material_name": "碎肉", "amount": 5 }
+    ]
+  },
+  {
+    "owner_name": "咸骨粥",
+    "requirements": [
+      { "material_name": "珠贝母", "amount": 1 },
+      { "material_name": "料酒", "amount": 10 },
+      { "material_name": "酱料", "amount": 3 },
+      { "material_name": "蒜苗", "amount": 10 },
+      { "material_name": "骨头", "amount": 15 }
+    ]
+  },
+  {
+    "owner_name": "皮蛋瘦肉粥",
+    "requirements": [
+      { "material_name": "珠贝母", "amount": 1 },
+      { "material_name": "生粉", "amount": 10 },
+      { "material_name": "酱料", "amount": 3 },
+      { "material_name": "蛋", "amount": 10 },
+      { "material_name": "精肉", "amount": 15 }
+    ]
+  },
+  {
+    "owner_name": "三鲜粥",
+    "requirements": [
+      { "material_name": "珠贝母", "amount": 1 },
+      { "material_name": "老姜", "amount": 10 },
+      { "material_name": "卤料", "amount": 3 },
+      { "material_name": "生粉", "amount": 10 },
+      { "material_name": "杂碎", "amount": 15 }
+    ]
+  },
+  {
+    "owner_name": "鱼片砂锅粥",
+    "requirements": [
+      { "material_name": "珠贝母", "amount": 1 },
+      { "material_name": "调料", "amount": 10 },
+      { "material_name": "馅料", "amount": 3 },
+      { "material_name": "老姜", "amount": 10 },
+      { "material_name": "鱼肉", "amount": 15 }
+    ]
+  },
+  {
+    "owner_name": "杂锦鱼球粥",
+    "requirements": [
+      { "material_name": "珠贝母", "amount": 1 },
+      { "material_name": "胡椒粉", "amount": 10 },
+      { "material_name": "酱料", "amount": 3 },
+      { "material_name": "老豆腐", "amount": 10 },
+      { "material_name": "鱼肉", "amount": 15 }
+    ]
+  },
+  {
+    "owner_name": "鱼头豆腐汤",
+    "requirements": [
+      { "material_name": "老豆腐", "amount": 10 },
+      { "material_name": "生粉", "amount": 5 },
+      { "material_name": "酱料", "amount": 1 },
+      { "material_name": "碎肉", "amount": 5 },
+      { "material_name": "鱼肉", "amount": 5 }
+    ]
+  },
+  {
+    "owner_name": "贡丸汤",
+    "requirements": [
+      { "material_name": "青菜", "amount": 10 },
+      { "material_name": "精制面粉", "amount": 5 },
+      { "material_name": "馅料", "amount": 1 },
+      { "material_name": "鱼肉", "amount": 5 },
+      { "material_name": "碎肉", "amount": 5 }
+    ]
+  },
+  {
+    "owner_name": "杂碎汤",
+    "requirements": [
+      { "material_name": "老豆腐", "amount": 10 },
+      { "material_name": "调料", "amount": 5 },
+      { "material_name": "卤料", "amount": 1 },
+      { "material_name": "碎肉", "amount": 5 },
+      { "material_name": "杂碎", "amount": 5 }
+    ]
+  },
+  {
+    "owner_name": "老火骨汤",
+    "requirements": [
+      { "material_name": "菌菇", "amount": 10 },
+      { "material_name": "料酒", "amount": 5 },
+      { "material_name": "卤料", "amount": 1 },
+      { "material_name": "血", "amount": 5 },
+      { "material_name": "骨头", "amount": 5 }
+    ]
+  },
+  {
+    "owner_name": "三鲜汤",
+    "requirements": [
+      { "material_name": "新鲜冬瓜", "amount": 10 },
+      { "material_name": "莲菇", "amount": 5 },
+      { "material_name": "馅料", "amount": 1 },
+      { "material_name": "骨头", "amount": 5 },
+      { "material_name": "精肉", "amount": 5 }
+    ]
+  },
+  {
+    "owner_name": "酸菜鱼",
+    "requirements": [
+      { "material_name": "老姜", "amount": 10 },
+      { "material_name": "红辣椒", "amount": 10 },
+      { "material_name": "馅料", "amount": 3 },
+      { "material_name": "鱼肉", "amount": 15 },
+      { "material_name": "蜂王浆", "amount": 1 }
+    ]
+  },
+  {
+    "owner_name": "炸酱面",
+    "requirements": [
+      { "material_name": "调料", "amount": 10 },
+      { "material_name": "精制面粉", "amount": 10 },
+      { "material_name": "卤料", "amount": 3 },
+      { "material_name": "杂碎", "amount": 15 },
+      { "material_name": "蜂王浆", "amount": 1 }
+    ]
+  },
+  {
+    "owner_name": "骨肉相连",
+    "requirements": [
+      { "material_name": "调料", "amount": 10 },
+      { "material_name": "料酒", "amount": 10 },
+      { "material_name": "馅料", "amount": 3 },
+      { "material_name": "骨头", "amount": 15 },
+      { "material_name": "蜂王浆", "amount": 1 }
+    ]
+  },
+  {
+    "owner_name": "红烧排骨",
+    "requirements": [
+      { "material_name": "大葱", "amount": 10 },
+      { "material_name": "调料", "amount": 10 },
+      { "material_name": "卤料", "amount": 3 },
+      { "material_name": "骨头", "amount": 15 },
+      { "material_name": "蜂王浆", "amount": 1 }
+    ]
+  },
+  {
+    "owner_name": "红烧扣肉",
+    "requirements": [
+      { "material_name": "白糖", "amount": 10 },
+      { "material_name": "胡椒粉", "amount": 10 },
+      { "material_name": "馅料", "amount": 3 },
+      { "material_name": "精肉", "amount": 15 },
+      { "material_name": "蜂王浆", "amount": 1 }
+    ]
+  },
+  {
+    "owner_name": "白肉血肠",
+    "requirements": [
+      { "material_name": "胡椒粉", "amount": 10 },
+      { "material_name": "红辣椒", "amount": 10 },
+      { "material_name": "酱料", "amount": 3 },
+      { "material_name": "血", "amount": 15 },
+      { "material_name": "蜂王浆", "amount": 1 }
+    ]
+  },
+  {
+    "owner_name": "太后饼",
+    "requirements": [
+      { "material_name": "蛋", "amount": 10 },
+      { "material_name": "精制面粉", "amount": 10 },
+      { "material_name": "卤料", "amount": 3 },
+      { "material_name": "碎肉", "amount": 15 },
+      { "material_name": "蜂王浆", "amount": 1 }
+    ]
+  },
+  {
+    "owner_name": "灌汤包",
+    "requirements": [
+      { "material_name": "生粉", "amount": 10 },
+      { "material_name": "精制面粉", "amount": 10 },
+      { "material_name": "酱料", "amount": 3 },
+      { "material_name": "碎肉", "amount": 15 },
+      { "material_name": "蜂王浆", "amount": 1 }
+    ]
+  },
+  {
+    "owner_name": "鲜肉包子",
+    "requirements": [
+      { "material_name": "老姜", "amount": 10 },
+      { "material_name": "精制面粉", "amount": 5 },
+      { "material_name": "卤料", "amount": 1 },
+      { "material_name": "血", "amount": 5 },
+      { "material_name": "碎肉", "amount": 1 }
+    ]
+  },
+  {
+    "owner_name": "白汗芦筋",
+    "requirements": [
+      { "material_name": "大葱", "amount": 10 },
+      { "material_name": "白糖", "amount": 5 },
+      { "material_name": "酱料", "amount": 1 },
+      { "material_name": "杂碎", "amount": 5 },
+      { "material_name": "骨头", "amount": 1 }
+    ]
+  },
+  {
+    "owner_name": "鱼香肉丝",
+    "requirements": [
+      { "material_name": "红辣椒", "amount": 10 },
+      { "material_name": "调料", "amount": 5 },
+      { "material_name": "酱料", "amount": 1 },
+      { "material_name": "骨头", "amount": 5 },
+      { "material_name": "鱼肉", "amount": 1 }
+    ]
+  },
+  {
+    "owner_name": "杂碎面",
+    "requirements": [
+      { "material_name": "精制面粉", "amount": 10 },
+      { "material_name": "调料", "amount": 5 },
+      { "material_name": "馅料", "amount": 1 },
+      { "material_name": "鱼肉", "amount": 5 },
+      { "material_name": "杂碎", "amount": 1 }
+    ]
+  },
+  {
+    "owner_name": "毛血旺",
+    "requirements": [
+      { "material_name": "调料", "amount": 10 },
+      { "material_name": "胡椒粉", "amount": 5 },
+      { "material_name": "卤料", "amount": 1 },
+      { "material_name": "杂碎", "amount": 5 },
+      { "material_name": "血", "amount": 1 }
+    ]
+  },
+  {
+    "owner_name": "水煮肉片",
+    "requirements": [
+      { "material_name": "红辣椒", "amount": 10 },
+      { "material_name": "料酒", "amount": 5 },
+      { "material_name": "馅料", "amount": 1 },
+      { "material_name": "鱼肉", "amount": 5 },
+      { "material_name": "精肉", "amount": 1 }
+    ]
+  },
+  {
+    "owner_name": "栗子烧肉",
+    "requirements": [
+      { "material_name": "粟米", "amount": 10 },
+      { "material_name": "调料", "amount": 5 },
+      { "material_name": "酱料", "amount": 1 },
+      { "material_name": "碎肉", "amount": 5 },
+      { "material_name": "精肉", "amount": 1 }
+    ]
+  },
+  {
+    "owner_name": "煎饼果子",
+    "requirements": [
+      { "material_name": "菌菇", "amount": 10 },
+      { "material_name": "精制面粉", "amount": 5 },
+      { "material_name": "馅料", "amount": 1 },
+      { "material_name": "精肉", "amount": 5 },
+      { "material_name": "碎肉", "amount": 1 }
+    ]
+  },
+  {
+    "owner_name": "咸鱼",
+    "requirements": [
+      { "material_name": "调料", "amount": 10 },
+      { "material_name": "鱼肉", "amount": 10 }
+    ]
+  },
+  {
+    "owner_name": "辣酱肉片",
+    "requirements": [
+      { "material_name": "调料", "amount": 1 },
+      { "material_name": "红辣椒", "amount": 1 },
+      { "material_name": "精肉", "amount": 4 }
+    ]
+  },
+  {
+    "owner_name": "戏凤饺",
+    "requirements": [
+      { "material_name": "饺子皮", "amount": 1 },
+      { "material_name": "饺子馅", "amount": 1 },
+      { "material_name": "调料", "amount": 1 }
+    ]
+  },
+  {
+    "owner_name": "盘龙饺",
+    "requirements": [
+      { "material_name": "饺子皮", "amount": 1 },
+      { "material_name": "饺子馅", "amount": 1 },
+      { "material_name": "调料", "amount": 1 }
+    ]
+  },
+  {
+    "owner_name": "如意饺",
+    "requirements": [
+      { "material_name": "饺子皮", "amount": 2 },
+      { "material_name": "饺子馅", "amount": 2 },
+      { "material_name": "调料", "amount": 2 }
+    ]
+  },
+  {
+    "owner_name": "鸿门宴",
+    "requirements": [
+      { "material_name": "今朝醉", "amount": 2 },
+      { "material_name": "馅料", "amount": 15 },
+      { "material_name": "红萝卜", "amount": 20 },
+      { "material_name": "鱼肉", "amount": 20 },
+      { "material_name": "杂碎", "amount": 20 }
+    ]
+  },
+  {
+    "owner_name": "团圆宴",
+    "requirements": [
+      { "material_name": "今朝醉", "amount": 2 },
+      { "material_name": "卤料", "amount": 15 },
+      { "material_name": "莲藕", "amount": 20 },
+      { "material_name": "杂碎", "amount": 20 },
+      { "material_name": "碎肉", "amount": 20 }
+    ]
+  },
+  {
+    "owner_name": "鸳鸯烩珍宴",
+    "requirements": [
+      { "material_name": "今朝醉", "amount": 2 },
+      { "material_name": "卤料", "amount": 15 },
+      { "material_name": "菌菇", "amount": 20 },
+      { "material_name": "血", "amount": 20 },
+      { "material_name": "骨头", "amount": 20 }
+    ]
+  },
+  {
+    "owner_name": "蜀味烘焙宴",
+    "requirements": [
+      { "material_name": "今朝醉", "amount": 2 },
+      { "material_name": "酱料", "amount": 15 },
+      { "material_name": "青瓜", "amount": 20 },
+      { "material_name": "骨头", "amount": 20 },
+      { "material_name": "鱼肉", "amount": 20 }
+    ]
+  },
+  {
+    "owner_name": "水晶芙蓉宴",
+    "requirements": [
+      { "material_name": "今朝醉", "amount": 2 },
+      { "material_name": "卤料", "amount": 15 },
+      { "material_name": "青菜", "amount": 20 },
+      { "material_name": "杂碎", "amount": 20 },
+      { "material_name": "碎肉", "amount": 20 }
+    ]
+  },
+  {
+    "owner_name": "玉笛谁家听梅落",
+    "requirements": [
+      { "material_name": "今朝醉", "amount": 2 },
+      { "material_name": "酱料", "amount": 15 },
+      { "material_name": "老豆腐", "amount": 20 },
+      { "material_name": "碎肉", "amount": 20 },
+      { "material_name": "精肉", "amount": 20 }
+    ]
+  },
+  {
+    "owner_name": "二十四桥明月夜",
+    "requirements": [
+      { "material_name": "今朝醉", "amount": 2 },
+      { "material_name": "馅料", "amount": 15 },
+      { "material_name": "新鲜冬瓜", "amount": 20 },
+      { "material_name": "精肉", "amount": 20 },
+      { "material_name": "血", "amount": 20 }
+    ]
+  },
+  {
+    "owner_name": "东海宴",
+    "requirements": [
+      { "material_name": "竹叶青", "amount": 10 },
+      { "material_name": "生粉", "amount": 10 },
+      { "material_name": "青瓜", "amount": 10 },
+      { "material_name": "酱料", "amount": 5 },
+      { "material_name": "杂碎", "amount": 10 }
+    ]
+  },
+]

@@ -1,0 +1,42 @@
+.title-search-block
+  .title-block
+    p.title-description
+			| 显示在数据总览中的图表
+    = link_to new_admin_chart_path, remote: true, class: 'btn btn-primary btn-sm rounded-s' do
+      | 添加图表
+  .items-search
+    = form_tag admin_charts_path, method: :get do
+      form.form-inline
+        .input-group
+          = text_field_tag :q, params[:q], class: 'form-control boxed rounded-s', placeholder: '图表名...'
+          span.input-group-btn
+            = link_to 'javascript:void(0)', onclick: "$(this).closest('form').submit()", class: 'btn btn-secondary rounded-s' do
+              i.fa.fa-search
+
+
+.card
+  .card-block
+    section
+      .table-responsive
+        table.table.table-striped.table-bordered.table-hover
+          thead
+            tr
+              th
+                | ID
+              th
+                | 图表名
+              th
+                | 操作
+          tbody
+            - if @charts.blank?
+              tr
+                td.nodata colspan=3
+                  | 暂无数据
+            - @charts.each do |chart|
+              tr
+                td = chart.id
+                td.w70p = chart.name
+                td.actions
+                  = link_to '编辑', edit_admin_chart_path(chart), remote: true
+                  = link_to '删除', admin_chart_path(chart), data: {'confirm' => '确认删除吗？'}, method: :delete, remote: true
+  = paginate @charts

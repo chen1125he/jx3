@@ -1,0 +1,14 @@
+.modal.fade
+  .modal-dialog role="document"
+    .modal-content
+      .modal-header
+        h5.modal-title
+          i.fa.fa-warning
+          | 添加图表
+        button.close type="button" data-dismiss="modal" aria-label="Close"
+          span aria-hidden="true"
+            | &times;
+      .modal-body
+        .chart-form
+          = render 'form', chart: @chart, url: admin_charts_path
+      .modal-footer
