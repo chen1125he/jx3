@@ -31,19 +31,22 @@
               th
                 | 物品名
               th
+                | 当前历史价格(金)
+              th
                 | 系统固定价格
               th
                 | 操作
           tbody
             - if @products.blank?
               tr
-                td.nodata colspan=4
+                td.nodata colspan=5
                   | 暂无数据
             - @products.each do |product|
               tr
                 td.w10p = product.id
                 td = product.category.name
                 td = product.name
+                td = product.current_price&.amount
                 td
                   - product.system_prices.each do |price|
                     = format('%<currency_type>s:%<amount>s', currency_type: price.currency_type_text, amount: price.amount)

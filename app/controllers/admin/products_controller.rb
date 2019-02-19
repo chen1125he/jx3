@@ -6,7 +6,7 @@ class Admin::ProductsController < Admin::BaseController
 
   def index
     q = Product.ransack({ cateogry_name_cont: params[:q], name_cont: params[:q] }.merge(m: :or))
-    @products = q.result.includes(:category, :system_prices).order(updated_at: :desc).page(params[:page])
+    @products = q.result.includes(:category, :system_prices, :current_price).order(updated_at: :desc).page(params[:page])
   end
 
   def edit
