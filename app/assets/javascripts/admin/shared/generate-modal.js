@@ -53,7 +53,7 @@
     downloadCsv: function(filepath){
       var downloadLink = this.modal().find('.download-link a');
       var href = downloadLink.data('download-path');
-      href = href + '?filepath=' + filepath + '&filename=物品列表.csv';
+      href = href + '?filepath=' + filepath + '&filename=物品价格列表.csv';
       downloadLink.attr('href', href);
       downloadLink.trigger('click');
     },

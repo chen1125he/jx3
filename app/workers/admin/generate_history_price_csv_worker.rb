@@ -17,7 +17,7 @@ class Admin::GenerateHistoryPriceCsvWorker
       products.includes(:category, :current_price).each_with_index do |product, index|
         at(index + 1)
 
-        csv << [product.category.name, product.name, product.current_price&.amount || 0, product.current_price&.seller_name, Date.today]
+        csv << [product.category.name, product.name, product.current_price&.amount, product.current_price&.seller_name, Date.today]
       end
     end
 
