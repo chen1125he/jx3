@@ -3,12 +3,14 @@
 class Admin::HistoryPricesController < Admin::BaseController
   before_action :load_product
   before_action :load_breadcrumb
-  before_action :load_history_prices, only: %i[index edit update destroy]
+  before_action :load_history_prices, only: %i[edit update destroy]
   before_action :load_history_price, only: %i[edit update destroy]
 
   def index
     add_breadcrumb @product.name, edit_admin_product_path(@product)
     add_breadcrumb '历史价格'
+
+    @history_prices = @product.history_prices.order(record_date: :desc).page(params[:page])
   end
 
   def new
@@ -48,11 +50,7 @@ class Admin::HistoryPricesController < Admin::BaseController
   end
 
   def load_history_prices
-    @history_prices = if params[:page_flag] == 'index'
-                        @product.history_prices.order(record_date: :desc).page(params[:page])
-                      else
-                        @product.history_prices.order(record_date: :desc).limit(5)
-                      end
+    @history_prices = @product.history_prices.order(record_date: :desc).limit(5)
   end
 
   def load_history_price
@@ -64,6 +62,6 @@ class Admin::HistoryPricesController < Admin::BaseController
   end
 
   def load_breadcrumb
-    add_breadcrumb '历史价格管理', admin_product_history_prices_path(@product)
+    add_breadcrumb '物品管理', admin_products_path
   end
 end
