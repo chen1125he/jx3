@@ -28,6 +28,12 @@
 	@include media-down(sm) {
 		margin-bottom: 20px;
 	}
+
+	.header-actions {
+		a:not(:first-child) {
+			margin-left: 10px;
+		}
+	}
 }
 
 
