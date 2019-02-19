@@ -27,6 +27,7 @@ class Product < ApplicationRecord
 
   belongs_to :category
   has_many :history_prices, -> { where(price_type: :history_price) }, dependent: :destroy, class_name: 'Price', foreign_key: :owner_id
+  has_one :current_price, -> { where(price_type: :history_price).order(id: :desc) }, class_name: 'Price', foreign_key: :owner_id
   has_many :system_prices, -> { where(price_type: :system_price) }, dependent: :destroy, class_name: 'Price', foreign_key: :owner_id
   has_many :requirements, dependent: :destroy, foreign_key: :owner_id
   has_many :materials, through: :requirements

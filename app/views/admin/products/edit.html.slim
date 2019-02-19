@@ -35,4 +35,4 @@
           | 查看更多
     section
       .table-responsive.history-price-list
-        = render 'history_price_list', history_prices: @history_prices, product: @product
+        = render 'history_price_list', history_prices: @product.history_prices.order(record_date: :desc).limit(5), product: @product

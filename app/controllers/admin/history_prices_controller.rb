@@ -3,7 +3,6 @@
 class Admin::HistoryPricesController < Admin::BaseController
   before_action :load_product
   before_action :load_breadcrumb
-  before_action :load_history_prices, only: %i[edit update destroy]
   before_action :load_history_price, only: %i[edit update destroy]
 
   def index
@@ -19,6 +18,7 @@ class Admin::HistoryPricesController < Admin::BaseController
 
   def create
     @history_price = @product.history_prices.new(history_price_params)
+    @history_price.service = current_service
     if @history_price.save
       render_turbolinks_reload
     else
@@ -30,6 +30,7 @@ class Admin::HistoryPricesController < Admin::BaseController
   end
 
   def update
+    @history_price.service = current_service
     if @history_price.update(history_price_params)
       render_turbolinks_reload
     else
@@ -47,10 +48,6 @@ class Admin::HistoryPricesController < Admin::BaseController
 
   def load_product
     @product = Product.find(params[:product_id])
-  end
-
-  def load_history_prices
-    @history_prices = @product.history_prices.order(record_date: :desc).limit(5)
   end
 
   def load_history_price

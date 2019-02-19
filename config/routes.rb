@@ -14,7 +14,7 @@ Rails.application.routes.draw do
     end
     resources :topping_products, only: [:update]
     resources :bulk_import_products, only: %i[new create]
-    resource :generate_product_csvs, only: %i[create]
+    resource :generate_history_price_csvs, only: %i[create]
 
     resources :materials, only: [:index]
   end

@@ -3,7 +3,6 @@
 class Admin::ProductsController < Admin::BaseController
   before_action :load_breadcrumb
   before_action :load_product, only: %i[edit update]
-  before_action :load_history_prices, only: %i[edit update]
 
   def index
     q = Product.ransack({ cateogry_name_cont: params[:q], name_cont: params[:q] }.merge(m: :or))
@@ -23,10 +22,6 @@ class Admin::ProductsController < Admin::BaseController
 
   def load_product
     @product = Product.find(params[:id])
-  end
-
-  def load_history_prices
-    @history_prices = @product.history_prices.order(record_date: :desc).limit(5)
   end
 
   def load_breadcrumb
