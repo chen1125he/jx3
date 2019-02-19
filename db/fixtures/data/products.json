@@ -52,9 +52,9 @@
       { "name": "大葱", "avg_amount": 1 },
       { "name": "莲藕", "avg_amount": 1 },
       { "name": "小茴香", "avg_amount": 1 },
-      { "name": "黄瓜", "avg_amount": 1 },
+      { "name": "青瓜", "avg_amount": 1 },
       { "name": "粟米", "avg_amount": 1 },
-      { "name": "红罗卜", "avg_amount": 1 },
+      { "name": "红萝卜", "avg_amount": 1 },
       { "name": "蒜苗", "avg_amount": 1 },
       { "name": "青菜", "avg_amount": 1 },
       { "name": "老豆腐", "avg_amount": 1 },
@@ -139,7 +139,7 @@
       { "name": "鸿门宴", "avg_amount": 1 },
       { "name": "团圆宴", "avg_amount": 1 },
       { "name": "鸳鸯烩珍宴", "avg_amount": 1 },
-      { "name": "蜀味烘培宴", "avg_amount": 1 },
+      { "name": "蜀味烘焙宴", "avg_amount": 1 },
       { "name": "水晶芙蓉宴", "avg_amount": 1 },
       { "name": "玉笛谁家听梅落", "avg_amount": 1 },
       { "name": "二十四桥明月夜", "avg_amount": 1 },
@@ -156,7 +156,7 @@
       { "name": "三头宴", "avg_amount": 1 },
       { "name": "贵妃宴", "avg_amount": 1 },
       { "name": "欢庆宴", "avg_amount": 1 },
-      { "name": "炼狱水煮鱼", "avg_amount": 1 },
+      { "name": "炼狱水煮鱼", "avg_amount": 1 }
     ]
   },
   {

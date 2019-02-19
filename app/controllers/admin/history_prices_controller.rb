@@ -60,7 +60,7 @@ class Admin::HistoryPricesController < Admin::BaseController
   end
 
   def history_price_params
-    params.require(:price).permit(:currency_type, :seller_name, :amount, :record_date)
+    params.require(:price).permit(:seller_name, :amount, :record_date)
   end
 
   def load_breadcrumb

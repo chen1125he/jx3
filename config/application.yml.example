@@ -1,0 +1,10 @@
+# Use `rake secret` to generate one key
+SECRET_KEY_BASE: ''
+
+CSV_TMP_DIR: tmp/csvs
+
+# redis namespace
+REDIS_NAMESPACE: jx3
+
+# sidekiq namespace
+SIDEKIQ_NAMESPACE: jx3

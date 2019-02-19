@@ -14,7 +14,7 @@
           | 添加材料
     section
       .table-responsive.system-price-list
-        = render 'requirement_list', requirements: @product.requirements, product: @product
+        = render 'requirement_list', requirements: @product.requirements.includes(:material), product: @product
 
 .card
   .card-block

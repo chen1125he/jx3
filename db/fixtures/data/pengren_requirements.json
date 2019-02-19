@@ -6,17 +6,17 @@
       { "material_name": "血", "amount": 5 },
       { "material_name": "杂碎", "amount": 5 },
       { "material_name": "人参", "amount": 1 },
-      { "material_name": "露水", "amount": 2 },
+      { "material_name": "露水", "amount": 2 }
     ]
   },
   {
     "owner_name": "馅料",
     "requirements": [
       { "material_name": "蛋", "amount": 20 },
-      { "material_name": "鱼", "amount": 5 },
+      { "material_name": "鱼肉", "amount": 5 },
       { "material_name": "精肉", "amount": 5 },
       { "material_name": "人参", "amount": 1 },
-      { "material_name": "露水", "amount": 2 },
+      { "material_name": "露水", "amount": 2 }
     ]
   },
   {
@@ -26,7 +26,7 @@
       { "material_name": "骨头", "amount": 5 },
       { "material_name": "碎肉", "amount": 5 },
       { "material_name": "人参", "amount": 1 },
-      { "material_name": "露水", "amount": 2 },
+      { "material_name": "露水", "amount": 2 }
     ]
   },
   {
@@ -158,7 +158,7 @@
     "owner_name": "三鲜汤",
     "requirements": [
       { "material_name": "新鲜冬瓜", "amount": 10 },
-      { "material_name": "莲菇", "amount": 5 },
+      { "material_name": "菌菇", "amount": 5 },
       { "material_name": "馅料", "amount": 1 },
       { "material_name": "骨头", "amount": 5 },
       { "material_name": "精肉", "amount": 5 }
@@ -255,7 +255,7 @@
     ]
   },
   {
-    "owner_name": "白汗芦筋",
+    "owner_name": "白汁芦筋",
     "requirements": [
       { "material_name": "大葱", "amount": 10 },
       { "material_name": "白糖", "amount": 5 },
@@ -431,16 +431,6 @@
       { "material_name": "新鲜冬瓜", "amount": 20 },
       { "material_name": "精肉", "amount": 20 },
       { "material_name": "血", "amount": 20 }
-    ]
-  },
-  {
-    "owner_name": "东海宴",
-    "requirements": [
-      { "material_name": "竹叶青", "amount": 10 },
-      { "material_name": "生粉", "amount": 10 },
-      { "material_name": "青瓜", "amount": 10 },
-      { "material_name": "酱料", "amount": 5 },
-      { "material_name": "杂碎", "amount": 10 }
     ]
   }
 ]
