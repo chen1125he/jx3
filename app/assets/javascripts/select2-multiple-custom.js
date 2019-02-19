@@ -1,11 +1,12 @@
 (function(){
-  App.select2Selector = {
+  App.select2MultipleSelector = {
     init: function(){
       this._selector().select2({
         theme: "bootstrap",
         language: "zh-CN",
         formatLoadMore: '加载中...',
         width: '100%',
+        placeholder: '请选择物品',
         ajax: {
           url: this._selector().data('path'),
           dataType: "json",
@@ -33,7 +34,7 @@
     },
 
     _selector: function() {
-      return $('select.select2-selector');
+      return $('select.select2-multiple-selector');
     }
   }
 }).call(this)
