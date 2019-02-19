@@ -7,18 +7,13 @@ table.table.table-striped.table-bordered.table-hover
         | 价格
       th
         | 出售者
-      th
-        | 操作
   tbody
     - if system_prices.blank?
       tr
-        td.nodata colspan=4
+        td.nodata colspan=3
           | 暂无数据
     - system_prices.each do |price|
       tr
         td = price.currency_type_text
         td = price.amount
         td = price.seller_name
-        td.actions
-          = link_to '编辑', edit_admin_product_system_price_path(product, price), remote: true
-          = link_to '删除', admin_product_system_price_path(product, price), data: {'confirm' => '确认删除吗？'}, method: :delete, remote: true

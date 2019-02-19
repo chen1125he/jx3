@@ -1,4 +1,0 @@
-= bootstrap_form_for service, url: url, remote: true do |f|
-  = f.select :area_id, Area.all.map{|s| [s.name, s.id]}
-  = f.text_field :name
-  = f.submit '保存'

@@ -2,9 +2,6 @@
   .title-block
     p.title-description
 			| 系统中的所有物品
-    = link_to new_admin_product_path, class: 'btn btn-primary btn-sm rounded-s' do
-      | 添加物品
-    | &nbsp;
     = link_to new_admin_bulk_import_product_path, class: 'btn btn-primary btn-sm rounded-s' do
       | 批量导入物品
     = link_to admin_generate_product_csvs_path, remote: true, method: :post, class: 'btn btn-primary btn-sm rounded-s' do

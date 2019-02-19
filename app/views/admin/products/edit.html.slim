@@ -9,9 +9,7 @@
   .card-block
     .card-title-block
       h3.title
-        | 所需材料&nbsp;
-        = link_to new_admin_product_requirement_path(@product), remote: true, class: 'btn btn-primary btn-sm rounded-s' do
-          | 添加材料
+        | 所需材料
     section
       .table-responsive.system-price-list
         = render 'requirement_list', requirements: @product.requirements.includes(:material), product: @product
@@ -20,9 +18,7 @@
   .card-block
     .card-title-block
       h3.title
-        | 系统固定价格&nbsp;
-        = link_to new_admin_product_system_price_path(@product), remote: true, class: 'btn btn-primary btn-sm rounded-s' do
-          | 添加价格
+        | 系统固定价格
     section
       .table-responsive.system-price-list
         = render 'system_price_list', system_prices: @product.system_prices, product: @product

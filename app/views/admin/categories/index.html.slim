@@ -2,8 +2,6 @@
   .title-block
     p.title-description
 			| 自定义的分类，包括各种物品
-    = link_to new_admin_category_path, remote: true, class: 'btn btn-primary btn-sm rounded-s' do
-      | 添加分类
   .items-search
     = form_tag admin_categories_path, method: :get do
       form.form-inline
@@ -25,18 +23,13 @@
                 | ID
               th
                 | 分类名
-              th
-                | 操作
           tbody
             - if @categories.blank?
               tr
-                td.nodata colspan=3
+                td.nodata colspan=2
                   | 暂无数据
             - @categories.each do |category|
               tr
                 td = category.id
-                td.w70p = category.name
-                td.actions
-                  = link_to '编辑', edit_admin_category_path(category), remote: true
-                  = link_to '删除', admin_category_path(category), data: {'confirm' => '确认删除吗？'}, method: :delete, remote: true
+                td = category.name
   = paginate @categories

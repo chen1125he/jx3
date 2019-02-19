@@ -2,8 +2,6 @@
   .title-block
     p.title-description
 			| 大区下的服务器，物品的历史价格是和服务器相关的
-    = link_to new_admin_service_path, remote: true, class: 'btn btn-primary btn-sm rounded-s' do
-      | 添加服务器
   .items-search
     = form_tag admin_services_path, method: :get do
       form.form-inline
@@ -27,19 +25,14 @@
                 | 所属大区名
               th
                 | 服务器名
-              th
-                | 操作
           tbody
             - if @services.blank?
               tr
-                td.nodata colspan=4
+                td.nodata colspan=3
                   | 暂无数据
             - @services.each do |service|
               tr
                 td = service.id
-                td.w30p = service.area.name
-                td.w30p = service.name
-                td.actions
-                  = link_to '编辑', edit_admin_service_path(service), remote: true
-                  = link_to '删除', admin_service_path(service), data: {'confirm' => '确认删除吗？'}, method: :delete, remote: true
+                td = service.area.name
+                td = service.name
   = paginate @services

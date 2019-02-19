@@ -6,12 +6,10 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :dashboards
     resources :charts
-    resources :categories
-    resources :areas
-    resources :services
-    resources :products, only: %i[index new create edit update] do
-      resources :requirements, only: %i[new create edit update destroy]
-      resources :system_prices, only: %i[new create edit update destroy]
+    resources :categories, only: [:index]
+    resources :areas, only: [:index]
+    resources :services, only: [:index]
+    resources :products, only: %i[index edit update] do
       resources :history_prices
     end
     resources :topping_products, only: [:update]
