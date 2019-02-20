@@ -6,19 +6,8 @@
 
 section.section
   .row
-    .col-md-6
-      .card
-        .card-block
-          .card-title-block
-            h3.title
-              | Area Chart Example
-          .section.example
-            #morris-area-chart
-    .col-md-6
-      .card
-        .card-block
-          .card-title-block
-            h3.title
-              | Area Chart Example
-          .section.example
-            #morris-area-chart
+    - @charts.each do |chart|
+      .col-md-6
+        .card
+          .card-block
+            .echart id=format('echart-%<id>s', id: chart.id) data-chart-data=Admin::ProductsHistoryPricesLineChartOptionsService.new(chart.product_items, title: chart.name).call.to_json

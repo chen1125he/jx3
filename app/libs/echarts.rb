@@ -6,8 +6,11 @@ module Echarts
       title: {
         # text: 'ECharts title' # To Be Merged
       },
-      tooltip: {},
+      tooltip: {
+        trigger: 'axis'
+      },
       legend: {
+        bottom: 0
         # data: %w[销量 价格] # To Be Merged
       },
       toolbox: {
@@ -18,6 +21,9 @@ module Echarts
         }
       },
       xAxis: {
+        axisLabel: {
+          interval: 0
+        }
         # data: %w[衬衫 羊毛衫 雪纺衫 裤子 高跟鞋 袜子] # To Be Merged
       },
       yAxis: {},

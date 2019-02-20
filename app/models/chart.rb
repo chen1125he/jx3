@@ -20,4 +20,6 @@ class Chart < ApplicationRecord
 
   has_many :chart_items, dependent: :destroy
   has_many :product_items, through: :chart_items, source_type: 'Product', source: :item
+
+  validates :name, presence: true
 end

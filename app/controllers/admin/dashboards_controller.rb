@@ -2,7 +2,10 @@
 
 class Admin::DashboardsController < Admin::BaseController
   before_action :load_breadcrumb
-  def index; end
+
+  def index
+    @charts = Chart.order(created_at: :asc).page(params[:page])
+  end
 
   private
 

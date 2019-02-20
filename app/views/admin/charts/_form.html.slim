@@ -1,9 +1,9 @@
 = bootstrap_form_for chart, url: url, remote: true do |f|
   = f.text_field :name
-  = f.form_group :product_items, label: { text: '物品' } do
+  = f.form_group :product_items, label: { text: '展示物品' } do
     = select_tag :product_items,
-                 options_for_select(f.object.product_items.pluck(:name, :id).to_h, f.object.product_items.pluck(:id)), class: 'form-control select2-multiple-selector',
-                 data: { path: admin_materials_path, selected: f.object.product_items.pluck(:name, :id) },
+                 options_for_select(f.object.product_items.map{ |item| [item.name, item.id] }.to_h, f.object.product_items.map(&:id)), class: 'form-control select2-multiple-selector',
+                 data: { path: admin_materials_path },
                  multiple: true
 
   = f.submit '保存'

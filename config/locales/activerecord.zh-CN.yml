@@ -24,3 +24,5 @@ zh-CN:
       requirement:
         material_id: 材料名
         amount: 需要数量
+      chart:
+        name: 图表名

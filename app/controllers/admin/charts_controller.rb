@@ -15,6 +15,7 @@ class Admin::ChartsController < Admin::BaseController
 
   def create
     @chart = Chart.new(chart_params)
+    @chart.product_items = Product.where(id: params[:product_items])
     if @chart.save
       render_turbolinks_reload
     else
@@ -26,6 +27,7 @@ class Admin::ChartsController < Admin::BaseController
   end
 
   def update
+    @chart.product_items = Product.where(id: params[:product_items])
     if @chart.update(chart_params)
       render_turbolinks_reload
     else

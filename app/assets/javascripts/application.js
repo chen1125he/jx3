@@ -25,7 +25,7 @@
 //= require select2
 //= require select2_locale_zh-CN
 //= require select2-multiple-custom
-//= echarts.simple
+//= require echarts.common
 //= require config
 //= require metismenu
 //= require_tree ./admin
