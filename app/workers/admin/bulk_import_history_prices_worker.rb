@@ -29,7 +29,7 @@ class Admin::BulkImportHistoryPricesWorker
 
   private
 
-  # row [category_name, name, amount, seller_name, record_date]
+  # row [category_name, product_name, amount, seller_name, record_date]
   def create_or_update_history_price(row, index)
     category = Category.find_by(name: row[0])
     product = category.products.find_by(name: row[1])
