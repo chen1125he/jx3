@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Echarts
-  def self.options
+  def self.line_options
     {
       title: {
         # text: 'ECharts title' # To Be Merged
@@ -35,6 +35,34 @@ module Echarts
         # }
         # To Be Merged
       ]
+    }
+  end
+
+  def self.tree_options
+    {
+      series: [
+        {
+          type: 'tree',
+          data: [],
+          symbolSize: 7,
+          label: {
+            normal: {
+              position: 'left',
+              verticalAlign: 'middle',
+              align: 'right'
+            }
+          },
+          leaves: {
+            label: {
+              normal: {
+                position: 'right',
+                verticalAlign: 'middle',
+                align: 'left'
+              }
+            }
+          }
+        }
+      ]  
     }
   end
 end

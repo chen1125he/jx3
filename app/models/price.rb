@@ -30,8 +30,8 @@ class Price < ApplicationRecord
   belongs_to :owner, class_name: 'Product', foreign_key: :owner_id
   belongs_to :service, optional: true
 
-  enumerize :price_type, in: %w[history_price system_price], default: :history_price
-  enumerize :currency_type, in: %w[gold jingli xiayi jianggong jianben weiwang duihuanpai], default: :gold
+  enumerize :price_type, in: %w[history_price system_price produce_price], default: :history_price
+  enumerize :currency_type, in: %w[gold jingli xiayi jianggong xiuwei jianben weiwang duihuanpai], default: :gold
 
   validates :amount, presence: true, numericality: { allow_nil: true, greater_than_or_equal_to: 0 }
   validates :currency_type, presence: true

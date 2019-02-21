@@ -10,7 +10,7 @@ class Admin::ProductsHistoryPricesLineChartOptionsService
 
     @products = products
 
-    @options = Echarts.options
+    @options = Echarts.line_options
   end
 
   def call
@@ -41,7 +41,7 @@ class Admin::ProductsHistoryPricesLineChartOptionsService
 
   def set_series!
     @products.each do |product|
-      history_prices = product.history_prices.order(record_date: :desc).limit(5).to_a
+      history_prices = product.history_prices.order(record_date: :desc).limit(@recent_days.count).to_a
 
       @options[:series] << {
         name: product.name,
