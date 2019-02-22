@@ -432,5 +432,145 @@
       { "material_name": "精肉", "amount": 20 },
       { "material_name": "血", "amount": 20 }
     ]
+  },
+  {
+    "owner_name": "东海宴",
+    "requirements": [
+      { "material_name": "竹叶青", "amount": 10 },
+      { "material_name": "生粉", "amount": 10 },
+      { "material_name": "青瓜", "amount": 10 },
+      { "material_name": "酱料", "amount": 5 },
+      { "material_name": "杂碎", "amount": 10 }
+    ]
+  },
+  {
+    "owner_name": "任侠宴",
+    "requirements": [
+      { "material_name": "郎官清", "amount": 10 },
+      { "material_name": "胡椒粉", "amount": 10 },
+      { "material_name": "红萝卜", "amount": 10 },
+      { "material_name": "馅料", "amount": 5 },
+      { "material_name": "碎肉", "amount": 10 }
+    ]
+  },
+  {
+    "owner_name": "兄弟宴",
+    "requirements": [
+      { "material_name": "西市腔", "amount": 10 },
+      { "material_name": "红辣椒", "amount": 5 },
+      { "material_name": "莲藕", "amount": 5 },
+      { "material_name": "卤料", "amount": 5 },
+      { "material_name": "精肉", "amount": 10 }
+    ]
+  },
+  {
+    "owner_name": "南山宴",
+    "requirements": [
+      { "material_name": "富水", "amount": 10 },
+      { "material_name": "调料", "amount": 10 },
+      { "material_name": "菌菇", "amount": 10 },
+      { "material_name": "卤料", "amount": 5 },
+      { "material_name": "鱼肉", "amount": 10 }
+    ]
+  },
+  {
+    "owner_name": "汉宫宴",
+    "requirements": [
+      { "material_name": "西市腔", "amount": 10 },
+      { "material_name": "白糖", "amount": 10 },
+      { "material_name": "新鲜冬瓜", "amount": 10 },
+      { "material_name": "馅料", "amount": 5 },
+      { "material_name": "骨头", "amount": 10 }
+    ]
+  },
+  {
+    "owner_name": "山河宴",
+    "requirements": [
+      { "material_name": "郎官清", "amount": 10 },
+      { "material_name": "料酒", "amount": 10 },
+      { "material_name": "老豆腐", "amount": 10 },
+      { "material_name": "酱料", "amount": 5 },
+      { "material_name": "血", "amount": 10 }
+    ]
+  },
+  {
+    "owner_name": "百味宴",
+    "requirements": [
+      { "material_name": "竹叶青", "amount": 10 },
+      { "material_name": "精制面粉", "amount": 10 },
+      { "material_name": "青菜", "amount": 10 },
+      { "material_name": "卤料", "amount": 5 },
+      { "material_name": "精肉", "amount": 10 }
+    ]
+  },
+  {
+    "owner_name": "洗尘宴",
+    "requirements": [
+      { "material_name": "土窟春", "amount": 10 },
+      { "material_name": "调料", "amount": 5 },
+      { "material_name": "菌菇", "amount": 5 },
+      { "material_name": "卤料", "amount": 2 },
+      { "material_name": "杂碎", "amount": 10 }
+    ]
+  },
+  {
+    "owner_name": "迎客宴",
+    "requirements": [
+      { "material_name": "新丰酒", "amount": 10 },
+      { "material_name": "生粉", "amount": 5 },
+      { "material_name": "青瓜", "amount": 5 },
+      { "material_name": "酱料", "amount": 2 },
+      { "material_name": "碎肉", "amount": 10 }
+    ]
+  },
+  {
+    "owner_name": "结缘宴",
+    "requirements": [
+      { "material_name": "若下", "amount": 10 },
+      { "material_name": "胡椒粉", "amount": 5 },
+      { "material_name": "红萝卜", "amount": 5 },
+      { "material_name": "馅料", "amount": 2 },
+      { "material_name": "精肉", "amount": 10 }
+    ]
+  },
+  {
+    "owner_name": "三头宴",
+    "requirements": [
+      { "material_name": "干和", "amount": 10 },
+      { "material_name": "白糖", "amount": 5 },
+      { "material_name": "新鲜冬瓜", "amount": 5 },
+      { "material_name": "馅料", "amount": 2 },
+      { "material_name": "鱼肉", "amount": 10 }
+    ]
+  },
+  {
+    "owner_name": "贵妃宴",
+    "requirements": [
+      { "material_name": "黄酒", "amount": 10 },
+      { "material_name": "精制面粉", "amount": 5 },
+      { "material_name": "青菜", "amount": 5 },
+      { "material_name": "卤料", "amount": 2 },
+      { "material_name": "血", "amount": 10 }
+    ]
+  },
+  {
+    "owner_name": "欢庆宴",
+    "requirements": [
+      { "material_name": "秋露白", "amount": 10 },
+      { "material_name": "料酒", "amount": 5 },
+      { "material_name": "老豆腐", "amount": 5 },
+      { "material_name": "酱料", "amount": 2 },
+      { "material_name": "骨头", "amount": 10 }
+    ]
+  },
+  {
+    "owner_name": "炼狱水煮鱼",
+    "requirements": [
+      { "material_name": "红辣椒", "amount": 10 },
+      { "material_name": "胡椒粉", "amount": 10 },
+      { "material_name": "调料", "amount": 10 },
+      { "material_name": "酱料", "amount": 5 },
+      { "material_name": "鱼肉", "amount": 10 }
+    ]
   }
 ]

@@ -36,6 +36,17 @@
       { "name": "露水", "avg_amount": 1 },
       { "name": "人参", "avg_amount": 1 },
 
+      { "name": "竹叶青", "avg_amount": 1 },
+      { "name": "郎官清", "avg_amount": 1 },
+      { "name": "西市腔", "avg_amount": 1 },
+      { "name": "富水", "avg_amount": 1 },
+      { "name": "黄酒", "avg_amount": 1 },
+      { "name": "秋露白", "avg_amount": 1 },
+      { "name": "干和", "avg_amount": 1 },
+      { "name": "土窟春", "avg_amount": 1 },
+      { "name": "新丰酒", "avg_amount": 1 },
+      { "name": "若下", "avg_amount": 1 },
+      { "name": "烧春", "avg_amount": 1 },
       { "name": "今朝醉", "avg_amount": 1 },
 
       { "name": "精制面粉", "avg_amount": 1 },
@@ -176,11 +187,15 @@
   {
     "category_name": "医术物品",
     "products": [
+      { "name": "上品万灵丹", "avg_amount": 2.5 },
+      { "name": "中品万灵丹", "avg_amount": 2.5 },
+
+      { "name": "上品万灵丹", "avg_amount": 2.5 },
+      { "name": "中品万灵丹", "avg_amount": 2.5 },
+
       { "name": "药引", "avg_amount": 1 },
       { "name": "药丸", "avg_amount": 1 },
-      { "name": "药料", "avg_amount": 1 },
-      { "name": "药膏", "avg_amount": 1 },
-      { "name": "药用黄丹", "avg_amount": 1 }
+      { "name": "药膏", "avg_amount": 1 }
     ]
   },
   {

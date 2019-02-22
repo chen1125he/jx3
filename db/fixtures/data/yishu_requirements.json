@@ -1,0 +1,12 @@
+[
+  {
+    "owner_name": "卤料",
+    "requirements": [
+      { "material_name": "调料", "amount": 20 },
+      { "material_name": "血", "amount": 5 },
+      { "material_name": "杂碎", "amount": 5 },
+      { "material_name": "人参", "amount": 1 },
+      { "material_name": "露水", "amount": 2 }
+    ]
+  }
+]
