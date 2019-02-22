@@ -11,6 +11,7 @@ ActiveRecord::Base.transaction do
         p.category_id = category[0].id
         p.name = product['name']
         p.avg_amount = product['avg_amount']
+        p.price_type = product['price_type'] if product['price_type']
       end
     end
   end

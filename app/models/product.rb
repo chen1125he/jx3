@@ -8,6 +8,7 @@
 #  avg_amount(平均获得数量(如生活技能物品)) :float            default(1.0)
 #  deleted_at                  :datetime
 #  name                        :string
+#  price_type(默认使用的价格类型)       :string
 #  created_at                  :datetime         not null
 #  updated_at                  :datetime         not null
 #  category_id                 :bigint(8)
@@ -23,8 +24,11 @@
 #
 
 class Product < ApplicationRecord
+  extend Enumerize
   include SoftDeletable
   include Prices
+
+  enumerize :price_type, in: %w[history_price system_price], default: :history_price
 
   belongs_to :category
   has_many :history_prices, -> { where(price_type: :history_price) }, dependent: :destroy, class_name: 'Price', foreign_key: :owner_id
@@ -38,13 +42,17 @@ class Product < ApplicationRecord
   validates :name, presence: true, uniqueness: { scope: %i[category_id], conditions: -> { where(deleted_at: nil) }, message: :product_taken }
   validates :avg_amount, presence: true, numericality: { allow_nil: true, greater_than_or_equal_to: 0 }
 
-  def produce_cost(requirements_produce = false)
+  def cost(requirements_level = 1)
     prices = {}
-    produce_prices.map { |price| prices = prices_merge(prices, { price.currency_type_text => price.amount }) }
-    if requirements_produce
-      materials.each { |m| prices = prices_merge(prices, m.produce_cost) }
+
+    if price_type.system_price?
+      system_prices.each { |price| prices = prices_merge(prices, price.currency_type_text => price.amount) }
+    elsif (requirements_level <= 0 || requirements.blank?)
+      prices = prices_merge(prices, current_price.currency_type_text => current_price.amount) if current_price
     else
-      materials.map(&:current_price).compact.map { |price| prices = prices_merge(prices, { price.currency_type_text => price.amount }) }
+      produce_prices.each { |price| prices = prices_merge(prices, price.currency_type_text => price.amount) }
+      requirements.each{ |r| prices = prices_merge(prices, prices_multiply(r.material.cost(requirements_level - 1), r.amount))}
+      prices = prices_devide(prices, avg_amount)
     end
 
     prices

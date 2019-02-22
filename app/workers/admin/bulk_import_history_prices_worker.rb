@@ -18,7 +18,7 @@ class Admin::BulkImportHistoryPricesWorker
       end
     rescue Utilities::CSVReader::FileNotExist => ex
       @errors << { message: ex.message }
-    rescue => ex
+    rescue StandardError => ex
       @errors << { message: ex.message }
     end
 

@@ -62,7 +62,7 @@ module Echarts
             }
           }
         }
-      ]  
+      ]
     }
   end
 end

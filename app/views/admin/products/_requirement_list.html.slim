@@ -5,12 +5,16 @@ table.table.table-striped.table-bordered.table-hover
         | 材料名
       th
         | 需要数量
+      th
+        | 操作
   tbody
     - if requirements.blank?
       tr
-        td.nodata colspan=2
+        td.nodata colspan=3
           | 暂无数据
     - requirements.each do |requirement|
       tr
         td = requirement.material.name
         td = requirement.amount
+        td.actions
+          = link_to '编辑', edit_admin_product_path(requirement.material), target: '_blank'
