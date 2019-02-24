@@ -1,12 +1,409 @@
 [
   {
-    "owner_name": "卤料",
+    "owner_name": "上品万灵丹",
     "requirements": [
-      { "material_name": "调料", "amount": 20 },
-      { "material_name": "血", "amount": 5 },
-      { "material_name": "杂碎", "amount": 5 },
-      { "material_name": "人参", "amount": 1 },
-      { "material_name": "露水", "amount": 2 }
+      { "material_name": "蜂王浆", "amount": 1 },
+      { "material_name": "药引", "amount": 4 },
+      { "material_name": "大黄", "amount": 10 },
+      { "material_name": "甘草", "amount": 10 },
+      { "material_name": "药罐", "amount": 20 }
+    ]
+  },
+  {
+    "owner_name": "中品万灵丹",
+    "requirements": [
+      { "material_name": "甘草", "amount": 5 },
+      { "material_name": "药丸", "amount": 10 },
+      { "material_name": "千里香", "amount": 10 },
+      { "material_name": "大黄", "amount": 5 },
+      { "material_name": "药囊", "amount": 10 }
+    ]
+  },
+  {
+    "owner_name": "上品大力丸",
+    "requirements": [
+      { "material_name": "沉香木", "amount": 1 },
+      { "material_name": "药引", "amount": 4 },
+      { "material_name": "川贝", "amount": 10 },
+      { "material_name": "枸杞", "amount": 10 },
+      { "material_name": "药罐", "amount": 20 }
+    ]
+  },
+  {
+    "owner_name": "上品静心丸",
+    "requirements": [
+      { "material_name": "珠贝母", "amount": 1 },
+      { "material_name": "药丸", "amount": 4 },
+      { "material_name": "五味子", "amount": 10 },
+      { "material_name": "川贝", "amount": 10 },
+      { "material_name": "药囊", "amount": 20 }
+    ]
+  },
+  {
+    "owner_name": "上品静心丸",
+    "requirements": [
+      { "material_name": "珠贝母", "amount": 1 },
+      { "material_name": "药丸", "amount": 4 },
+      { "material_name": "大黄", "amount": 10 },
+      { "material_name": "千里香", "amount": 10 },
+      { "material_name": "药料", "amount": 20 }
+    ]
+  },
+  {
+    "owner_name": "上品健体丸",
+    "requirements": [
+      { "material_name": "沉香木", "amount": 1 },
+      { "material_name": "药引", "amount": 4 },
+      { "material_name": "大黄", "amount": 10 },
+      { "material_name": "甘草", "amount": 10 },
+      { "material_name": "银针", "amount": 20 }
+    ]
+  },
+  {
+    "owner_name": "上品聚魂丹",
+    "requirements": [
+      { "material_name": "蜂王浆", "amount": 1 },
+      { "material_name": "药膏", "amount": 4 },
+      { "material_name": "千里香", "amount": 10 },
+      { "material_name": "枸杞", "amount": 10 },
+      { "material_name": "药用黄丹", "amount": 20 }
+    ]
+  },
+  {
+    "owner_name": "中品健体丸",
+    "requirements": [
+      { "material_name": "葫芦", "amount": 10 },
+      { "material_name": "药膏", "amount": 1 },
+      { "material_name": "虫草", "amount": 10 },
+      { "material_name": "五味子", "amount": 5 },
+      { "material_name": "珊瑚", "amount": 5 }
+    ]
+  },
+  {
+    "owner_name": "中品聚魂丹",
+    "requirements": [
+      { "material_name": "彼岸花", "amount": 10 },
+      { "material_name": "药丸", "amount": 1 },
+      { "material_name": "银针", "amount": 10 },
+      { "material_name": "大黄", "amount": 5 },
+      { "material_name": "芍药", "amount": 5 }
+    ]
+  },
+  {
+    "owner_name": "中品大力丸",
+    "requirements": [
+      { "material_name": "珊瑚", "amount": 10 },
+      { "material_name": "药膏", "amount": 1 },
+      { "material_name": "药料", "amount": 10 },
+      { "material_name": "彼岸花", "amount": 5 },
+      { "material_name": "千里香", "amount": 5 }
+    ]
+  },
+  {
+    "owner_name": "中品轻身丹",
+    "requirements": [
+      { "material_name": "芍药", "amount": 10 },
+      { "material_name": "药引", "amount": 1 },
+      { "material_name": "金针", "amount": 10 },
+      { "material_name": "虫草", "amount": 5 },
+      { "material_name": "甘草", "amount": 5 }
+    ]
+  },
+  {
+    "owner_name": "中品静心丸",
+    "requirements": [
+      { "material_name": "甘草", "amount": 10 },
+      { "material_name": "药引", "amount": 1 },
+      { "material_name": "药用黄丹", "amount": 10 },
+      { "material_name": "枸杞", "amount": 5 },
+      { "material_name": "珊瑚", "amount": 5 }
+    ]
+  },
+  {
+    "owner_name": "上品破秽散",
+    "requirements": [
+      { "material_name": "蜂王浆", "amount": 1 },
+      { "material_name": "药引", "amount": 4 },
+      { "material_name": "金针", "amount": 20 },
+      { "material_name": "虫草", "amount": 10 },
+      { "material_name": "五味子", "amount": 10 }
+    ]
+  },
+  {
+    "owner_name": "上品凝神散",
+    "requirements": [
+      { "material_name": "沉香木", "amount": 1 },
+      { "material_name": "药丸", "amount": 4 },
+      { "material_name": "银针", "amount": 20 },
+      { "material_name": "芍药", "amount": 10 },
+      { "material_name": "虫草", "amount": 10 }
+    ]
+  },
+  {
+    "owner_name": "上品玉璃散",
+    "requirements": [
+      { "material_name": "珠贝母", "amount": 1 },
+      { "material_name": "药膏", "amount": 4 },
+      { "material_name": "葫芦", "amount": 20 },
+      { "material_name": "川贝", "amount": 10 },
+      { "material_name": "五味子", "amount": 10 }
+    ]
+  },
+  {
+    "owner_name": "上品亢龙散",
+    "requirements": [
+      { "material_name": "蜂王浆", "amount": 1 },
+      { "material_name": "药引", "amount": 4 },
+      { "material_name": "药用黄丹", "amount": 20 },
+      { "material_name": "彼岸花", "amount": 10 },
+      { "material_name": "珊瑚", "amount": 10 }
+    ]
+  },
+  {
+    "owner_name": "上品活气散",
+    "requirements": [
+      { "material_name": "珠贝母", "amount": 1 },
+      { "material_name": "药膏", "amount": 4 },
+      { "material_name": "药料", "amount": 20 },
+      { "material_name": "彼岸花", "amount": 10 },
+      { "material_name": "芍药", "amount": 10 }
+    ]
+  },
+  {
+    "owner_name": "上品展凤散",
+    "requirements": [
+      { "material_name": "沉香木", "amount": 1 },
+      { "material_name": "药丸", "amount": 4 },
+      { "material_name": "药罐", "amount": 20 },
+      { "material_name": "甘草", "amount": 10 },
+      { "material_name": "珊瑚", "amount": 10 }
+    ]
+  },
+  {
+    "owner_name": "上品益气散",
+    "requirements": [
+      { "material_name": "珠贝母", "amount": 1 },
+      { "material_name": "药膏", "amount": 4 },
+      { "material_name": "药囊", "amount": 20 },
+      { "material_name": "甘草", "amount": 10 },
+      { "material_name": "大黄", "amount": 10 }
+    ]
+  },
+  {
+    "owner_name": "上品长恨散",
+    "requirements": [
+      { "material_name": "蜂王浆", "amount": 1 },
+      { "material_name": "药引", "amount": 4 },
+      { "material_name": "葫芦", "amount": 20 },
+      { "material_name": "大黄", "amount": 10 },
+      { "material_name": "千里香", "amount": 10 }
+    ]
+  },
+  {
+    "owner_name": "中品凝神散",
+    "requirements": [
+      { "material_name": "药料", "amount": 10 },
+      { "material_name": "药引", "amount": 1 },
+      { "material_name": "五味子", "amount": 10 },
+      { "material_name": "川贝", "amount": 5 },
+      { "material_name": "枸杞", "amount": 5 }
+    ]
+  },
+  {
+    "owner_name": "中品破秽散",
+    "requirements": [
+      { "material_name": "银针", "amount": 10 },
+      { "material_name": "药膏", "amount": 1 },
+      { "material_name": "川贝", "amount": 10 },
+      { "material_name": "千里香", "amount": 5 },
+      { "material_name": "枸杞", "amount": 5 }
+    ]
+  },
+  {
+    "owner_name": "中品玉璃散",
+    "requirements": [
+      { "material_name": "枸杞", "amount": 10 },
+      { "material_name": "药丸", "amount": 1 },
+      { "material_name": "金针", "amount": 10 },
+      { "material_name": "千里香", "amount": 5 },
+      { "material_name": "大黄", "amount": 5 }
+    ]
+  },
+  {
+    "owner_name": "中品展凤散",
+    "requirements": [
+      { "material_name": "彼岸花", "amount": 10 },
+      { "material_name": "药引", "amount": 1 },
+      { "material_name": "药囊", "amount": 10 },
+      { "material_name": "虫草", "amount": 5 },
+      { "material_name": "芍药", "amount": 5 }
+    ]
+  },
+  {
+    "owner_name": "中品活气散",
+    "requirements": [
+      { "material_name": "虫草", "amount": 10 },
+      { "material_name": "药丸", "amount": 1 },
+      { "material_name": "药用黄丹", "amount": 10 },
+      { "material_name": "川贝", "amount": 5 },
+      { "material_name": "五味子", "amount": 5 }
+    ]
+  },
+  {
+    "owner_name": "中品亢龙散",
+    "requirements": [
+      { "material_name": "芍药", "amount": 10 },
+      { "material_name": "药膏", "amount": 1 },
+      { "material_name": "药罐", "amount": 10 },
+      { "material_name": "虫草", "amount": 5 },
+      { "material_name": "五味子", "amount": 5 }
+    ]
+  },
+  {
+    "owner_name": "中品益气散",
+    "requirements": [
+      { "material_name": "珊瑚", "amount": 10 },
+      { "material_name": "药丸", "amount": 1 },
+      { "material_name": "葫芦", "amount": 10 },
+      { "material_name": "彼岸花", "amount": 5 },
+      { "material_name": "芍药", "amount": 5 }
+    ]
+  },
+  {
+    "owner_name": "中品长恨散",
+    "requirements": [
+      { "material_name": "甘草", "amount": 10 },
+      { "material_name": "珊瑚", "amount": 1 },
+      { "material_name": "金针", "amount": 10 },
+      { "material_name": "彼岸花", "amount": 5 },
+      { "material_name": "珊瑚", "amount": 5 }
+    ]
+  },
+  {
+    "owner_name": "金针·影",
+    "requirements": [
+      { "material_name": "大黄", "amount": 10 },
+      { "material_name": "药丸", "amount": 1 },
+      { "material_name": "药罐", "amount": 10 },
+      { "material_name": "甘草", "amount": 5 },
+      { "material_name": "川贝", "amount": 5 }
+    ]
+  },
+  {
+    "owner_name": "金针·烟",
+    "requirements": [
+      { "material_name": "千里香", "amount": 10 },
+      { "material_name": "药膏", "amount": 1 },
+      { "material_name": "药囊", "amount": 10 },
+      { "material_name": "五味子", "amount": 5 },
+      { "material_name": "大黄", "amount": 5 }
+    ]
+  },
+  {
+    "owner_name": "截元丹",
+    "requirements": [
+      { "material_name": "枸杞", "amount": 10 },
+      { "material_name": "药引", "amount": 1 },
+      { "material_name": "葫芦", "amount": 10 },
+      { "material_name": "千里香", "amount": 5 },
+      { "material_name": "虫草", "amount": 5 }
+    ]
+  },
+  {
+    "owner_name": "健胃散",
+    "requirements": [
+      { "material_name": "甘草", "amount": 10 },
+      { "material_name": "药丸", "amount": 1 },
+      { "material_name": "葫芦", "amount": 10 },
+      { "material_name": "珊瑚", "amount": 5 },
+      { "material_name": "枸杞", "amount": 5 }
+    ]
+  },
+  {
+    "owner_name": "化功散",
+    "requirements": [
+      { "material_name": "珊瑚", "amount": 10 },
+      { "material_name": "药引", "amount": 1 },
+      { "material_name": "药囊", "amount": 10 },
+      { "material_name": "千里香", "amount": 5 },
+      { "material_name": "彼岸花", "amount": 5 }
+    ]
+  },
+  {
+    "owner_name": "忘情水",
+    "requirements": [
+      { "material_name": "彼岸花", "amount": 10 },
+      { "material_name": "药膏", "amount": 1 },
+      { "material_name": "药罐", "amount": 10 },
+      { "material_name": "芍药", "amount": 5 },
+      { "material_name": "大黄", "amount": 5 }
+    ]
+  },
+  {
+    "owner_name": "风身丸",
+    "requirements": [
+      { "material_name": "芍药", "amount": 10 },
+      { "material_name": "药丸", "amount": 1 },
+      { "material_name": "药用黄丹", "amount": 10 },
+      { "material_name": "虫草", "amount": 5 },
+      { "material_name": "甘草", "amount": 5 }
+    ]
+  },
+  {
+    "owner_name": "逍遥散",
+    "requirements": [
+      { "material_name": "虫草", "amount": 10 },
+      { "material_name": "药引", "amount": 1 },
+      { "material_name": "药料", "amount": 10 },
+      { "material_name": "五味子", "amount": 5 },
+      { "material_name": "珊瑚", "amount": 5 }
+    ]
+  },
+  {
+    "owner_name": "佳·纳元丹",
+    "requirements": [
+      { "material_name": "五味子", "amount": 10 },
+      { "material_name": "药膏", "amount": 1 },
+      { "material_name": "银针", "amount": 10 },
+      { "material_name": "彼岸花", "amount": 5 },
+      { "material_name": "川贝", "amount": 5 }
+    ]
+  },
+  {
+    "owner_name": "飞鱼丸",
+    "requirements": [
+      { "material_name": "川贝", "amount": 10 },
+      { "material_name": "药丸", "amount": 1 },
+      { "material_name": "金针", "amount": 10 },
+      { "material_name": "枸杞", "amount": 5 },
+      { "material_name": "芍药", "amount": 5 }
+    ]
+  },
+  {
+    "owner_name": "药引",
+    "requirements": [
+      { "material_name": "银鳞", "amount": 2 },
+      { "material_name": "药囊", "amount": 10 },
+      { "material_name": "露水", "amount": 1 },
+      { "material_name": "药罐", "amount": 10 }
+    ]
+  },
+  {
+    "owner_name": "药丸",
+    "requirements": [
+      { "material_name": "紫檀", "amount": 2 },
+      { "material_name": "药囊", "amount": 10 },
+      { "material_name": "露水", "amount": 1 },
+      { "material_name": "药罐", "amount": 10 }
+    ]
+  },
+  {
+    "owner_name": "药膏",
+    "requirements": [
+      { "material_name": "人参", "amount": 2 },
+      { "material_name": "药囊", "amount": 10 },
+      { "material_name": "露水", "amount": 1 },
+      { "material_name": "药罐", "amount": 10 }
     ]
   }
 ]
