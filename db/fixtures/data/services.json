@@ -69,10 +69,7 @@
   },
   {
     "area_name": "电信七区",
-    "services": [
-      { "name": "一苇渡江" },
-      { "name": "仙侣庭园" }
-    ]
+    "services": [{ "name": "一苇渡江" }, { "name": "仙侣庭园" }]
   },
   {
     "area_name": "电信八区",
@@ -138,15 +135,11 @@
   },
   {
     "area_name": "电信PVP搞事区",
-    "services": [
-      { "name": "百无禁忌" }
-    ]
+    "services": [{ "name": "百无禁忌" }]
   },
   {
     "area_name": "双线PVP搞事区",
-    "services": [
-      { "name": "止戈为武" }
-    ]
+    "services": [{ "name": "止戈为武" }]
   },
   {
     "area_name": "测试区",

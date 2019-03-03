@@ -1,14 +1,10 @@
 [
   {
     "owner_name": "炼狱水煮鱼",
-    "produce_prices": [
-      { "currency_type": "jingli", "amount": 20 }
-    ]
+    "produce_prices": [{ "currency_type": "jingli", "amount": 20 }]
   },
   {
     "owner_name": "酱料",
-    "produce_prices": [
-      { "currency_type": "jingli", "amount": 20 }
-    ]
+    "produce_prices": [{ "currency_type": "jingli", "amount": 20 }]
   }
 ]

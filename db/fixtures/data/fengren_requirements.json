@@ -1,926 +1,926 @@
 [
   {
-		"owner_name": "五色石",
-		"requirements": [
+    "owner_name": "五色石",
+    "requirements": [
       { "material_name": "紫檀", "amount": 2 },
       { "material_name": "百染线", "amount": 10 },
       { "material_name": "百股线", "amount": 1 },
       { "material_name": "金线", "amount": 10 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "七彩线",
-		"requirements": [
+    "owner_name": "七彩线",
+    "requirements": [
       { "material_name": "硼砂", "amount": 2 },
       { "material_name": "百染线", "amount": 10 },
       { "material_name": "百股线", "amount": 1 },
       { "material_name": "石灰", "amount": 10 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "银丝缎",
-		"requirements": [
+    "owner_name": "银丝缎",
+    "requirements": [
       { "material_name": "宝石", "amount": 2 },
       { "material_name": "百染线", "amount": 10 },
       { "material_name": "百股线", "amount": 1 },
       { "material_name": "百花线", "amount": 10 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "蜀染布",
-		"requirements": [
+    "owner_name": "蜀染布",
+    "requirements": [
       { "material_name": "银鳞", "amount": 2 },
       { "material_name": "百染线", "amount": 10 },
       { "material_name": "百股线", "amount": 1 },
       { "material_name": "纺丝", "amount": 10 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "百花布",
-		"requirements": [
+    "owner_name": "百花布",
+    "requirements": [
       { "material_name": "玛瑙", "amount": 2 },
       { "material_name": "百染线", "amount": 10 },
       { "material_name": "百股线", "amount": 1 },
       { "material_name": "棉线", "amount": 10 }
-		]
-	},
+    ]
+  },
 
   {
-		"owner_name": "绝世上衣·【寒】",
-		"requirements": [
+    "owner_name": "绝世上衣·【寒】",
+    "requirements": [
       { "material_name": "蜃楼珠", "amount": 1 },
       { "material_name": "沉香木", "amount": 10 },
       { "material_name": "银鳞", "amount": 20 },
       { "material_name": "五色石", "amount": 20 },
       { "material_name": "百染线", "amount": 20 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "绝世鞋子·【寒】",
-		"requirements": [
+    "owner_name": "绝世鞋子·【寒】",
+    "requirements": [
       { "material_name": "蜃楼珠", "amount": 1 },
       { "material_name": "珠贝母", "amount": 10 },
       { "material_name": "宝石", "amount": 20 },
       { "material_name": "七彩线", "amount": 20 },
       { "material_name": "百染线", "amount": 20 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "绝世护腕·【寒】",
-		"requirements": [
+    "owner_name": "绝世护腕·【寒】",
+    "requirements": [
       { "material_name": "蜃楼珠", "amount": 1 },
       { "material_name": "猫眼石", "amount": 10 },
       { "material_name": "紫檀", "amount": 20 },
       { "material_name": "银丝缎", "amount": 20 },
       { "material_name": "百染线", "amount": 20 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "壁·蓬莱",
-		"requirements": [
+    "owner_name": "壁·蓬莱",
+    "requirements": [
       { "material_name": "蜃楼珠", "amount": 1 },
       { "material_name": "珠贝母", "amount": 10 },
       { "material_name": "宝石", "amount": 20 },
       { "material_name": "七彩线", "amount": 20 },
       { "material_name": "百染线", "amount": 20 }
-		]
-	},
+    ]
+  },
 
   {
-		"owner_name": "蜀染布包",
-		"requirements": [
+    "owner_name": "蜀染布包",
+    "requirements": [
       { "material_name": "蜀染布", "amount": 1 },
       { "material_name": "百股线", "amount": 1 },
       { "material_name": "百染线", "amount": 3 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "梨绒落绢包",
-		"requirements": [
+    "owner_name": "梨绒落绢包",
+    "requirements": [
       { "material_name": "蜀染布", "amount": 1 },
       { "material_name": "百股线", "amount": 2 },
       { "material_name": "百染线", "amount": 6 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "天工锦缎皮包",
-		"requirements": [
+    "owner_name": "天工锦缎皮包",
+    "requirements": [
       { "material_name": "蜀染布", "amount": 1 },
       { "material_name": "百股线", "amount": 1 },
       { "material_name": "百染线", "amount": 3 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "衣饰包·披肩",
-		"requirements": [
+    "owner_name": "衣饰包·披肩",
+    "requirements": [
       { "material_name": "五色石", "amount": 1 },
       { "material_name": "百染线", "amount": 2 },
       { "material_name": "石灰", "amount": 10 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "百纳包",
-		"requirements": [
+    "owner_name": "百纳包",
+    "requirements": [
       { "material_name": "百花布", "amount": 1 },
       { "material_name": "百染线", "amount": 1 },
       { "material_name": "棉线", "amount": 15 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "百花草药包",
-		"requirements": [
+    "owner_name": "百花草药包",
+    "requirements": [
       { "material_name": "百花布", "amount": 1 },
       { "material_name": "百染线", "amount": 1 },
       { "material_name": "纺丝", "amount": 15 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "衣饰包·披风",
-		"requirements": [
+    "owner_name": "衣饰包·披风",
+    "requirements": [
       { "material_name": "蜀染布", "amount": 1 },
       { "material_name": "百染线", "amount": 2 },
       { "material_name": "百花线", "amount": 10 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "百编金石包",
-		"requirements": [
+    "owner_name": "百编金石包",
+    "requirements": [
       { "material_name": "百花布", "amount": 1 },
       { "material_name": "百染线", "amount": 5 },
       { "material_name": "金线", "amount": 15 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "轻容百花包",
-		"requirements": [
+    "owner_name": "轻容百花包",
+    "requirements": [
       { "material_name": "百染线", "amount": 3 },
       { "material_name": "棉线", "amount": 20 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "挂件包·腰部",
-		"requirements": [
+    "owner_name": "挂件包·腰部",
+    "requirements": [
       { "material_name": "蜀染布", "amount": 1 },
       { "material_name": "百染线", "amount": 2 },
       { "material_name": "纺丝", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "轻容纱金石包",
-		"requirements": [
+    "owner_name": "轻容纱金石包",
+    "requirements": [
       { "material_name": "蜀染布", "amount": 1 },
       { "material_name": "百染线", "amount": 2 },
       { "material_name": "纺丝", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "挂件包·背部",
-		"requirements": [
+    "owner_name": "挂件包·背部",
+    "requirements": [
       { "material_name": "百花布", "amount": 1 },
       { "material_name": "百染线", "amount": 2 },
       { "material_name": "棉线", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "轻容纱草药包",
-		"requirements": [
+    "owner_name": "轻容纱草药包",
+    "requirements": [
       { "material_name": "百染线", "amount": 3 },
       { "material_name": "金线", "amount": 20 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "挂件包·面部",
-		"requirements": [
+    "owner_name": "挂件包·面部",
+    "requirements": [
       { "material_name": "百花布", "amount": 1 },
       { "material_name": "百染线", "amount": 2 },
       { "material_name": "金线", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "绫罗金石包",
-		"requirements": [
+    "owner_name": "绫罗金石包",
+    "requirements": [
       { "material_name": "百染线", "amount": 1 },
       { "material_name": "棉线", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "绫罗皮包",
-		"requirements": [
+    "owner_name": "绫罗皮包",
+    "requirements": [
       { "material_name": "百染线", "amount": 1 },
       { "material_name": "纺丝", "amount": 20 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "绫罗草药包",
-		"requirements": [
+    "owner_name": "绫罗草药包",
+    "requirements": [
       { "material_name": "百染线", "amount": 1 },
       { "material_name": "金线", "amount": 20 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "丝绸皮包",
-		"requirements": [
+    "owner_name": "丝绸皮包",
+    "requirements": [
       { "material_name": "纺丝", "amount": 10 },
       { "material_name": "棉线", "amount": 10 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "棉布包",
-		"requirements": [
+    "owner_name": "棉布包",
+    "requirements": [
       { "material_name": "棉线", "amount": 5 },
       { "material_name": "百花线", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "彩锦皮包",
-		"requirements": [
+    "owner_name": "彩锦皮包",
+    "requirements": [
       { "material_name": "纺丝", "amount": 15 },
       { "material_name": "金线", "amount": 15 }
-		]
-	},
+    ]
+  },
 
   {
-		"owner_name": "小香包",
-		"requirements": [
+    "owner_name": "小香包",
+    "requirements": [
       { "material_name": "百花布", "amount": 1 },
       { "material_name": "百染线", "amount": 2 },
       { "material_name": "棉线", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "水波绫香袋",
-		"requirements": [
+    "owner_name": "水波绫香袋",
+    "requirements": [
       { "material_name": "银丝缎", "amount": 1 },
       { "material_name": "百染线", "amount": 5 },
       { "material_name": "百花线", "amount": 10 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "绫罗绣球",
-		"requirements": [
+    "owner_name": "绫罗绣球",
+    "requirements": [
       { "material_name": "七彩线", "amount": 1 },
       { "material_name": "百染线", "amount": 6 },
       { "material_name": "石灰", "amount": 15 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "绣花香包",
-		"requirements": [
+    "owner_name": "绣花香包",
+    "requirements": [
       { "material_name": "蜀染布", "amount": 1 },
       { "material_name": "百染线", "amount": 3 },
       { "material_name": "纺丝", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "彩锦香包",
-		"requirements": [
+    "owner_name": "彩锦香包",
+    "requirements": [
       { "material_name": "五色石", "amount": 1 },
       { "material_name": "百染线", "amount": 4 },
       { "material_name": "金线", "amount": 8 }
-		]
-	},
+    ]
+  },
 
   {
-		"owner_name": "箭囊",
-		"requirements": [
+    "owner_name": "箭囊",
+    "requirements": [
       { "material_name": "蜀染布", "amount": 5 },
       { "material_name": "百股线", "amount": 5 },
       { "material_name": "棉线", "amount": 10 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "包裹",
-		"requirements": [
+    "owner_name": "包裹",
+    "requirements": [
       { "material_name": "银丝缎", "amount": 5 },
       { "material_name": "百股线", "amount": 5 },
       { "material_name": "金线", "amount": 10 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "大红花",
-		"requirements": [
+    "owner_name": "大红花",
+    "requirements": [
       { "material_name": "五色石", "amount": 5 },
       { "material_name": "百股线", "amount": 5 },
       { "material_name": "纺丝", "amount": 10 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "风筝",
-		"requirements": [
+    "owner_name": "风筝",
+    "requirements": [
       { "material_name": "七彩线", "amount": 5 },
       { "material_name": "百股线", "amount": 5 },
       { "material_name": "百花线", "amount": 10 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "香囊",
-		"requirements": [
+    "owner_name": "香囊",
+    "requirements": [
       { "material_name": "蜀染布", "amount": 5 },
       { "material_name": "百股线", "amount": 5 },
       { "material_name": "棉线", "amount": 10 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "手帕",
-		"requirements": [
+    "owner_name": "手帕",
+    "requirements": [
       { "material_name": "七彩线", "amount": 5 },
       { "material_name": "百股线", "amount": 5 },
       { "material_name": "百花线", "amount": 10 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "娃娃",
-		"requirements": [
+    "owner_name": "娃娃",
+    "requirements": [
       { "material_name": "百花布", "amount": 5 },
       { "material_name": "百股线", "amount": 5 },
       { "material_name": "石灰", "amount": 10 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "风车",
-		"requirements": [
+    "owner_name": "风车",
+    "requirements": [
       { "material_name": "银丝缎", "amount": 5 },
       { "material_name": "百股线", "amount": 5 },
       { "material_name": "金线", "amount": 10 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "水囊",
-		"requirements": [
+    "owner_name": "水囊",
+    "requirements": [
       { "material_name": "五色石", "amount": 5 },
       { "material_name": "百股线", "amount": 5 },
       { "material_name": "纺丝", "amount": 10 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "灯笼",
-		"requirements": [
+    "owner_name": "灯笼",
+    "requirements": [
       { "material_name": "百花布", "amount": 5 },
       { "material_name": "百股线", "amount": 5 },
       { "material_name": "金线", "amount": 10 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "蹴鞠",
-		"requirements": [
+    "owner_name": "蹴鞠",
+    "requirements": [
       { "material_name": "百花布", "amount": 1 },
       { "material_name": "百染线", "amount": 2 },
       { "material_name": "石灰", "amount": 10 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "冷月伞",
-		"requirements": [
+    "owner_name": "冷月伞",
+    "requirements": [
       { "material_name": "蜀染布", "amount": 5 },
       { "material_name": "百股线", "amount": 5 },
       { "material_name": "棉线", "amount": 10 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "烟雨伞",
-		"requirements": [
+    "owner_name": "烟雨伞",
+    "requirements": [
       { "material_name": "百花布", "amount": 5 },
       { "material_name": "百股线", "amount": 5 },
       { "material_name": "纺丝", "amount": 10 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "五彩球·蓝",
-		"requirements": [
+    "owner_name": "五彩球·蓝",
+    "requirements": [
       { "material_name": "七彩线", "amount": 1 },
       { "material_name": "百染线", "amount": 2 },
       { "material_name": "棉线", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "五彩球·赤",
-		"requirements": [
+    "owner_name": "五彩球·赤",
+    "requirements": [
       { "material_name": "银丝缎", "amount": 1 },
       { "material_name": "百染线", "amount": 2 },
       { "material_name": "金线", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "桃花灯",
-		"requirements": [
+    "owner_name": "桃花灯",
+    "requirements": [
       { "material_name": "百花布", "amount": 1 },
       { "material_name": "百染线", "amount": 2 },
       { "material_name": "纺丝", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "彩云逐月",
-		"requirements": [
+    "owner_name": "彩云逐月",
+    "requirements": [
       { "material_name": "蜀染布", "amount": 1 },
       { "material_name": "百染线", "amount": 2 },
       { "material_name": "百花线", "amount": 5 }
-		]
-	},
+    ]
+  },
 
   {
-		"owner_name": "山水丹青染布画",
-		"requirements": [
+    "owner_name": "山水丹青染布画",
+    "requirements": [
       { "material_name": "百花布", "amount": 2 },
       { "material_name": "百染线", "amount": 8 },
       { "material_name": "石灰", "amount": 20 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "丹青染布画",
-		"requirements": [
+    "owner_name": "丹青染布画",
+    "requirements": [
       { "material_name": "蜀染布", "amount": 1 },
       { "material_name": "百染线", "amount": 8 },
       { "material_name": "纺丝", "amount": 20 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·腕·染（内破）",
-		"requirements": [
+    "owner_name": "仙踪·腕·染（内破）",
+    "requirements": [
       { "material_name": "纺丝", "amount": 20 },
       { "material_name": "百染线", "amount": 10 },
       { "material_name": "蜀染布", "amount": 5 },
       { "material_name": "紫檀", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·腕·染（外破）",
-		"requirements": [
+    "owner_name": "仙踪·腕·染（外破）",
+    "requirements": [
       { "material_name": "棉线", "amount": 20 },
       { "material_name": "百染线", "amount": 10 },
       { "material_name": "百花布", "amount": 5 },
       { "material_name": "银鳞", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·腕·染（仇恨）",
-		"requirements": [
+    "owner_name": "仙踪·腕·染（仇恨）",
+    "requirements": [
       { "material_name": "石灰", "amount": 20 },
       { "material_name": "百染线", "amount": 10 },
       { "material_name": "七彩线", "amount": 5 },
       { "material_name": "玛瑙", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·腕·染（会心）",
-		"requirements": [
+    "owner_name": "仙踪·腕·染（会心）",
+    "requirements": [
       { "material_name": "金线", "amount": 20 },
       { "material_name": "百染线", "amount": 10 },
       { "material_name": "五色石", "amount": 5 },
       { "material_name": "宝石", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·腕·染（根骨）",
-		"requirements": [
+    "owner_name": "仙踪·腕·染（根骨）",
+    "requirements": [
       { "material_name": "百花线", "amount": 20 },
       { "material_name": "百染线", "amount": 10 },
       { "material_name": "银丝缎", "amount": 5 },
       { "material_name": "宝石", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·腕·染（力道）",
-		"requirements": [
+    "owner_name": "仙踪·腕·染（力道）",
+    "requirements": [
       { "material_name": "金线", "amount": 20 },
       { "material_name": "百染线", "amount": 10 },
       { "material_name": "五色石", "amount": 5 },
       { "material_name": "紫檀", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·腕·染（无双）",
-		"requirements": [
+    "owner_name": "仙踪·腕·染（无双）",
+    "requirements": [
       { "material_name": "百花线", "amount": 20 },
       { "material_name": "百染线", "amount": 10 },
       { "material_name": "银丝缎", "amount": 5 },
       { "material_name": "玛瑙", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·腕·染（身法）",
-		"requirements": [
+    "owner_name": "仙踪·腕·染（身法）",
+    "requirements": [
       { "material_name": "棉线", "amount": 20 },
       { "material_name": "百染线", "amount": 10 },
       { "material_name": "百花布", "amount": 5 },
       { "material_name": "玛瑙", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·腕·染（元气）",
-		"requirements": [
+    "owner_name": "仙踪·腕·染（元气）",
+    "requirements": [
       { "material_name": "纺丝", "amount": 20 },
       { "material_name": "百染线", "amount": 10 },
       { "material_name": "蜀染布", "amount": 5 },
       { "material_name": "银鳞", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·鞋·染（外功）",
-		"requirements": [
+    "owner_name": "仙踪·鞋·染（外功）",
+    "requirements": [
       { "material_name": "石灰", "amount": 20 },
       { "material_name": "百染线", "amount": 10 },
       { "material_name": "七彩线", "amount": 5 },
       { "material_name": "银鳞", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·鞋·染（跑速）",
-		"requirements": [
+    "owner_name": "仙踪·鞋·染（跑速）",
+    "requirements": [
       { "material_name": "百花线", "amount": 20 },
       { "material_name": "百染线", "amount": 10 },
       { "material_name": "银丝缎", "amount": 5 },
       { "material_name": "宝石", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·鞋·染（治疗）",
-		"requirements": [
+    "owner_name": "仙踪·鞋·染（治疗）",
+    "requirements": [
       { "material_name": "纺丝", "amount": 20 },
       { "material_name": "百染线", "amount": 10 },
       { "material_name": "蜀染布", "amount": 5 },
       { "material_name": "宝石", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·鞋·染（内功）",
-		"requirements": [
+    "owner_name": "仙踪·鞋·染（内功）",
+    "requirements": [
       { "material_name": "棉线", "amount": 20 },
       { "material_name": "百染线", "amount": 10 },
       { "material_name": "百花布", "amount": 5 },
       { "material_name": "紫檀", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·鞋·染（命中）",
-		"requirements": [
+    "owner_name": "仙踪·鞋·染（命中）",
+    "requirements": [
       { "material_name": "金线", "amount": 20 },
       { "material_name": "百染线", "amount": 10 },
       { "material_name": "五色石", "amount": 5 },
       { "material_name": "玛瑙", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·鞋·染（急速）",
-		"requirements": [
+    "owner_name": "仙踪·鞋·染（急速）",
+    "requirements": [
       { "material_name": "百花线", "amount": 20 },
       { "material_name": "百染线", "amount": 10 },
       { "material_name": "银丝缎", "amount": 5 },
       { "material_name": "银鳞", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·衣·染（御劲）",
-		"requirements": [
+    "owner_name": "仙踪·衣·染（御劲）",
+    "requirements": [
       { "material_name": "金线", "amount": 20 },
       { "material_name": "百染线", "amount": 10 },
       { "material_name": "五色石", "amount": 5 },
       { "material_name": "紫檀", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·衣·染（闪避）",
-		"requirements": [
+    "owner_name": "仙踪·衣·染（闪避）",
+    "requirements": [
       { "material_name": "金线", "amount": 20 },
       { "material_name": "百染线", "amount": 10 },
       { "material_name": "五色石", "amount": 5 },
       { "material_name": "银鳞", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·衣·染（格档）",
-		"requirements": [
+    "owner_name": "仙踪·衣·染（格档）",
+    "requirements": [
       { "material_name": "纺丝", "amount": 20 },
       { "material_name": "百染线", "amount": 10 },
       { "material_name": "蜀染布", "amount": 5 },
       { "material_name": "玛瑙", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·衣·染（气血）",
-		"requirements": [
+    "owner_name": "仙踪·衣·染（气血）",
+    "requirements": [
       { "material_name": "棉线", "amount": 20 },
       { "material_name": "百染线", "amount": 10 },
       { "material_name": "百花布", "amount": 5 },
       { "material_name": "宝石", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·衣·染（外防）",
-		"requirements": [
+    "owner_name": "仙踪·衣·染（外防）",
+    "requirements": [
       { "material_name": "百花线", "amount": 20 },
       { "material_name": "百染线", "amount": 10 },
       { "material_name": "银丝缎", "amount": 5 },
       { "material_name": "紫檀", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·衣·染（招架）",
-		"requirements": [
+    "owner_name": "仙踪·衣·染（招架）",
+    "requirements": [
       { "material_name": "棉线", "amount": 20 },
       { "material_name": "百染线", "amount": 10 },
       { "material_name": "百花布", "amount": 5 },
       { "material_name": "玛瑙", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·衣·染（内防）",
-		"requirements": [
+    "owner_name": "仙踪·衣·染（内防）",
+    "requirements": [
       { "material_name": "石灰", "amount": 20 },
       { "material_name": "百染线", "amount": 10 },
       { "material_name": "七彩线", "amount": 5 },
       { "material_name": "宝石", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·衣·染（化劲）",
-		"requirements": [
+    "owner_name": "仙踪·衣·染（化劲）",
+    "requirements": [
       { "material_name": "纺丝", "amount": 20 },
       { "material_name": "百染线", "amount": 10 },
       { "material_name": "蜀染布", "amount": 5 },
       { "material_name": "银鳞", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·衣·染（体质）",
-		"requirements": [
+    "owner_name": "仙踪·衣·染（体质）",
+    "requirements": [
       { "material_name": "石灰", "amount": 20 },
       { "material_name": "猫眼石", "amount": 5 },
       { "material_name": "七彩线", "amount": 10 },
       { "material_name": "紫檀", "amount": 10 },
       { "material_name": "沉香木", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·衣·绣（御劲）",
-		"requirements": [
+    "owner_name": "仙踪·衣·绣（御劲）",
+    "requirements": [
       { "material_name": "石灰", "amount": 20 },
       { "material_name": "猫眼石", "amount": 5 },
       { "material_name": "七彩线", "amount": 10 },
       { "material_name": "紫檀", "amount": 10 },
       { "material_name": "沉香木", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·衣·绣（闪避）",
-		"requirements": [
+    "owner_name": "仙踪·衣·绣（闪避）",
+    "requirements": [
       { "material_name": "金线", "amount": 20 },
       { "material_name": "猫眼石", "amount": 5 },
       { "material_name": "五色石", "amount": 10 },
       { "material_name": "紫檀", "amount": 10 },
       { "material_name": "沉香木", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·衣·绣（格挡）",
-		"requirements": [
+    "owner_name": "仙踪·衣·绣（格挡）",
+    "requirements": [
       { "material_name": "纺丝", "amount": 20 },
       { "material_name": "珠贝母", "amount": 5 },
       { "material_name": "蜀染布", "amount": 10 },
       { "material_name": "玛瑙", "amount": 10 },
       { "material_name": "沉香木", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·衣·绣（气血）",
-		"requirements": [
+    "owner_name": "仙踪·衣·绣（气血）",
+    "requirements": [
       { "material_name": "棉线", "amount": 20 },
       { "material_name": "猫眼石", "amount": 5 },
       { "material_name": "百花布", "amount": 10 },
       { "material_name": "宝石", "amount": 10 },
       { "material_name": "珠贝母", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·衣·绣（外防）",
-		"requirements": [
+    "owner_name": "仙踪·衣·绣（外防）",
+    "requirements": [
       { "material_name": "百花线", "amount": 20 },
       { "material_name": "猫眼石", "amount": 5 },
       { "material_name": "银丝缎", "amount": 10 },
       { "material_name": "紫檀", "amount": 10 },
       { "material_name": "珠贝母", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·衣·绣（招架）",
-		"requirements": [
+    "owner_name": "仙踪·衣·绣（招架）",
+    "requirements": [
       { "material_name": "棉线", "amount": 20 },
       { "material_name": "猫眼石", "amount": 5 },
       { "material_name": "百花布", "amount": 10 },
       { "material_name": "玛瑙", "amount": 10 },
       { "material_name": "沉香木", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·衣·绣（内防）",
-		"requirements": [
+    "owner_name": "仙踪·衣·绣（内防）",
+    "requirements": [
       { "material_name": "石灰", "amount": 20 },
       { "material_name": "沉香木", "amount": 5 },
       { "material_name": "七彩线", "amount": 10 },
       { "material_name": "宝石", "amount": 10 },
       { "material_name": "珠贝母", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·衣·绣（化劲）",
-		"requirements": [
+    "owner_name": "仙踪·衣·绣（化劲）",
+    "requirements": [
       { "material_name": "纺丝", "amount": 20 },
       { "material_name": "猫眼石", "amount": 5 },
       { "material_name": "蜀染布", "amount": 10 },
       { "material_name": "银鳞", "amount": 10 },
       { "material_name": "珠贝母", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·衣·绣（体质）",
-		"requirements": [
+    "owner_name": "仙踪·衣·绣（体质）",
+    "requirements": [
       { "material_name": "石灰", "amount": 20 },
       { "material_name": "猫眼石", "amount": 5 },
       { "material_name": "七彩线", "amount": 10 },
       { "material_name": "紫檀", "amount": 10 },
       { "material_name": "沉香木", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·鞋·绣（急速）",
-		"requirements": [
+    "owner_name": "仙踪·鞋·绣（急速）",
+    "requirements": [
       { "material_name": "百花线", "amount": 20 },
       { "material_name": "沉香木", "amount": 5 },
       { "material_name": "银丝缎", "amount": 10 },
       { "material_name": "银鳞", "amount": 10 },
       { "material_name": "珠贝母", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·鞋·绣（治疗）",
-		"requirements": [
+    "owner_name": "仙踪·鞋·绣（治疗）",
+    "requirements": [
       { "material_name": "纺丝", "amount": 20 },
       { "material_name": "沉香木", "amount": 5 },
       { "material_name": "蜀染布", "amount": 10 },
       { "material_name": "宝石", "amount": 10 },
       { "material_name": "猫眼石", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·鞋·绣（内功）",
-		"requirements": [
+    "owner_name": "仙踪·鞋·绣（内功）",
+    "requirements": [
       { "material_name": "棉线", "amount": 20 },
       { "material_name": "沉香木", "amount": 5 },
       { "material_name": "百花布", "amount": 10 },
       { "material_name": "紫檀", "amount": 10 },
       { "material_name": "珠贝母", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·鞋·绣（外功）",
-		"requirements": [
+    "owner_name": "仙踪·鞋·绣（外功）",
+    "requirements": [
       { "material_name": "石灰", "amount": 20 },
       { "material_name": "珠贝母", "amount": 5 },
       { "material_name": "七彩线", "amount": 10 },
       { "material_name": "银鳞", "amount": 10 },
       { "material_name": "猫眼石", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·鞋·绣（命中）",
-		"requirements": [
+    "owner_name": "仙踪·鞋·绣（命中）",
+    "requirements": [
       { "material_name": "金线", "amount": 20 },
       { "material_name": "珠贝母", "amount": 5 },
       { "material_name": "五色石", "amount": 10 },
       { "material_name": "玛瑙", "amount": 10 },
       { "material_name": "猫眼石", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·腕·绣（无双）",
-		"requirements": [
+    "owner_name": "仙踪·腕·绣（无双）",
+    "requirements": [
       { "material_name": "百花线", "amount": 20 },
       { "material_name": "沉香木", "amount": 5 },
       { "material_name": "银丝缎", "amount": 10 },
       { "material_name": "玛瑙", "amount": 10 },
       { "material_name": "猫眼石", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·腕·绣（根骨）",
-		"requirements": [
+    "owner_name": "仙踪·腕·绣（根骨）",
+    "requirements": [
       { "material_name": "百花线", "amount": 20 },
       { "material_name": "珠贝母", "amount": 5 },
       { "material_name": "银丝缎", "amount": 10 },
       { "material_name": "宝石", "amount": 10 },
       { "material_name": "猫眼石", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·腕·绣（力道）",
-		"requirements": [
+    "owner_name": "仙踪·腕·绣（力道）",
+    "requirements": [
       { "material_name": "金线", "amount": 20 },
       { "material_name": "沉香木", "amount": 5 },
       { "material_name": "五色石", "amount": 10 },
       { "material_name": "紫檀", "amount": 10 },
       { "material_name": "猫眼石", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·腕·绣（元气）",
-		"requirements": [
+    "owner_name": "仙踪·腕·绣（元气）",
+    "requirements": [
       { "material_name": "纺丝", "amount": 20 },
       { "material_name": "沉香木", "amount": 5 },
       { "material_name": "蜀染布", "amount": 10 },
       { "material_name": "银鳞", "amount": 10 },
       { "material_name": "珠贝母", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·腕·绣（仇恨）",
-		"requirements": [
+    "owner_name": "仙踪·腕·绣（仇恨）",
+    "requirements": [
       { "material_name": "石灰", "amount": 20 },
       { "material_name": "沉香木", "amount": 5 },
       { "material_name": "七彩线", "amount": 10 },
       { "material_name": "玛瑙", "amount": 10 },
       { "material_name": "珠贝母", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·腕·绣（内破）",
-		"requirements": [
+    "owner_name": "仙踪·腕·绣（内破）",
+    "requirements": [
       { "material_name": "纺丝", "amount": 20 },
       { "material_name": "猫眼石", "amount": 5 },
       { "material_name": "蜀染布", "amount": 10 },
       { "material_name": "紫檀", "amount": 10 },
       { "material_name": "珠贝母", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·腕·绣（外破）",
-		"requirements": [
+    "owner_name": "仙踪·腕·绣（外破）",
+    "requirements": [
       { "material_name": "棉线", "amount": 20 },
       { "material_name": "沉香木", "amount": 5 },
       { "material_name": "百花布", "amount": 10 },
       { "material_name": "银鳞", "amount": 10 },
       { "material_name": "猫眼石", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·腕·绣（会心）",
-		"requirements": [
+    "owner_name": "仙踪·腕·绣（会心）",
+    "requirements": [
       { "material_name": "金线", "amount": 20 },
       { "material_name": "沉香木", "amount": 5 },
       { "material_name": "五色石", "amount": 10 },
       { "material_name": "宝石", "amount": 10 },
       { "material_name": "珠贝母", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "仙踪·腕·绣（身法）",
-		"requirements": [
+    "owner_name": "仙踪·腕·绣（身法）",
+    "requirements": [
       { "material_name": "棉线", "amount": 20 },
       { "material_name": "猫眼石", "amount": 5 },
       { "material_name": "百花布", "amount": 10 },
       { "material_name": "玛瑙", "amount": 10 },
       { "material_name": "珠贝母", "amount": 5 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "寻踪觅宝·上衣",
-		"requirements": [
+    "owner_name": "寻踪觅宝·上衣",
+    "requirements": [
       { "material_name": "棉线", "amount": 20 },
       { "material_name": "百染线", "amount": 10 },
       { "material_name": "银鳞", "amount": 1 },
       { "material_name": "五色石", "amount": 1 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "寻踪觅宝·护腕",
-		"requirements": [
+    "owner_name": "寻踪觅宝·护腕",
+    "requirements": [
       { "material_name": "纺丝", "amount": 20 },
       { "material_name": "百染线", "amount": 10 },
       { "material_name": "紫檀", "amount": 1 },
       { "material_name": "银丝缎", "amount": 1 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "寻踪觅宝·鞋子",
-		"requirements": [
+    "owner_name": "寻踪觅宝·鞋子",
+    "requirements": [
       { "material_name": "金线", "amount": 20 },
       { "material_name": "百染线", "amount": 10 },
       { "material_name": "宝石", "amount": 1 },
       { "material_name": "七彩线", "amount": 1 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "山水刺绣手绢",
-		"requirements": [
+    "owner_name": "山水刺绣手绢",
+    "requirements": [
       { "material_name": "石灰", "amount": 20 },
       { "material_name": "百染线", "amount": 8 },
       { "material_name": "五色石", "amount": 2 }
-		]
-	},
+    ]
+  },
   {
-		"owner_name": "刺绣手绢",
+    "owner_name": "刺绣手绢",
     "requirements": [
       { "material_name": "纺丝", "amount": 20 },
       { "material_name": "百染线", "amount": 8 },
       { "material_name": "七彩线", "amount": 1 }
-		]
+    ]
   }
 ]

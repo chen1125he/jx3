@@ -1,20 +1,14 @@
 [
   {
     "owner_name": "红辣椒",
-    "system_prices": [
-      { "currency_type": "gold", "amount": 1 }
-    ]
+    "system_prices": [{ "currency_type": "gold", "amount": 1 }]
   },
   {
     "owner_name": "胡椒粉",
-    "system_prices": [
-      { "currency_type": "gold", "amount": 1 }
-    ]
+    "system_prices": [{ "currency_type": "gold", "amount": 1 }]
   },
   {
     "owner_name": "调料",
-    "system_prices": [
-      { "currency_type": "gold", "amount": 1 }
-    ]
+    "system_prices": [{ "currency_type": "gold", "amount": 1 }]
   }
 ]
