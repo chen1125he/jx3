@@ -1,15 +1,3 @@
-// This is a manifest file that'll be compiled into application.js, which will include all the files
-// listed below.
-//
-// Any JavaScript/Coffee file within this directory, lib/assets/javascripts, vendor/assets/javascripts,
-// or any plugin's vendor/assets/javascripts directory can be referenced here using a relative path.
-//
-// It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
-// compiled file. JavaScript code in this file should be added after the last require_* statement.
-//
-// Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
-// about supported directives.
-//
 //= require jquery
 //= require jquery.remotipart
 //= require jquery_ujs
@@ -26,6 +14,8 @@
 //= require select2_locale_zh-CN
 //= require select2-multiple-custom
 //= require echarts.common
+//= require clipboard.min
+//= require noty
 //= require config
 //= require metismenu
 //= require_tree ./admin
@@ -36,5 +26,15 @@
 
   $(document).on('turbolinks:load', function() {
     App.dateTimePicker.init();
+
+    // Configure noty
+    Noty.overrideDefaults({ timeout: 3000, theme: 'bootstrap-v3', closeWith: ['click', 'button'] });
+
+    // Init clipboard
+    var btns = new Clipboard('.btn-clipboard[data-clipboard-text]');
+    btns.on('success', function(e) {
+      var n = new Noty({ text: '复制成功', type: 'success' });
+      n.show();
+    });
   })
 }).call(this);

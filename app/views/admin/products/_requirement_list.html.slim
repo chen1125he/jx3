@@ -14,7 +14,7 @@ table.table.table-striped.table-bordered.table-hover
           | 暂无数据
     - requirements.each do |requirement|
       tr
-        td = requirement.material.name
+        td = link_to requirement.material.name, 'javascript:;', class: 'btn-clipboard', data: { 'clipboard-text' => requirement.material.name }
         td = requirement.amount
         td.actions
           = link_to '编辑', edit_admin_product_path(requirement.material), target: '_blank'

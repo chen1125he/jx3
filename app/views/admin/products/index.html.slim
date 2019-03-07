@@ -45,7 +45,7 @@
               tr
                 td.w10p = product.id
                 td = product.category.name
-                td = product.name
+                td = link_to product.name, 'javascript:;', class: 'btn-clipboard', data: { 'clipboard-text' => product.name }
                 td = product.current_price&.amount
                 td
                   - product.system_prices.each do |price|

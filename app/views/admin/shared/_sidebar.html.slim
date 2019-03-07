@@ -8,21 +8,21 @@ aside.sidebar
       ul.sidebar-menu.metismenu#sidebar-menu
         li class=active_menu_class([:dashboards, :charts])
           = link_to admin_dashboards_path do
-            i.fa.fa-home
+            = icon('fa', 'chart-line')
             | 数据总览
         li class=active_menu_class([:products, :history_prices, :bulk_import_history_prices])
           = link_to admin_products_path do
-            i.fa.fa-home
+            = icon('fa', 'shopping-bag')
             | 物品管理
         li class=active_menu_class([:categories])
           = link_to admin_categories_path do
-            i.fa.fa-home
+            = icon('fa', 'th')
             | 分类管理
         li class=active_menu_class([:areas])
           = link_to admin_areas_path do
-            i.fa.fa-home
+            = icon('fa', 'cogs')
             | 大区管理
         li class=active_menu_class([:services])
           = link_to admin_services_path do
-            i.fa.fa-home
+            = icon('fa', 'cog')
             | 服务器管理
