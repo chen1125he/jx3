@@ -43,7 +43,7 @@
   {
     "owner_name": "密银锭",
     "requirements": [
-      { "material_name": "煤碳", "amount": 20 },
+      { "material_name": "煤炭", "amount": 20 },
       { "material_name": "银矿", "amount": 10 },
       { "material_name": "硼砂", "amount": 2 }
     ]
