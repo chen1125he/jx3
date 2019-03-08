@@ -4,17 +4,22 @@ table.table.table-striped.table-bordered.table-hover
       th
         | 材料名
       th
+        | 当前历史价格(金)
+      th
         | 需要数量
       th
         | 操作
   tbody
     - if requirements.blank?
       tr
-        td.nodata colspan=3
+        td.nodata colspan=4
           | 暂无数据
     - requirements.each do |requirement|
       tr
         td = link_to requirement.material.name, 'javascript:;', class: 'btn-clipboard', data: { 'clipboard-text' => requirement.material.name }
+        td
+          = requirement.material.current_price && link_to(requirement.material.current_price.amount, edit_admin_product_history_price_path(requirement.material, requirement.material.current_price), remote: true)
         td = requirement.amount
         td.actions
-          = link_to '编辑', edit_admin_product_path(requirement.material), target: '_blank'
+          = link_to '材料详情', edit_admin_product_path(requirement.material), target: '_blank'
+          = link_to '添加历史价格', new_admin_product_history_price_path(requirement.material), remote: true
