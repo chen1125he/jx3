@@ -80,7 +80,7 @@ gem 'mina-sidekiq', '~> 1.0.3', require: false
 # Background job
 gem 'redis-namespace'
 gem 'remotipart', '~> 1.2'
-gem 'sidekiq'
+gem 'sidekiq', '5.2.3'
 gem 'sidekiq-status'
 gem 'sidekiq-unique-jobs'
 
