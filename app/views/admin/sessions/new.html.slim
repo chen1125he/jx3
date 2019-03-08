@@ -1,0 +1,12 @@
+= form_tag admin_login_path do
+  .form-group
+    label for="username"
+      | 用户名
+    = text_field_tag :name, nil, class: 'form-control'
+  .form-group
+    label for="password"
+      | 密码
+    = password_field_tag :password, nil, class: 'form-control'
+  .form-group
+    button.btn.btn-block.btn-primary type="submit"
+      | 登录

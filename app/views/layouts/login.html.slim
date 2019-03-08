@@ -1,0 +1,29 @@
+doctype html
+html lang="zh-cmn-Hans"
+  head
+    meta charset="utf-8"
+    meta http-equiv="x-ua-compatible" content="ie=edge"
+    meta name="description" content=""
+		meta name="viewport" content="width=device-width, initial-scale=1"
+    title
+      | jx3
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+
+  body.loaded
+    .auth
+      .auth-container
+        .card
+          header.auth-header
+            h1.auth-title
+      				| 剑网3 生活助手
+          .auth-content
+            = render 'layouts/shared/message'
+            = yield
+
+    .ref#ref
+			.color-primary
+			  .chart
+				  .color-primary
+				  .color-secondary

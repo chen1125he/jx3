@@ -23,6 +23,7 @@ html lang="zh-cmn-Hans"
         .mobile-menu-handle
 
         article.content.pagename-page
+          = render 'layouts/shared/message'
           section.breadcrumbs class=(breadcrumbs.blank? ? 'hidden' : '')
             = render_breadcrumbs separator: ' > '
           = yield

@@ -2,11 +2,10 @@
   ul.nav-profile
     li.profile.dropdown
       = link_to '#', class: 'nav-link dropdown-toggle', data: { 'toggle' => 'dropdown' }, role: 'button', aria: { 'haspopup' => 'true', 'expanded' => 'false'} do
-        .img style="background-image: url('https://avatars3.githubusercontent.com/u/3959008?v=3&s=40')">
-
-        span.name John Doe
+        span.name
+          = current_admin.name
       .dropdown-menu.profile-dropdown-menu aria-labelledby="dropdownMenu1"
         .dropdown-divider
-        = link_to '#', class: 'dropdown-item' do
+        = link_to admin_logout_path, method: :delete, class: 'dropdown-item' do
           i.fa.fa-power-off.icon
           | 退出
