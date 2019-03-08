@@ -59,7 +59,7 @@ group :development do
 end
 
 # view
-gem 'bootstrap', '~> 4.2.1'
+gem 'bootstrap', ">= 4.3.1"
 gem 'bootstrap-daterangepicker-rails'
 gem 'breadcrumbs_on_rails'
 gem 'echarts-rails'
