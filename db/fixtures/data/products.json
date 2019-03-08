@@ -466,9 +466,9 @@
       { "name": "佳·纳元丹", "avg_amount": 7 },
       { "name": "飞鱼丸", "avg_amount": 7.5 },
 
-      { "name": "药引", "avg_amount": 1 },
-      { "name": "药丸", "avg_amount": 1 },
-      { "name": "药膏", "avg_amount": 1 }
+      { "name": "药引", "avg_amount": 2.5 },
+      { "name": "药丸", "avg_amount": 2.5 },
+      { "name": "药膏", "avg_amount": 2.5 }
     ]
   },
   {
