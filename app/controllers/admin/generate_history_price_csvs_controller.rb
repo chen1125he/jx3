@@ -2,6 +2,6 @@
 
 class Admin::GenerateHistoryPriceCsvsController < Admin::BaseController
   def create
-    @jid = Admin::GenerateHistoryPriceCsvWorker.perform_async
+    @jid = Admin::GenerateHistoryPriceCsvWorker.perform_async(q: params[:q])
   end
 end

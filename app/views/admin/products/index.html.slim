@@ -5,7 +5,7 @@
     .header-actions
       = link_to new_admin_bulk_import_history_price_path, class: 'btn btn-primary btn-sm rounded-s' do
         | 批量导入物品价格
-      = link_to admin_generate_history_price_csvs_path, remote: true, method: :post, class: 'btn btn-primary btn-sm rounded-s' do
+      = link_to admin_generate_history_price_csvs_path(q: params[:q]), remote: true, method: :post, class: 'btn btn-primary btn-sm rounded-s' do
         | 批量导出物品价格
   .items-search
     = form_tag admin_products_path, method: :get do
@@ -39,7 +39,7 @@
           tbody
             - if @products.blank?
               tr
-                td.nodata colspan=5
+                td.nodata colspan=6
                   | 暂无数据
             - @products.each do |product|
               tr

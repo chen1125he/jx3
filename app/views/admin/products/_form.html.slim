@@ -2,4 +2,4 @@
   = f.select :category_id, Category.all.map{|s| [s.name, s.id]}, {}, { disabled: true }
   = f.text_field :name, disabled: true
   = f.text_field :game_id, disabled: true
-  = f.number_field :avg_amount, disabled: true
+  = f.text_field :avg_amount, disabled: true

@@ -1,6 +1,6 @@
 = bootstrap_form_for history_price, url: url, remote: true do |f|
   = f.select :currency_type, Price.currency_type.options, {}, { disabled: true }
-  = f.number_field :amount
+  = f.text_field :amount
   = f.text_field :seller_name
   = f.text_field :record_date, class: 'datetimepicker'
   = f.submit '保存'
