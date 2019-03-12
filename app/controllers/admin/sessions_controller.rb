@@ -1,14 +1,16 @@
+# frozen_string_literal: true
+
 class Admin::SessionsController < Admin::BaseController
   layout 'login'
 
-  skip_before_action :ensure_authenticated_admin, only: [:new, :create]
+  skip_before_action :ensure_authenticated_admin, only: %i[new create]
 
   def new
   end
 
   def create
     admin = Admin.find_by(name: params[:name])
-    if admin && admin.authenticate(params[:password])
+    if admin&.authenticate(params[:password])
       session[:admin_id] = admin.id
       @current_admin = admin
       redirect_to admin_root_url
