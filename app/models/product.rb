@@ -47,11 +47,11 @@ class Product < ApplicationRecord
 
     if price_type.system_price?
       system_prices.each { |price| prices = prices_merge(prices, price.currency_type_text => price.amount) }
-    elsif (requirements_level <= 0 || requirements.blank?)
+    elsif requirements_level <= 0 || requirements.blank?
       prices = prices_merge(prices, current_price.currency_type_text => current_price.amount) if current_price
     else
       produce_prices.each { |price| prices = prices_merge(prices, price.currency_type_text => price.amount) }
-      requirements.each{ |r| prices = prices_merge(prices, prices_multiply(r.material.cost(requirements_level - 1), r.amount))}
+      requirements.each { |r| prices = prices_merge(prices, prices_multiply(r.material.cost(requirements_level - 1), r.amount)) }
       prices = prices_devide(prices, avg_amount)
     end
 

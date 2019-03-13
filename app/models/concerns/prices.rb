@@ -18,10 +18,10 @@ module Prices
   end
 
   def prices_multiply(prices = {}, multiple = 1)
-    prices.each{ |key, value| prices[key] = value * multiple }
+    prices.each { |key, value| prices[key] = value * multiple }
   end
 
   def prices_devide(prices = {}, devide = 1)
-    prices.each{ |key, value| prices[key] = value.to_f / devide }
+    prices.each { |key, value| prices[key] = value.to_f / devide }
   end
 end
