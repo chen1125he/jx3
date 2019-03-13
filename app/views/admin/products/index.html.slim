@@ -55,5 +55,5 @@
                 td.actions.w20p
                   = link_to '编辑', edit_admin_product_path(product)
                   = link_to '置顶', admin_topping_product_path(product), method: :put, remote: true
-                  = link_to '添加历史价格', new_admin_product_history_price_path(product), remote: true
+                  = link_to '添加历史价格', new_admin_product_history_price_path(product), class: 'btn-clipboard', data: { 'clipboard-text' => product.name }, remote: true
   = paginate @products
