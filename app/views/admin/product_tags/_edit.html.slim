@@ -1,0 +1,14 @@
+.modal.fade
+  .modal-dialog role="document"
+    .modal-content
+      .modal-header
+        h5.modal-title
+          i.fa.fa-warning
+          | 编辑标签
+        button.close type="button" data-dismiss="modal" aria-label="Close"
+          span aria-hidden="true"
+            | &times;
+      .modal-body
+        .product-tag-form
+          = render 'form', product: @product, url: admin_product_tags_path(@product)
+      .modal-footer

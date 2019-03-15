@@ -1,0 +1,14 @@
+.modal.fade
+  .modal-dialog role="document"
+    .modal-content
+      .modal-header
+        h5.modal-title
+          i.fa.fa-warning
+          | 添加标签
+        button.close type="button" data-dismiss="modal" aria-label="Close"
+          span aria-hidden="true"
+            | &times;
+      .modal-body
+        .tag-form
+          = render 'form', tag: @tag, url: admin_tags_path
+      .modal-footer

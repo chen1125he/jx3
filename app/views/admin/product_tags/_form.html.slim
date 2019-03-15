@@ -1,0 +1,9 @@
+= bootstrap_form_for product, url: url, remote: true do |f|
+  = f.text_field :name, disabled: true
+  = f.form_group :tag_ids, label: { text: '标签' } do
+    = select_tag :tag_ids,
+                 options_for_select(f.object.tags.map{ |item| [item.name, item.id] }.to_h, f.object.tags.map(&:id)), class: 'form-control select2-multiple-selector',
+                 data: { path: admin_tags_path, placeholder: '请选择标签' },
+                 multiple: true
+
+  = f.submit '保存'

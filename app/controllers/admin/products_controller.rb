@@ -5,8 +5,8 @@ class Admin::ProductsController < Admin::BaseController
   before_action :load_product, only: %i[edit update]
 
   def index
-    q = Product.ransack({ category_name_cont: params[:q], name_cont: params[:q] }.merge(m: 'or'))
-    @products = q.result.includes(:category, :system_prices, :current_price).order(updated_at: :desc).page(params[:page])
+    q = Admin::QueryProductsService.new(params).call
+    @products = q.includes(:category, :system_prices, :current_price, :tags).page(params[:page])
   end
 
   def edit

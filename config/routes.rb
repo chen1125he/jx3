@@ -13,10 +13,12 @@ Rails.application.routes.draw do
     resources :dashboards, only: [:index]
     resources :charts
     resources :categories, only: [:index]
+    resources :tags
     resources :areas, only: [:index]
     resources :services, only: [:index]
     resources :products, only: %i[index edit update] do
       resources :history_prices
+      resource :tags, only: [:edit, :update], controller: 'product_tags'
     end
     resources :topping_products, only: [:update]
     resources :bulk_import_history_prices, only: %i[new create]

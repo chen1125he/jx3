@@ -3,7 +3,7 @@
   = f.form_group :product_items, label: { text: '展示物品' } do
     = select_tag :product_items,
                  options_for_select(f.object.product_items.map{ |item| [item.name, item.id] }.to_h, f.object.product_items.map(&:id)), class: 'form-control select2-multiple-selector',
-                 data: { path: admin_materials_path },
+                 data: { path: admin_materials_path, placeholder: '请选择物品' },
                  multiple: true
 
   = f.submit '保存'

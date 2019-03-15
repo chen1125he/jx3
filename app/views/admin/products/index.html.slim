@@ -29,6 +29,8 @@
               th
                 | 所属分类名
               th
+                | 标签
+              th
                 | 物品名
               th
                 | 当前历史价格(金)
@@ -39,12 +41,13 @@
           tbody
             - if @products.blank?
               tr
-                td.nodata colspan=6
+                td.nodata colspan=7
                   | 暂无数据
             - @products.each do |product|
               tr
                 td.w10p = product.id
                 td = product.category.name
+                td.w20p = product.tags.map(&:name).join(';')
                 td = link_to product.name, 'javascript:;', class: 'btn-clipboard', data: { 'clipboard-text' => product.name }
                 td
                   = product.current_price && link_to(product.current_price.amount, edit_admin_product_history_price_path(product, product.current_price), remote: true)
@@ -56,4 +59,5 @@
                   = link_to '编辑', edit_admin_product_path(product)
                   = link_to '置顶', admin_topping_product_path(product), method: :put, remote: true
                   = link_to '添加历史价格', new_admin_product_history_price_path(product), class: 'btn-clipboard', data: { 'clipboard-text' => product.name }, remote: true
+                  = link_to '编辑标签', edit_admin_product_tags_path(product), remote: true
   = paginate @products

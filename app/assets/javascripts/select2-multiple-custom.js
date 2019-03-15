@@ -6,7 +6,7 @@
         language: "zh-CN",
         formatLoadMore: '加载中...',
         width: '100%',
-        placeholder: '请选择物品',
+        placeholder: this._selector().data('placeholder'),
         ajax: {
           url: this._selector().data('path'),
           dataType: "json",
@@ -20,7 +20,7 @@
           },
           processResults: function (data, page) {
             return {
-              results: $.map(data.materials, function (material) {
+              results: $.map(data.items, function (material) {
                 return {
                   text: material.name,
                   id: material.id

@@ -26,3 +26,5 @@ zh-CN:
         amount: 需要数量
       chart:
         name: 图表名
+      tag:
+        name: 标签名

@@ -8,8 +8,8 @@ class Admin::GenerateHistoryPriceCsvWorker
   HEADER = %w[分类名 物品名 价格值(金) 售卖者 记录时间].freeze
 
   def perform(options = {})
-    q = Product.ransack({ category_name_cont: options['q'], name_cont: options['q'] }.merge(m: 'or'))
-    products = q.result.order(updated_at: :desc)
+    products = Admin::QueryProductsService.new(options).call
+
     total(products.count)
 
     filepath = Utilities::CSVGenerator.generate(filename: 'products.csv') do |csv|

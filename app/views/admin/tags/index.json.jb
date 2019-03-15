@@ -1,0 +1,4 @@
+{
+  items: @tags.map { |m| { name: m.name, id: m.id } },
+  more: @tags.current_page < @tags.total_pages
+}

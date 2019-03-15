@@ -1,0 +1,47 @@
+.title-search-block
+  .title-block
+    p.title-description
+			| 物品标签，可以添加到各个物品上，方便筛选
+    = link_to new_admin_tag_path, remote: true, class: 'btn btn-primary btn-sm rounded-s' do
+      | 添加标签
+  .items-search
+    = form_tag admin_tags_path, method: :get do
+      form.form-inline
+        .input-group
+          = text_field_tag :q, params[:q], class: 'form-control boxed rounded-s', placeholder: '标签名...'
+          span.input-group-btn
+            = link_to 'javascript:void(0)', onclick: "$(this).closest('form').submit()", class: 'btn btn-secondary rounded-s' do
+              i.fa.fa-search
+
+section.section
+  .row
+    .col-md-12
+      .card
+        .card-block
+          .card-title-block
+            h3.title
+              | Responsive simple
+          section
+            .table-responsive
+              table.table.table-striped.table-bordered.table-hover
+                thead
+                  tr
+                    th
+                      | ID
+                    th
+                      | 标签名
+                    th
+                      | 操作
+                tbody
+                  - if @tags.blank?
+                    tr
+                      td.nodata colspan=3
+                        | 暂无数据
+                  - @tags.each do |tag|
+                    tr
+                      td = tag.id
+                      td = tag.name
+                      td.actions
+                        = link_to '编辑', edit_admin_tag_path(tag), remote: true
+                        = link_to '删除', admin_tag_path(tag), data: {'confirm' => '确认删除吗？'}, method: :delete, remote: true
+        = paginate @tags

@@ -5,6 +5,6 @@ class Admin::MaterialsController < Admin::BaseController
     q = Product.ransack(name_cont: params[:q])
     @materials = q.result.order(created_at: :asc).page(params[:page])
 
-    render json: { materials: @materials.map { |m| { name: m.name, id: m.id } }, more: @materials.current_page < @materials.total_pages }
+    render json: { items: @materials.map { |m| { name: m.name, id: m.id } }, more: @materials.current_page < @materials.total_pages }
   end
 end
