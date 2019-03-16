@@ -1,0 +1,34 @@
+ruby:
+  help = case params[:type]
+         when 'add'
+           '搜索结果中的物品都将会被添加上指定标签'
+         when 'remove'
+           '搜索结果中的物品都将会被移除指定标签'
+         else
+           '参数错误，请刷新重试'
+         end
+
+.modal.fade
+  .modal-dialog role="document"
+    .modal-content
+      .modal-header
+        h5.modal-title
+          i.fa.fa-warning
+          | 批量编辑标签
+        button.close type="button" data-dismiss="modal" aria-label="Close"
+          span aria-hidden="true"
+            | &times;
+      .modal-body
+        .bulk-edit-product-tag-form
+          = bootstrap_form_tag url: admin_bulk_edit_product_tags_path, method: :put, remote: true do |f|
+            = f.hidden_field :q, value: params[:q]
+            = f.hidden_field :type, value: params[:type]
+            = f.form_group :tag_ids, label: { text: '标签' }, help: help do
+              = select_tag :tag_ids,
+                           [], class: 'form-control select2-multiple-selector',
+                           data: { path: admin_tags_path, placeholder: '请选择标签' },
+                           multiple: true
+
+            = f.submit '保存'
+
+      .modal-footer

@@ -180,9 +180,13 @@
 		td.nodata {
 			text-align: center;
 		}
-		
+
 		td.actions a:not(:first-child) {
 			margin-left: 10px;
+		}
+
+		td, th {
+			vertical-align: middle;
 		}
 	}
 }

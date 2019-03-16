@@ -22,4 +22,6 @@
 class ProductTag < ApplicationRecord
   belongs_to :product
   belongs_to :tag
+
+  validates :product, uniqueness: { scope: %i[tag] }
 end

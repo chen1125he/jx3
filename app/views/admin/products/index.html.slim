@@ -3,6 +3,10 @@
     p.title-description
 			| 系统中的所有物品
     .header-actions
+      = link_to edit_admin_bulk_edit_product_tags_path(q: params[:q], type: :add), remote: true, class: 'btn btn-primary btn-sm rounded-s' do
+        | 批量添加标签
+      = link_to edit_admin_bulk_edit_product_tags_path(q: params[:q], type: :remove), remote: true, class: 'btn btn-primary btn-sm rounded-s' do
+        | 批量删除标签
       = link_to new_admin_bulk_import_history_price_path, class: 'btn btn-primary btn-sm rounded-s' do
         | 批量导入物品价格
       = link_to admin_generate_history_price_csvs_path(q: params[:q]), remote: true, method: :post, class: 'btn btn-primary btn-sm rounded-s' do
@@ -11,7 +15,7 @@
     = form_tag admin_products_path, method: :get do
       form.form-inline
         .input-group
-          = text_field_tag :q, params[:q], class: 'form-control boxed rounded-s', placeholder: '所属分类名、物品名...'
+          = text_field_tag :q, params[:q], class: 'form-control boxed rounded-s', placeholder: '所属分类名、物品名、标签名...'
           span.input-group-btn
             = link_to 'javascript:void(0)', onclick: "$(this).closest('form').submit()", class: 'btn btn-secondary rounded-s' do
               i.fa.fa-search
@@ -52,9 +56,12 @@
                 td
                   = product.current_price && link_to(product.current_price.amount, edit_admin_product_history_price_path(product, product.current_price), remote: true)
                 td
-                  - product.system_prices.each do |price|
-                    = format('%<currency_type>s:%<amount>s', currency_type: price.currency_type_text, amount: price.amount)
-                    br
+                  - if product.system_prices.present?
+                    - product.system_prices.each do |price|
+                      = format('%<currency_type>s:%<amount>s', currency_type: price.currency_type_text, amount: price.amount)
+                      br
+                  - else
+                    | -
                 td.actions.w20p
                   = link_to '编辑', edit_admin_product_path(product)
                   = link_to '置顶', admin_topping_product_path(product), method: :put, remote: true

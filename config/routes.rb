@@ -20,6 +20,7 @@ Rails.application.routes.draw do
       resources :history_prices
       resource :tags, only: [:edit, :update], controller: 'product_tags'
     end
+    resource :bulk_edit_product_tags, only: [:edit, :update]
     resources :topping_products, only: [:update]
     resources :bulk_import_history_prices, only: %i[new create]
     resource :generate_history_price_csvs, only: %i[create]
