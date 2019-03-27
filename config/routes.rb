@@ -16,7 +16,7 @@ Rails.application.routes.draw do
     resources :tags
     resources :areas, only: [:index]
     resources :services, only: [:index]
-    resources :products, only: %i[index edit update] do
+    resources :products, only: %i[index edit update show] do
       resources :history_prices
       resource :tags, only: [:edit, :update], controller: 'product_tags'
     end

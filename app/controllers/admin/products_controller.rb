@@ -2,7 +2,7 @@
 
 class Admin::ProductsController < Admin::BaseController
   before_action :load_breadcrumb
-  before_action :load_product, only: %i[edit update]
+  before_action :load_product, only: %i[edit update show]
 
   def index
     q = Admin::QueryProductsService.new(params).call

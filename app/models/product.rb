@@ -60,4 +60,30 @@ class Product < ApplicationRecord
 
     prices
   end
+
+  def tree_cost(requirements_level = 1)
+    cost(requirements_level).map do |key, value|
+      {
+        name: format('%<name>s: %<value>s', name: key, value: value),
+        value: value
+      }
+    end
+  end
+
+  def tree_requirements(options = {})
+    amount = options.delete(:amount) || 1
+    level = options.delete(:level) || 1
+    rs = []
+    requirements.includes(:material).each do |requirement|
+      r = {
+        name: format('%<name>s: %<amount>s', name: requirement.material.name, amount: requirement.amount / avg_amount * amount),
+        value: requirement.amount / avg_amount * amount
+      }
+      r[:children] = requirement.material.tree_requirements(amount: r[:value]) if level > 1 && requirement.material.requirements.present?
+
+      rs << r
+    end
+
+    rs
+  end
 end
