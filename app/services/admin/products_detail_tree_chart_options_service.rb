@@ -1,4 +1,4 @@
-class ProductDetailTreeChartOptionsService
+class Admin::ProductDetailTreeChartOptionsService
   def initialize(product = nil)
     @product = product
     @data = {

@@ -45,6 +45,14 @@ class Product < ApplicationRecord
   validates :name, presence: true, uniqueness: { scope: %i[category_id], conditions: -> { where(deleted_at: nil) }, message: :product_taken }
   validates :avg_amount, presence: true, numericality: { allow_nil: true, greater_than_or_equal_to: 0 }
 
+  def profit(requirements_level = 1)
+    return 0 unless price_type.history_price?
+    return 0 unless current_price.present?
+    c = cost(requirements_level)
+    cp = current_price.amount
+    ((c['金'] - cp) / c['精力']).round(2)
+  end
+
   def cost(requirements_level = 1)
     prices = {}
 

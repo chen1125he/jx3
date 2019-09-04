@@ -41,6 +41,8 @@
               th
                 | 系统固定价格
               th
+                | 收益/自制高级材料收益(金/1点精力)
+              th
                 | 操作
           tbody
             - if @products.blank?
@@ -60,6 +62,11 @@
                     - product.system_prices.each do |price|
                       = format('%<currency_type>s:%<amount>s', currency_type: price.currency_type_text, amount: price.amount)
                       br
+                  - else
+                    | -
+                td
+                  - if product.price_type.history_price?
+                    = format('%<profit>s / %<produce_meterial_profit>s', profit: product.profit, produce_meterial_profit: product.profit(2))
                   - else
                     | -
                 td.actions.w20p
